@@ -1,12 +1,41 @@
-.navbar-lewagon {
+.navbar-mangolab {
   justify-content: space-between;
   background: white;
+  font-family: "Montserrat", "sans-serif";
+  height: 126px;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-mangolab .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-mangolab .navbar-brand img {
+  width: 216px;
+  height: 66.15px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+// Navbar buttons"
+
+.navbar-light .navbar-nav .nav-link {
+  color: $charcoal;
+  &:hover {
+    color: $charcoal;
+  }
+}
+
+.btn-white {
+  font-size: 14px;
+  font-weight: 650;
+  margin-right: 50px;
+}
+
+.btn-black {
+  font-size: 16px;
+  font-weight: 650;
+  
 }
