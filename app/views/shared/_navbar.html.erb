@@ -1,71 +1,34 @@
-<%
-=begin %>
-
-<div class="main-container">
-  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-      <%= link_to "#", class: "navbar-brand" do %>
-        <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
-      <% end %>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <%= link_to "Home", "#", class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "Messages", "#", class: "nav-link" %>
-          </li>
-          <li class="nav-item dropdown">
-            <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-              <%= link_to "Action", "#", class: "dropdown-item" %>
-              <%= link_to "Another action", "#", class: "dropdown-item" %>
-            </div>
-          </li>
-        </ul>
+<header>
+  <nav class="menu-bar">
+    <div class="main-container" id="navbar-menu">
+      <div class="menu-icons">
+        <svg class="menu-btn" width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="24" height="3" rx="1.5" fill="#454545"/>
+            <rect y="7" width="24" height="3" rx="1.5" fill="#454545"/>
+            <rect y="14" width="24" height="3" rx="1.5" fill="#454545"/>
+        </svg>
+        <svg class="close-btn" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 2L2 20" stroke="#454545" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 2L20 20" stroke="#454545" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
       </div>
-    </div>
-</div>
-  <%
-=end %>
-
-
-<div class="navbar navbar-expand-sm navbar-light navbar-mangolab main-container">
-  <%# <div class="main-container navbar-container"> %>
-    <%= link_to "#", class: "navbar-brand" do %>
-      <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602006495/MangoLab.io%20-%20Website/Navbar/NavBar_Logo_rkvimm.png" %>
-    <% end %>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-btns" aria-controls="navbar-btns" aria-expanded="false">
-      <%# <span class="navbar-toggler-icon"></span> %>
-      <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="24" height="3" rx="1.5" fill="#454545"/>
-        <rect y="7" width="24" height="3" rx="1.5" fill="#454545"/>
-        <rect y="14" width="24" height="3" rx="1.5" fill="#454545"/>
-      </svg>
-    </button>
-
-
-    <div class="collapse navbar-collapse" id="navbar-btns">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <%= link_to "SERVICES", "#", class: "nav-link btn-white" %>
+      <%= link_to "#", class: "navbar-brand" do %>
+        <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602006495/MangoLab.io%20-%20Website/Navbar/NavBar_Logo_rkvimm.png" %>
+      <% end %>
+      <ul class="nav-list">
+        <li>
+          <%= link_to "SERVICES", "#", class: "btn-white" %>
         </li>
         <li class="nav-item">
-          <%= link_to "PROCESS", "#", class: "nav-link btn-white" %>
+          <%= link_to "PROCESS", "#", class: "btn-white" %>
         </li>
         <li class="nav-item">
-          <%= link_to "VERTICALS", "#", class: "nav-link btn-white" %>
+          <%= link_to "VERTICALS", "#", class: "btn-white" %>
         </li>
         <li class="nav-item" id="black-background">
-          <%= link_to "FREE CONSULTATION", "#", class: "nav-link btn-black" %>
+          <%= link_to "FREE CONSULTATION", "#", class: "btn-black" %>
         </li>
       </ul>
     </div>
-  <%# </div> %>
-</div>
+  </nav>
+</header>
