@@ -1,0 +1,23 @@
+@media screen and (max-width: 414px) {
+  .navbar-light .navbar-toggler {
+    border: 0px;
+    padding-right: 0px;
+  }
+  .navbar-mangolab {
+    padding: 12px 0px;
+  }
+
+  // .navbar-container {
+  //   justify-content: space-between;
+  // }
+
+  .navbar-nav {
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: flex-starT;
+  }
+
+
+
+
+}
