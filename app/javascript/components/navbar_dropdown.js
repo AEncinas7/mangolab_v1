@@ -1,8 +1,9 @@
 const initNavbarDropdown = () => {
   const selectElement = (element) => document.querySelector(element);
+  const icons = document.querySelector('.menu-icons');
 
-  selectElement('.menu-icons'),addEventListener('click', () => {
-    selectElement('body').classList.toggle('active');
+  icons.addEventListener('click', (element) => {
+    selectElement('header').classList.toggle('active');
   });
 }
 

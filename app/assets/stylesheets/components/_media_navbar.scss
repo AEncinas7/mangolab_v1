@@ -1,4 +1,9 @@
 @media screen and (max-width: 414px) {
+  header {
+    height: 100px;
+    position: relative;
+  }
+  
   .menu-bar {
     position: fixed;
     top: 0;
@@ -30,32 +35,33 @@
   
   .menu-icons {
     display: block;
-    top: 4%;
+    top: 50%;
+    transform: translateY(-50%);
   }
   
   .close-btn {
     display: none;
   }
  
-  body.active .close-btn {
+  header.active .close-btn {
     display: block;
   }
 
-  body.active .menu-btn {
+  header.active .menu-btn {
     display: none;
   }
   
-  body.active .nav-list {
+  header.active .nav-list {
     visibility: visible;
     opacity: 1;
   }
 
-  body.active .menu-bar {
+  header.active .menu-bar {
     height: 100vh;
   }
 
-  body.active .menu-icons {
-    top: 4.5%;
+  header.active .menu-icons {
+    top: 50%;
   }
 
   .navbar-brand {
