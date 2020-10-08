@@ -4,7 +4,7 @@
 }
 
 .home-container {
-  height: 700px;
+  height: 826px;
   display: flex;
 }
 
@@ -61,6 +61,7 @@
     align-items: center;
   }
   .chevron-right {
+    z-index: -1;
     margin-left: 16px;
     transform: rotate(0deg);
     transition: .6s;
@@ -77,5 +78,10 @@
 @media(max-width: 414px) {
   .main-container {
     width: 358px;
+    
+  }
+
+  #intro .right-side {
+    display: none;
   }
 }

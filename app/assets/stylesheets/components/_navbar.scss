@@ -1,40 +1,52 @@
-.navbar-mangolab {
-  justify-content: space-between;
-  background: white;
+// Custom Navbar:
+header {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
   font-family: "Montserrat", "sans-serif";
+}
+
+.menu-bar {
+  width: 100%;
+  position: relative;
   height: 126px;
+  display: flex;
+  align-items: center;
+  a {
+    text-decoration: none;
+  }
+}
+
+#navbar-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  list-style: none;
   padding: 0px;
-}
-
-.navbar-mangolab .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-mangolab .navbar-brand img {
-  width: 216px;
-  height: 66.15px;
-}
-
-.navbar-nav {
+  margin: 0;
   display: flex;
   align-items: center;
 }
 
-// Navbar buttons"
-
-.navbar-light .navbar-nav .nav-link {
-  color: $charcoal;
-  padding: 0px;
-  &:hover {
-    color: $charcoal;
+.navbar-brand {
+  img {
+    width: 216px; 
+    height: 66.15px;
   }
 }
 
 .btn-white {
+  color: $charcoal;
   font-size: 14px;
   font-weight: 650;
   margin-right: 50px;
   position: relative;
+  &:hover {
+    color: $charcoal;
+  }
 }
 
 .btn-white:after {
@@ -89,14 +101,12 @@
   font-weight: 650;
 }
 
-// medias:
-
-@media(max-width: 414px) {
-  .navbar-light .navbar-toggler {
-    border: 0px;
-    padding-right: 0px;
-  }
-  .navbar-mangolab {
-    height: 100px;
-  }
+.menu-icons {
+  position: absolute;
+  top: 4%;
+  right: 28px;
+  // transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1500;
+  display: none;
 }
