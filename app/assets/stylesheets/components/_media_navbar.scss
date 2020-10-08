@@ -3,25 +3,59 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100px;
+    transition: height .55s linear;
     flex-direction: column;
     align-items: flex-start;
     background-color: white;
     position: relative;
   }
-  
-  #navbar-menu {
+ 
+  .navbar-container {
+    width: 358px;
     flex-direction: column;
   }
 
   .nav-list {
-    // display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s, visibility 1s;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 58px;
     li {
       margin-bottom: 50px;
     }
+  }
+  
+  .menu-icons {
+    display: block;
+    top: 4%;
+  }
+  
+  .close-btn {
+    display: none;
+  }
+ 
+  body.active .close-btn {
+    display: block;
+  }
+
+  body.active .menu-btn {
+    display: none;
+  }
+  
+  body.active .nav-list {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  body.active .menu-bar {
+    height: 100vh;
+  }
+
+  body.active .menu-icons {
+    top: 4.5%;
   }
 
   .navbar-brand {
@@ -41,25 +75,5 @@
 
   .btn-white {
     font-size: 18px;
-  }
-
-  .menu-icons {
-    display: block;
-  }
-
-  .close-btn {
-    display: none;
-  }
-
-  nav.active .cose-btn {
-    display: block;
-  }
-
-  nav.active .menu-btn {
-    display: none;
-  }
-
-  nav.active .nav-list {
-    display: flex;
   }
 }
