@@ -76,18 +76,4 @@
 
 .lets-talk-btn:hover .chevron-right {
   transform: rotate(90deg);
-  
-}
-
-// medias:
-
-@media(max-width: 414px) {
-  .main-container {
-    width: 358px;
-    
-  }
-
-  #intro .right-side {
-    display: none;
-  }
 }

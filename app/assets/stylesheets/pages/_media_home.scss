@@ -1,0 +1,21 @@
+@media(max-width: 414px) {
+  .main-container {
+    width: 358px;
+  }
+
+  .home-container {
+    height: 696px;
+  }
+
+  #intro .left-side {
+    justify-content: flex-start;
+    padding-top: 168px;
+    h1 {
+      padding-right: 0px;
+    }
+  }
+
+  #intro .right-side {
+    display: none;
+  }
+}

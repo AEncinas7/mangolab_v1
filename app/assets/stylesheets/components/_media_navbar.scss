@@ -21,6 +21,12 @@
     flex-direction: column;
   }
 
+  .navbar-brand {
+  img {
+    width: 150px; 
+    height: 49.94px;
+  }
+}
   .nav-list {
     visibility: hidden;
     opacity: 0;
