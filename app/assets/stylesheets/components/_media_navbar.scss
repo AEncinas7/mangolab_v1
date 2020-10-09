@@ -1,14 +1,23 @@
-@media screen and (max-width: 414px) {
+// 420px maximum width: cover all smartphones in portrait mode
+// 421px to 767px width: most smartphones in landscape mode
+// 768px to 1023px: most Android tablets and iPads in portrait mode
+// 1024px to 1365px: most Android tablets and iPads in landscape mode, older desktop/laptop monitors
+// 1366px and above: iPad PRO, HDready and FullHD desktop laptop monitors
+
+@media screen and (max-width: 1023px) {
   header {
     height: 100px;
-    position: relative;
+    position: fixed;
+    @media screen and (max-width: 420px){
+    
+    }
   }
   
   .menu-bar {
+    height: 100px;
     position: fixed;
     top: 0;
     left: 0;
-    height: 100px;
     transition: height .55s linear;
     flex-direction: column;
     align-items: flex-start;
@@ -17,14 +26,25 @@
   }
  
   .navbar-container {
-    width: 358px;
+    width: 100%;
+    margin: 0 112px;
     flex-direction: column;
+    @media screen and (max-width: 420px){
+      margin: 0 28px;
+    }
+    @media screen and (min-width: 421px) and (max-width: 767px){
+      margin: 0 56px;
+    }
   }
 
   .navbar-brand {
   img {
     width: 150px; 
     height: 49.94px;
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+      width: 216px;
+      height: 66.15px;
+    }
   }
 }
   .nav-list {
@@ -43,6 +63,15 @@
     display: block;
     top: 50%;
     transform: translateY(-50%);
+    @media screen and (min-width: 420px){
+      right: 28px;
+    }
+    @media screen and (min-width: 421px) and (max-width: 767px){
+      right: 56px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+      right: 112px;
+    }
   }
   
   .close-btn {
@@ -89,3 +118,4 @@
     font-size: 18px;
   }
 }
+
