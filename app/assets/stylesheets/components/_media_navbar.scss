@@ -5,46 +5,42 @@
 // 1366px and above: iPad PRO, HDready and FullHD desktop laptop monitors
 
 @media screen and (max-width: 1023px) {
-  header {
-    height: 100px;
-    position: fixed;
-    @media screen and (max-width: 420px){
+  // header {
+  //   height: 100px;
+  //   position: fixed;
+  //   @media screen and (max-width: 420px){
     
-    }
-  }
+  //   }
+  // }
   
   .menu-bar {
     height: 100px;
-    position: fixed;
-    top: 0;
-    left: 0;
     transition: height .55s linear;
     flex-direction: column;
     align-items: flex-start;
     background-color: white;
-    position: relative;
   }
  
-  .navbar-container {
+  .menu-container {
     width: 100%;
-    margin: 0 112px;
+    margin: 0 28px;
     flex-direction: column;
-    @media screen and (max-width: 420px){
-      margin: 0 28px;
-    }
-    @media screen and (min-width: 421px) and (max-width: 767px){
-      margin: 0 56px;
-    }
+    // @media screen and (max-width: 420px){
+    //   margin: 0 28px;
+    // }
+    // @media screen and (min-width: 421px) and (max-width: 767px){
+    //   margin: 0 56px;
+    // }
   }
 
   .navbar-brand {
   img {
     width: 150px; 
     height: 49.94px;
-    @media screen and (min-width: 768px) and (max-width: 1023px){
-      width: 216px;
-      height: 66.15px;
-    }
+    // @media screen and (min-width: 768px) and (max-width: 1023px){
+    //   width: 216px;
+    //   height: 66.15px;
+    // }
   }
 }
   .nav-list {
@@ -61,42 +57,57 @@
   
   .menu-icons {
     display: block;
-    top: 50%;
+    top: 6%;
     transform: translateY(-50%);
-    @media screen and (min-width: 420px){
-      right: 28px;
-    }
-    @media screen and (min-width: 421px) and (max-width: 767px){
-      right: 56px;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1023px){
-      right: 112px;
-    }
+    right: 28px;
+    // @media screen and (min-width: 420px){
+    //   right: 28px;
+    // }
+    // @media screen and (min-width: 421px) and (max-width: 767px){
+    //   right: 56px;
+    // }
+    // @media screen and (min-width: 768px) and (max-width: 1023px){
+    //   right: 112px;
+    // }
   }
   
   .close-btn {
     display: none;
   }
  
-  header.active .close-btn {
-    display: block;
+  .menu-bar.active {
+    height: 100vh;
   }
 
-  header.active .menu-btn {
-    display: none;
+  .menu-bar.active .menu-icons {
+    top: 6%;
   }
+
+
+  //-------
+  // .menu-bar.active .close-btn {
+  //   display: block;
+  // }
+
+  // .menu-bar.active .menu-btn {
+  //   display: none;
+  // }
+
+  // .btn-hide {
+  //   display: none;
+  // }
+
+
+
+  //-------
   
-  header.active .nav-list {
+  .menu-bar.active .nav-list {
     visibility: visible;
     opacity: 1;
   }
 
-  header.active .menu-bar {
+  .menu-bar.active .menu-bar {
     height: 100vh;
-  }
-
-  header.active .menu-icons {
-    top: 50%;
   }
 
   .navbar-brand {
