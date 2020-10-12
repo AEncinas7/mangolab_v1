@@ -1,41 +1,39 @@
-// // Custom Navbar:
-// header {
-//   width: 100%;
-//   position: fixed;
-//   background-color: white;
-// }
-
+// Custom Navbar:
 .menu-bar {
   width: 100%;
   height: 126px;
   position: fixed;
   display: flex;
   align-items: center;
-  // transition: 0.5s background-color ease;
   a {
     text-decoration: none;
   }
 }
 
-.white-menu {
-  // position: fixed;
-  background-color: white;
+.menu-container {
+  width: 1040px;
+  margin: 0 auto;
+  // display: flex;
+  // justify-content: space-between;
+  position: relative;
+}
+
+.menu-left {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-right {
+  display: none;
 }
 
 .menu-icons {
   position: absolute;
-  top: 6%;
-  right: 80px;
+  top: 10%;
+  transform: translateY(-50%);
+  right: 0px;
   cursor: pointer;
   z-index: 1500;
-  display: none;
-}
-
-.menu-container {
-  width: 1040px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
 }
 
 .navbar-brand {

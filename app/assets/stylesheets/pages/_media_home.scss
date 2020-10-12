@@ -4,99 +4,121 @@
 // 1024px to 1365px: most Android tablets and iPads in landscape mode, older desktop/laptop monitors
 // 1366px and above: iPad PRO, HDready and FullHD desktop laptop monitors
 
-@media screen and (max-width: 767px) {
-  .main-container {
-    width: 100%;
-    margin: 0 28px;
-    @media screen and (min-width: 421px) and (max-width: 767px){
-      margin: 0 56px;
-    }
-    // @media screen and (min-width: 660px) and (max-width: 767px){
-    //   width: 548px;
-    //   margin: 0 auto;
-    // }
-  }
 
-  .home-container {
-    height: 696px;
-  }
+// @media screen and (max-width: 420px) {
+//   .main-container {
+//     width: 358px;
+//   }
+// }
 
-  #intro .left-side {
-    justify-content: flex-start;
-    padding-top: 168px;
-    h1 {
-      padding-right: 0px;
-      @media screen and (min-width: 421px) and (max-width: 767px){
-      font-size: 32px;
-      }
-    }
-    h3 {
-      @media screen and (min-width: 421px) and (max-width: 767px){
-        font-size: 12px;
-      }
-    }
-    a {
-      @media screen and (min-width: 421px) and (max-width: 767px){
-        width: 142px;
-        height: 36px;
-      }
-    }
-    span {
-      @media screen and (min-width: 421px) and (max-width: 767px){
-        font-size: 12px;
-      }
-    }
-    .chevron-right {
-      @media screen and (min-width: 421px) and (max-width: 767px){
-        width: 10px;
-        height: 23px;
-      }
-    }
-  }
+// @media screen and (min-width: 421px) and (max-width: 767px) {
+//   .main-container {
+//     width: 421px;
+//   }
+// }
 
-  #intro .right-side {
-    display: none;
-    @media screen and (min-width: 660px) and (max-width: 767px){
-      padding-top: 150px;
-      display: block;
-    }
-    img {
-      @media screen and (min-width: 660px) and (max-width: 767px){
-        width: 300px;
-      }
-    }
-  }
-}
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
-  .main-container {
-    width: 656px;
-    margin: 0 auto;
-  }
 
-  #intro .left-side {
-    h3 {
-      font-size: 12px;
-    }
-    h1 {
-      font-size: 32px;
-    }
-    a {
-      width: 142px;
-      height: 36px;
-    }
-    span {
-      font-size: 12px;
-    }
-    .chevron-right {
-      width: 10px;
-      height: 23px;
-    }
-  }
 
-  #intro .right-side {
-    img {
-      width: 300px;
-    }
-  }
-}
+// @media screen and (max-width: 1023px) {
+//   .main-container {
+//     width: 100%;
+//     margin: 0 auto;
+//     margin: 0 112px;
+//     @media screen and (max-width: 420px){
+//       margin: 0px 28px;
+//     }
+//     @media screen and (min-width: 421px) and (max-width: 767px){
+//       margin: 0px 56px;
+//     }
+//   }
+
+//   .home-container {
+//     height: 796px;
+//     @media screen and (min-width: 660px) and (max-width: 767px){
+//       // padding-right: 37px;
+//     }
+//   }
+
+//   #intro .left-side {
+//     justify-content: flex-start;
+//     padding-top: 268px;
+//     @media screen and (min-width: 421px) and (max-width: 660px){
+//       padding-right: 56px;
+//     }
+//     h1 {
+//       padding-right: 0px;
+//       @media screen and (min-width: 421px) and (max-width: 767px){
+//       font-size: 32px;
+//       }
+//     }
+//     h3 {
+//       @media screen and (min-width: 421px) and (max-width: 767px){
+//         font-size: 12px;
+//       }
+//     }
+//     a {
+//       @media screen and (min-width: 421px) and (max-width: 767px){
+//         width: 142px;
+//         height: 36px;
+//       }
+//     }
+//     span {
+//       @media screen and (min-width: 421px) and (max-width: 767px){
+//         font-size: 12px;
+//       }
+//     }
+//     .chevron-right {
+//       @media screen and (min-width: 421px) and (max-width: 767px){
+//         width: 10px;
+//         height: 23px;
+//       }
+//     }
+//   }
+
+//   #intro .right-side {
+//     display: none;
+//     @media screen and (min-width: 660px) and (max-width: 767px){
+//       padding-top: 268px;
+//       display: block;
+//     }
+//     img {
+//       @media screen and (min-width: 660px) and (max-width: 767px){
+//         width: 300px;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 768px) and (max-width: 1023px){
+//   .main-container {
+//     width: 656px;
+//     margin: 0 auto;
+//   }
+
+//   #intro .left-side {
+//     h3 {
+//       font-size: 12px;
+//     }
+//     h1 {
+//       font-size: 32px;
+//     }
+//     a {
+//       width: 142px;
+//       height: 36px;
+//     }
+//     span {
+//       font-size: 12px;
+//     }
+//     .chevron-right {
+//       width: 10px;
+//       height: 23px;
+//     }
+//   }
+
+//   #intro .right-side {
+//     img {
+//       width: 300px;
+//     }
+//   }
+// }

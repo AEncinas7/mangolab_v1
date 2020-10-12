@@ -5,15 +5,8 @@ const initNavbarDropdown = () => {
   icons.addEventListener('click', (element) => {
     selectElement('.menu-bar').classList.toggle('active');
 
-    if (selectElement('.menu-btn').style.display === "block") {
-      selectElement('.menu-btn').style.display === "none";
-    }
-    
-    if (selectElement('.close-btn').style.display === "none") {
-      selectElement('.close-btn').style.display === "display";
-    }
-    // selectElement('.menu-btn').style.display = "none";
-    // selectElement('.close-btn').style.display = "block";
+    selectElement('.menu-btn').classList.toggle('btn-hiden');
+    selectElement('.close-btn').classList.toggle('btn-displayed');
   });
 
 
