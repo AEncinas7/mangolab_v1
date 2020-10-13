@@ -1,12 +1,8 @@
 // Custom Navbar:
-header {
-  width: 100%;
-  position: absolute;
-}
-
 .menu-bar {
   width: 100%;
   height: 126px;
+  position: fixed;
   display: flex;
   align-items: center;
   a {
@@ -14,38 +10,47 @@ header {
   }
 }
 
-.navbar-container {
+.menu-container {
   width: 1040px;
   margin: 0 auto;
+  // display: flex;
+  // justify-content: space-between;
+  position: relative;
+}
+
+.menu-left {
   display: flex;
   justify-content: space-between;
 }
 
-.navbar-brand {
-  margin: 0px;
-  img {
-    width: 216px; 
-    height: 66.15px;
-  }
+.menu-right {
+  display: none;
 }
 
 .menu-icons {
   position: absolute;
-  top: 5%;
-  right: 28px;
+  top: 10%;
+  transform: translateY(-50%);
+  right: 0px;
   cursor: pointer;
   z-index: 1500;
-  display: none;
 }
 
+.navbar-brand {
+  margin: 0px;
+  padding: 0px;
+  svg {
+    width: 216px; 
+    height: 66.15px;
+  }
+}
 
 .nav-list {
   list-style: none;
   padding: 0px;
   margin: 0;
   display: flex;
-  align-items: center;
-}
+  align-items: center;}
 
 
 .btn-white {
@@ -92,6 +97,7 @@ header {
 }
 
 .btn-black {
+  font-family: "Montserrat", "sans-serif";
   font-size: 16px;
   font-weight: 650;
   color: white!important;

@@ -18,7 +18,9 @@ require("channels")
 // External Imports:
 import 'bootstrap';
 import { initNavbarDropdown } from '../components/navbar_dropdown';
+import { initNavbarScrolldown } from '../components/navbar_scrolldown';
 
 document.addEventListener('turbolinks:load', () => {
   initNavbarDropdown();
+  initNavbarScrolldown();
 });

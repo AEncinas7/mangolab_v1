@@ -3,8 +3,13 @@ const initNavbarDropdown = () => {
   const icons = document.querySelector('.menu-icons');
 
   icons.addEventListener('click', (element) => {
-    selectElement('header').classList.toggle('active');
+    selectElement('.menu-bar').classList.toggle('active');
+
+    selectElement('.menu-btn').classList.toggle('btn-hiden');
+    selectElement('.close-btn').classList.toggle('btn-displayed');
   });
+
+
 }
 
 export { initNavbarDropdown };
