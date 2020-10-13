@@ -19,7 +19,6 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  // width: 50%;
   h3 {
     font-size: 20px;
     font-weight: 600;
@@ -30,7 +29,6 @@
     padding-right: 62px;
     margin-bottom: 15px;
   }
- 
 }
 
 .right-side {
@@ -68,6 +66,7 @@
     margin-left: 16px;
     transform: rotate(0deg);
     transition: .6s;
+    fill: linear-gradient(to top, $green, $orange);
   }
 }
 
