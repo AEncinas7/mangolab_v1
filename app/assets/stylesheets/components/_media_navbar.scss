@@ -1,11 +1,5 @@
-// 420px maximum width: cover all smartphones in portrait mode
-// 421px to 767px width: most smartphones in landscape mode
-// 768px to 1023px: most Android tablets and iPads in portrait mode
-// 1024px to 1365px: most Android tablets and iPads in landscape mode, older desktop/laptop monitors
-// 1366px and above: iPad PRO, HDready and FullHD desktop laptop monitors
-
-@media screen and (min-width: 364px) {
-  // Mobile
+@media screen and (max-width: 1039px) {
+  // Tablet
   .menu-bar {
     height: 100px;
     transition: height .55s linear;
@@ -15,19 +9,17 @@
   }
 
   .menu-container {
-    width: 364px;
-    // flex-direction: column;
-    // background-color: gray;
-  }
+    width: 812px;
+  } 
 
   .menu-left {
     flex-direction: column;
   }
 
   .navbar-brand {
-    img {
-      width: 150px; 
-      height: 49.94px;
+    svg {
+      width: 200px; 
+      height: 75px;
     }
   }
 
@@ -43,10 +35,6 @@
     }
   }
 
-  .menu-icons {
-    display: block;
-  }
-  
   .close-btn {
     display: none;
   }
@@ -78,149 +66,82 @@
     display: flex;
     align-items: center;
   }
-  
-  // #black-background {
-  //   position: absolute;
-  //   bottom: 0%;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  //   margin-bottom: 25px;
-  // }
 
-  .btn-white {
+  .btn-white, .btn-black {
     font-size: 18px;
   }
 
+  .menu-icons {
+    display: block;
+    width: 30px;
+    .menu-btn, .close-btn {
+      width: 30px;
+      height: 20px;
+    }
+  }
 
-  @media screen and (min-width: 420px) {
-    width: 420px;
-    // Mobile
+  #black-background {
+    width: 246px;
+    height: 48px;
   }
-  @media screen and (min-width: 530px) {
-    width: 530px;
-    // Mobile
-  }
-  @media screen and (min-width: 654px) {
-    width: 654px;
-    // Tablet
-  }
-  @media screen and (min-width: 812px) {
-    width: 812px;
-    // Tablet
-  }
-  @media screen and (min-width: 1040px) {
-    width: 1040px;
-    background-color: red;
-    // Desktop
 
+  @media screen and (max-width: 812px) {
+    // Tablet
+    .menu-container {
+      width: 654px;
+    }
   }
+
+  @media screen and (max-width: 654px) {
+    // Mobile
+    .menu-container {
+      width: 530px;
+    }
+
+    .menu-icons {
+      // width: 30px;
+      .menu-btn, .close-btn {
+      width: 24px;
+      height: 17px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 530px) {
+    // Mobile
+    .menu-container {
+      width: 420px;
+    }
+
+    .navbar-brand {
+      svg {
+        width: 150px; 
+        height: 75px;
+      }
+    }
+
+    .btn-white, .btn-black {
+      font-size: 16px;
+    }
+
+    #black-background {
+      width: 220px;
+      height: 44px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    // Mobile
+    .menu-container {
+      width: 364px;
+    }
+
+   .navbar-brand {
+      svg {
+        width: 150px; 
+        height: 75px;
+      }
+    }
+  }
+
 }
-
-
-
-// @media screen and (max-width: 1199px) {
-//   .menu-bar {
-//     height: 100px;
-//     transition: height .55s linear;
-//     flex-direction: column;
-//     align-items: flex-start;
-//     background-color: white;
-//   }
- 
-//   .menu-container {
-//     // width: 100%;
-//     margin: 0 80px;
-//     flex-direction: column;
-//     @media screen and (max-width: 420px){
-//       margin: 0 28px;
-//     }
-//     @media screen and (min-width: 421px) and (max-width: 767px){
-//       margin: 0 56px;
-//     }
-//     @media screen and (min-width: 768px) and (max-width: 1023px){
-//       margin: 0 56px;
-//     }
-//   }
-
-//   .navbar-brand {
-//   img {
-//     width: 150px; 
-//     height: 49.94px;
-//     @media screen and (min-width: 768px) and (max-width: 1199px){
-//       width: 216px;
-//       height: 66.15px;
-//     }
-//   }
-// }
-//   .nav-list {
-//     visibility: hidden;
-//     opacity: 0;
-//     transition: opacity 1s, visibility 1s;
-//     flex-direction: column;
-//     align-items: flex-start;
-//     margin-top: 58px;
-//     li {
-//       margin-bottom: 50px;
-//     }
-//   }
-  
-//   .menu-icons {
-//     display: block;
-//     top: 46px;
-//     transform: translateY(-50%);
-//     right: 80px;
-//     @media screen and (max-width: 420px){
-//       right: 28px;
-//     }
-//     @media screen and (min-width: 421px) and (max-width: 767px){
-//       right: 56px;
-//     }
-//     @media screen and (min-width: 768px) and (max-width: 1023px){
-//       right: 112px;
-//     }
-//   }
-  
-//   .close-btn {
-//     display: none;
-//   }
- 
-//   .btn-displayed {
-//     display: block;
-//   }
-
-//   .btn-hiden {
-//     display: none;
-//   }
-
-//   .menu-bar.active {
-//     height: 100vh;
-//   }
-  
-//   .menu-bar.active .nav-list {
-//     visibility: visible;
-//     opacity: 1;
-//   }
-
-//   .menu-bar.active .menu-bar {
-//     height: 100vh;
-//   }
-
-//   .navbar-brand {
-//     padding: 0px;
-//     height: 100px;
-//     display: flex;
-//     align-items: center;
-//   }
-  
-//   #black-background {
-//     position: absolute;
-//     bottom: 0%;
-//     left: 50%;
-//     transform: translateX(-50%);
-//     margin-bottom: 25px;
-//   }
-
-//   .btn-white {
-//     font-size: 18px;
-//   }
-// }
