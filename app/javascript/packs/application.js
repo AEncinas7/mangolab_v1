@@ -19,8 +19,12 @@ require("channels")
 import 'bootstrap';
 import { initNavbarDropdown } from '../components/navbar_dropdown';
 import { initNavbarScrolldown } from '../components/navbar_scrolldown';
+import { initGoogleAnalytics } from '../components/google_analytics';
+import { initHotjar } from '../components/hotjar';
 
 document.addEventListener('turbolinks:load', () => {
   initNavbarDropdown();
   initNavbarScrolldown();
+  initGoogleAnalytics();
+  initHotjar();
 });
