@@ -19,8 +19,10 @@ require("channels")
 import 'bootstrap';
 import { initNavbarDropdown } from '../components/navbar_dropdown';
 import { initNavbarScrolldown } from '../components/navbar_scrolldown';
+import { initHomeChangeColorOnScroll } from '../components/home_scrolldown';
 
 document.addEventListener('turbolinks:load', () => {
   initNavbarDropdown();
   initNavbarScrolldown();
+  initHomeChangeColorOnScroll();
 });

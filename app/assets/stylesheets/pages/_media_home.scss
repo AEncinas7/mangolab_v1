@@ -1,10 +1,4 @@
 @media screen and (max-width: 1039px) {
-
-  // .main-container {
-  //   width: 812px;
-  // }
-
-
   .home-container {
     width: 812px;
   }
@@ -36,10 +30,6 @@
   }
     
   @media screen and (max-width: 812px) {
-    // .main-container {
-    //   width: 654px;
-    // }
-    
     .home-container {
       width: 654px;
     }
@@ -62,10 +52,6 @@
   }
 
   @media screen and (max-width: 654px) {
-    // .main-container {
-    //   width: 530px;
-    // }
-
     .home-container {
       width: 530px;
     }
@@ -88,9 +74,6 @@
   }
 
   @media screen and (max-width: 530px) {
-    // .main-container {
-    //   width: 420px;
-    // }
     .home-container {
       width: 420px;
     }
@@ -123,130 +106,8 @@
   }
 
   @media screen and (max-width: 420px) {
-    // .main-container {
-    //   width: 364px;
-    // }
     .home-container {
       width: 364px;
     }
   }
 }
-
-
-// @media screen and (max-width: 420px) {
-//   .main-container {
-//     width: 358px;
-//   }
-// }
-
-// @media screen and (min-width: 421px) and (max-width: 767px) {
-//   .main-container {
-//     width: 421px;
-//   }
-// }
-
-
-
-
-// @media screen and (max-width: 1023px) {
-//   .main-container {
-//     width: 100%;
-//     margin: 0 auto;
-//     margin: 0 112px;
-//     @media screen and (max-width: 420px){
-//       margin: 0px 28px;
-//     }
-//     @media screen and (min-width: 421px) and (max-width: 767px){
-//       margin: 0px 56px;
-//     }
-//   }
-
-//   .home-container {
-//     height: 796px;
-//     @media screen and (min-width: 660px) and (max-width: 767px){
-//       // padding-right: 37px;
-//     }
-//   }
-
-//   #intro .left-side {
-//     justify-content: flex-start;
-//     padding-top: 268px;
-//     @media screen and (min-width: 421px) and (max-width: 660px){
-//       padding-right: 56px;
-//     }
-//     h1 {
-//       padding-right: 0px;
-//       @media screen and (min-width: 421px) and (max-width: 767px){
-//       font-size: 32px;
-//       }
-//     }
-//     h3 {
-//       @media screen and (min-width: 421px) and (max-width: 767px){
-//         font-size: 12px;
-//       }
-//     }
-//     a {
-//       @media screen and (min-width: 421px) and (max-width: 767px){
-//         width: 142px;
-//         height: 36px;
-//       }
-//     }
-//     span {
-//       @media screen and (min-width: 421px) and (max-width: 767px){
-//         font-size: 12px;
-//       }
-//     }
-//     .chevron-right {
-//       @media screen and (min-width: 421px) and (max-width: 767px){
-//         width: 10px;
-//         height: 23px;
-//       }
-//     }
-//   }
-
-//   #intro .right-side {
-//     display: none;
-//     @media screen and (min-width: 660px) and (max-width: 767px){
-//       padding-top: 268px;
-//       display: block;
-//     }
-//     img {
-//       @media screen and (min-width: 660px) and (max-width: 767px){
-//         width: 300px;
-//       }
-//     }
-//   }
-// }
-
-// @media screen and (min-width: 768px) and (max-width: 1023px){
-//   .main-container {
-//     width: 656px;
-//     margin: 0 auto;
-//   }
-
-//   #intro .left-side {
-//     h3 {
-//       font-size: 12px;
-//     }
-//     h1 {
-//       font-size: 32px;
-//     }
-//     a {
-//       width: 142px;
-//       height: 36px;
-//     }
-//     span {
-//       font-size: 12px;
-//     }
-//     .chevron-right {
-//       width: 10px;
-//       height: 23px;
-//     }
-//   }
-
-//   #intro .right-side {
-//     img {
-//       width: 300px;
-//     }
-//   }
-// }
