@@ -1,13 +1,18 @@
-
 .main-container {
-  width: 1040px;
-  margin: 0 auto;
+  width: 100%;
+}
+
+.home-intro, .home-services {
+  background-color: white;
 }
 
 .home-container {
+  width: 1040px;
+  margin: 0 auto;
   height: 826px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 #intro {
@@ -73,4 +78,42 @@
 
 .lets-talk-btn:hover .chevron-right {
   transform: rotate(90deg);
+}
+
+
+// About us section:
+
+.home-about-us {
+  background-color: black;
+}
+
+#about-us .left-side {
+  color: $bone;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  .ceo, .cto {
+    display: flex;
+  }
+  .details {
+    text-align: center;
+    img {
+      width: 80px;
+    }
+    .name {
+      font-family: "Montserrat", "sans-serif";
+      // font-weight: 650;
+      font-size: 14px;
+    }
+    .role {
+      font-family: "Lato";
+      font-weight: 550;
+      font-size: 12px;
+    }
+  }
+  p {
+    font-family: "Lato";
+    font-weight: 550;
+    font-size: 14px;
+  }
 }
