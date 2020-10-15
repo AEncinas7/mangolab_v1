@@ -1,13 +1,16 @@
-
-.main-container {
-  width: 1040px;
-  margin: 0 auto;
+.color-container {
+  width: 100%;
+  background-color: white;
+  transition: background-color 1.5s;
 }
 
 .home-container {
+  width: 1040px;
+  margin: 0 auto;
   height: 826px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 #intro {
@@ -48,7 +51,6 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 8px;
   text-decoration: none!important;
   color: $charcoal;
   border-radius: 12px;
@@ -62,8 +64,8 @@
     align-items: center;
   }
   .chevron-right {
-    z-index: -1;
     margin-left: 16px;
+    margin-right: 8px;
     transform: rotate(0deg);
     transition: .6s;
     width: 12px;
@@ -73,4 +75,103 @@
 
 .lets-talk-btn:hover .chevron-right {
   transform: rotate(90deg);
+}
+
+// Let's talk button change with js:
+
+.lets-talk-btn-change {
+  width: 158px;
+  height: 44px;
+  font-size: 16px;
+  font-weight: 650;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none!important;
+  color: $bone;
+
+  border-radius: 12px;
+  border: 3px solid transparent;
+  background-image: linear-gradient(black, black), radial-gradient(circle at left, $green, $orange);
+  background-origin: border-box;
+  background-clip: content-box, border-box;   
+ 
+  &:hover {
+    color: $bone;
+  }
+  span {
+    display: flex;
+    align-items: center;
+  }
+  .chevron-right {
+    margin-left: 16px;
+    margin-right: 8px;
+    transform: rotate(0deg);
+    transition: .6s;
+    width: 12px;
+    height: 25px;
+  }
+}
+
+.lets-talk-btn-change:hover .chevron-right {
+  transform: rotate(90deg);
+}
+// ----------------
+
+// About us section:
+
+.home-about-us {
+  background-color: black;
+}
+
+#about-us .left-side {
+  color: $charcoal;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  .ceo, .cto {
+    display: flex;
+    width: 508px;
+    height: 292px;;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+    .name {
+      font-family: "Montserrat", "sans-serif";
+      font-size: 14px;
+    }
+    .role {
+      font-family: "Lato";
+      font-weight: 550;
+      font-size: 12px;
+    }
+  }
+  p {
+    font-family: "Lato";
+    // font-weight: 550;
+    font-size: 14px;
+  }
+  .about-details {
+    font-family: "Lato";
+    font-weight: 550;
+    letter-spacing: 0.05rem;
+    margin-left: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+#about-us .right-side {
+  margin-right: 44px;
+  img {
+    margin-bottom: 56px;
+  }
 }
