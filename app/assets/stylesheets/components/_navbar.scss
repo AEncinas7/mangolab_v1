@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   background-color: white;
+  transition: background-color 1.5s;
   a {
     text-decoration: none;
   }
@@ -45,6 +46,10 @@
   }
 }
 
+#logo-small, #logo-big, #logo-chevron-left, #logo-chevron-right, #logo-slash {
+  transition: opacity 1.5s, visibility 1.5s;
+}
+
 .nav-list {
   list-style: none;
   padding: 0px;
@@ -52,26 +57,6 @@
   display: flex;
   align-items: center;
 }
-
-// .nav-item {
-//   width: 132px;
-// }
-
-// .nav-item:after {
-//   content: "";
-//   left: 0;
-//   bottom: -5px;
-//   width: 33%;
-//   position: absolute;
-//   border-bottom: 4px solid;
-//   border-image: linear-gradient(to right, $green, $orange) 1;
-//   transition: .35s;
-// }
-
-// .nav-item:hover:after {
-//   width: 68%;
-// }
-
 
 .btn-white {
   font-family: "Montserrat", "sans-serif";
@@ -120,7 +105,7 @@
   font-family: "Montserrat", "sans-serif";
   font-size: 16px;
   font-weight: 650;
-  color: white!important;
+  // color: white!important;
   font-size: 16px;
   width: 214px;
   height: 38px;
@@ -130,6 +115,12 @@
   justify-content: center;
   align-items: center;
   transition: .65s;
+}
+
+#black-background {
+  a {
+    color: white;
+  }
 }
 
 #black-background:hover .btn-black {
