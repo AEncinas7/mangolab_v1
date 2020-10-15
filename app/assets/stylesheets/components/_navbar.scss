@@ -85,7 +85,13 @@
   width: 48px;
 }
 
-#black-background {
+.free-consultation-btn {
+  a {
+    color: white;
+  }
+}
+
+.black-background {
   width: 220px;
   height: 44px;
   background-color: $charcoal;
@@ -105,7 +111,6 @@
   font-family: "Montserrat", "sans-serif";
   font-size: 16px;
   font-weight: 650;
-  // color: white!important;
   font-size: 16px;
   width: 214px;
   height: 38px;
@@ -117,15 +122,33 @@
   transition: .65s;
 }
 
-#black-background {
-  a {
-    color: white;
-  }
-}
 
-#black-background:hover .btn-black {
+.black-background:hover .btn-black {
   background-color: white;
   color: $charcoal!important;
   font-weight: 650;
 }
 
+// Free consultation changes with js:
+
+.white-background {
+  width: 220px;
+  height: 44px;
+  background-color: $bone;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  // box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+  transition: .65s;
+  &:hover {
+    background: linear-gradient(to right, $green, $orange)
+  }
+}
+
+.white-background:hover .btn-black {
+  background-color: black;
+  color: $bone!important;
+  font-weight: 650;
+}
