@@ -52,9 +52,9 @@
       <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602864368/MangoLab.io%20-%20Website/Home_Page/HomePage_Services_ewoaxc.png" %>
     </div>
     <div class="right-side">
-      <h3 class="home-btn">SERVICES</h3>
-      <h1 class="home-title">Strategy, Design & Development</h1>
-      <p class="home-description">
+      <h3 id="home-step">SERVICES</h3>
+      <h1 id="home-title">Strategy, Design & Development</h1>
+      <p id="home-description">
         MangoLab turns your business idea into a launched product by guiding your journey through a personalized and custom software development to meet your goals.
         We strategize, design and build platforms and digital experiences that connect to the heart of your organization to scale onto the next level.
         Whether you require an E-Commerce, SaaS platform or a Web/Native Application to engage with your audience — we’ve got you covered.
@@ -70,34 +70,70 @@
 
 </div>
 
+<div class="home-main-container">
+  <div class="home-container" id="process">
+    <div class="left-side">
+      <h3 id="home-step">PROCESS</h3>
+      <h1 id="home-title">Set, Ready & Launch</h1>
+      <p id="home-description">
+        As any new project in life, planning is key. That’s why we’ve tailored our process to reduce risk during each step of the development and
+        minimize the time wasted to focus primarly on accelerating the launch of your product. We get to know your vision, help craft your product,
+        and bring it to market fast, keeping you appraised of every step along the way. Teamwork is everything.
+      </p>
+      <%= link_to "#", class: "view-our-process-btn-js-change view-our-process-btn" do %>
+        <span>
+          VIEW OUR PROCESS 
+          <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right" %>
+        </span>
+      <% end %>
+    </div>
+    <div class="right-side">
+      <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602864499/MangoLab.io%20-%20Website/Home_Page/HomePage_Process_umqkjv.png" %>
+    </div>
+  </div>
 
+  <div class="home-container" id="verticals">
+    <div class="left-side">
+      <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602864579/MangoLab.io%20-%20Website/Home_Page/HomePage_Verticals_xm5kuv.png" %>
+    </div>
+    <div class="right-side">
+      <h3 id="home-step">VERTICALS</h3>
+      <h1 id="home-title">Our expertise</h1>
+      <p id="home-description">
+        A deep understanding of your industry is required to create successful products. What sets us apart is our ability to learn and understand the
+        ecosystem in which you operate. Our team has developed products, services and organizations in a variety of industries, from healthcare and sports to nonprofit.
+         Whether you are launching a networking app, a patient portal, or a SaaS platform, we will bring your product to market, fast.
+      </p>
+      <%= link_to "#", class: "learn-more-btn-js-change learn-more-btn" do %>
+        <span>
+          LEARN MORE 
+          <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right" %>
+        </span>
+      <% end %>
+    </div>
+  </div>  
+</div>
+
+<div class="mvp-container">
+  <div id="next-mvp">
+    <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1601953845/MangoLab.io%20-%20Website/Home_Page/HomePage_Alarm_iplxhc.png", class: "mvp-icon" %>
+    <div class="counter">
+      <h1>Next MVP will be launched in:</h1>
+      <h3>Want to talk about your project?</h3>
+    </div>
+    <%= link_to "#", class: "lets-go-btn-js-change lets-go-btn-change" do %>
+      <span>
+        LET'S GO 
+        <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right" %>
+      </span>
+    <% end %>
+  </div>
+</div>
 <%
 =begin %>
-<div class="main-container home-process">
-  <div class="home-container" id="process">
-  <div class="left-side">
-    </div>
-    <div class="right-side">
-    </div>
-  </div>
-</div>
 
-<div class="main-container home-verticals">
-  <div class="home-container" id="verticals">
-  <div class="left-side">
-    </div>
-    <div class="right-side">
-    </div>
-  </div>
-</div>
-
-<div class="main-container home-goals">
+<div class="main-container">
   <div id="goals">
-  </div>
-</div>
-
-<div class="main-container home-next-mvp">
-  <div id="next-mvp">
   </div>
 </div>
 
