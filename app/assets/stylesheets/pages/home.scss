@@ -77,6 +77,45 @@
   transform: rotate(90deg);
 }
 
+// What we do button:
+
+.what-we-do-btn {
+  font-family: "Montserrat", "sans-serif";
+  width: 235.88px;
+  height: 44px;
+  font-size: 16px;
+  font-weight: 650;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none!important;
+  color: $charcoal;
+  border-radius: 12px;
+  border: 3px solid $charcoal;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+  &:hover {
+    color: $charcoal;
+  }
+  span {
+    display: flex;
+    align-items: center;
+  }
+  .chevron-right {
+    margin-left: 37px;
+    margin-right: 8px;
+    transform: rotate(0deg);
+    transition: .6s;
+    width: 12px;
+    height: 25px;
+  }
+}
+
+.what-we-do-btn:hover .chevron-right {
+  transform: rotate(90deg);
+}
+
+// ----------------
+
 // Let's talk button change with js:
 
 .lets-talk-btn-change {
@@ -116,13 +155,53 @@
 .lets-talk-btn-change:hover .chevron-right {
   transform: rotate(90deg);
 }
+
 // ----------------
 
-// About us section:
+// What we do button with js changes:
 
-.home-about-us {
-  background-color: black;
+.what-we-do-btn-change {
+  font-family: "Montserrat", "sans-serif";
+  width: 235.88px;
+  height: 44px;
+  font-size: 16px;
+  font-weight: 650;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none!important;
+  color: $bone;
+
+   border-radius: 12px;
+  border: 3px solid transparent;
+  background-image: linear-gradient(black, black), radial-gradient(circle at left, $green, $orange);
+  background-origin: border-box;
+  background-clip: content-box, border-box;   
+
+  &:hover {
+    color: $bone;
+  }
+  span {
+    display: flex;
+    align-items: center;
+  }
+  .chevron-right {
+    margin-left: 37px;
+    margin-right: 8px;
+    transform: rotate(0deg);
+    transition: .6s;
+    width: 12px;
+    height: 25px;
+  }
 }
+
+.what-we-do-btn-change:hover .chevron-right {
+  transform: rotate(90deg);
+}
+
+// ----------------------
+
+// About us section:
 
 #about-us .left-side {
   color: $charcoal;
@@ -173,5 +252,53 @@
   margin-right: 44px;
   img {
     margin-bottom: 56px;
+  }
+}
+
+
+// Home buttons:
+
+.home-btn {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 16px;
+  font-weight: 650;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.home-btn:after {
+  content: "";
+  left: 0;
+  bottom: -4px;
+  width: 35px;
+  position: absolute;
+  border-bottom: 4px solid;
+  border-image: linear-gradient(to right, $green, $orange) 1;
+}
+
+
+// ------------------
+
+
+// Services section:
+
+#services {
+  height: 700px;
+  .right-side {
+    width: 520px;
+  }
+}
+
+#services .right-side {
+  h1 {
+    font-size: 32px;
+    font-weight: 600;
+    padding-right: 70px;
+    margin-bottom: 37px;
+  }
+  p{
+    font-family: "Lato";
+    font-size: 14px;
+    padding-right: 38px;
   }
 }

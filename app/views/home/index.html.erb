@@ -3,7 +3,7 @@
     <div class="left-side" id="intro-js-change">
       <h3>We are MangoLab.io</h3>
       <h1>Software development focused on your success<br>(Coming soon)</h1>
-      <%= link_to "#", class: "lets-talk-btn-js-change lets-talk-btn" do %>
+      <%= link_to "https://calendly.com/mangolab/freeconsultation", class: "lets-talk-btn-js-change lets-talk-btn", target: :_blank do %>
         <span>
           LET'S TALK 
           <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right" %>
@@ -49,9 +49,22 @@
 
   <div class="home-container" id="services">
     <div class="left-side">
-      </div>
-      <div class="right-side">
-      </div>
+      <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602864368/MangoLab.io%20-%20Website/Home_Page/HomePage_Services_ewoaxc.png" %>
+    </div>
+    <div class="right-side">
+      <h3 class="home-btn">SERVICES</h3>
+      <h1 class="home-title">Strategy, Design & Development</h1>
+      <p class="home-description">
+        MangoLab turns your business idea into a launched product by guiding your journey through a personalized and custom software development to meet your goals.
+        We strategize, design and build platforms and digital experiences that connect to the heart of your organization to scale onto the next level.
+        Whether you require an E-Commerce, SaaS platform or a Web/Native Application to engage with your audience — we’ve got you covered.
+      </p>
+      <%= link_to "#", class: "what-we-do-btn-js-change what-we-do-btn" do %>
+        <span>
+          WHAT WE DO 
+          <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right" %>
+        </span>
+      <% end %>
     </div>
   </div>
 
