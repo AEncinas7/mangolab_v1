@@ -1,5 +1,6 @@
 const initHomeChangeColorOnScroll = () => {
   const selectElement = (element) => document.querySelector(element);
+  const selectElementAll = (element) => document.querySelectorAll(element);
   const boneColor = '#F0F0F0';
   const charcoalColor = '#454545';
 
@@ -29,6 +30,21 @@ const initHomeChangeColorOnScroll = () => {
       selectElement('.what-we-do-btn-js-change').classList.remove('what-we-do-btn-change');
       selectElement('.what-we-do-btn-js-change').classList.add('what-we-do-btn');
 
+    }
+
+    // if (window.scrollY >= 1526 && window.scrollY <= 3756) {
+      
+    if (window.scrollY >= 3052) {
+      selectElement('.verticals-container').style.backgroundColor = 'black';
+      selectElement('#verticals-js-change').style.color = boneColor;
+      selectElement('.learn-more-btn-js-change').classList.remove('learn-more-btn');
+      selectElement('.learn-more-btn-js-change').classList.add('learn-more-btn-change');
+    }
+     else {
+      selectElement('.verticals-container').style.backgroundColor = 'white';
+      selectElement('#verticals-js-change').style.color = charcoalColor;
+      selectElement('.learn-more-btn-js-change').classList.remove('learn-more-btn-change');
+      selectElement('.learn-more-btn-js-change').classList.add('learn-more-btn');
     }
   });
 

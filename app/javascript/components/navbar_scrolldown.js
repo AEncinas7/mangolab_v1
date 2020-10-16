@@ -28,6 +28,18 @@ const initNavbarScrolldown = () => {
       selectElement('#logo-big').style.fill = charcoalColor;
       selectElement('#logo-small').style.fill = charcoalColor;
     }
+
+    if (window.scrollY >= 3052) {
+      selectElement('.menu-bar').style.backgroundColor = 'black';
+      selectElementAll('.btn-white').forEach(ele => ele.style.color = boneColor);
+
+      selectElement('.free-consultation-btn').classList.remove('black-background');
+      selectElement('.free-consultation-btn').classList.add('white-background');
+      selectElement('.btn-black').style.color = 'black';
+
+      selectElement('#logo-big').style.fill = boneColor;
+      selectElement('#logo-small').style.fill = boneColor;
+    }
   });
 }
 
