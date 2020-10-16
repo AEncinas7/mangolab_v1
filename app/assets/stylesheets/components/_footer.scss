@@ -1,0 +1,35 @@
+.black-footer {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.border-top-footer {
+  width: 1200px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid $charcoal;
+}
+
+.footer-container {
+  font-family: "Montserrat", "sans-serif";
+  width: 1040px;
+  // height: 125px;
+  font-size: 12px;
+  margin: 0 auto;
+  color: $bone;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .networking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      margin-left: 15px;
+    }
+  }
+}

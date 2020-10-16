@@ -41,88 +41,7 @@
   justify-content: center;
 }
 
-// Buttons:
-
-.lets-talk-btn {
-  width: 158px;
-  height: 44px;
-  font-size: 16px;
-  font-weight: 650;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  text-decoration: none!important;
-  color: $charcoal;
-  border-radius: 12px;
-  border: 3px solid $charcoal;
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
-  &:hover {
-    color: $charcoal;
-  }
-  span {
-    display: flex;
-    align-items: center;
-  }
-  .chevron-right {
-    margin-left: 16px;
-    margin-right: 8px;
-    transform: rotate(0deg);
-    transition: .6s;
-    width: 12px;
-    height: 25px;
-  }
-}
-
-.lets-talk-btn:hover .chevron-right {
-  transform: rotate(90deg);
-}
-
-// Let's talk button change with js:
-
-.lets-talk-btn-change {
-  width: 158px;
-  height: 44px;
-  font-size: 16px;
-  font-weight: 650;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  text-decoration: none!important;
-  color: $bone;
-
-  border-radius: 12px;
-  border: 3px solid transparent;
-  background-image: linear-gradient(black, black), radial-gradient(circle at left, $green, $orange);
-  background-origin: border-box;
-  background-clip: content-box, border-box;   
- 
-  &:hover {
-    color: $bone;
-  }
-  span {
-    display: flex;
-    align-items: center;
-  }
-  .chevron-right {
-    margin-left: 16px;
-    margin-right: 8px;
-    transform: rotate(0deg);
-    transition: .6s;
-    width: 12px;
-    height: 25px;
-  }
-}
-
-.lets-talk-btn-change:hover .chevron-right {
-  transform: rotate(90deg);
-}
-// ----------------
-
 // About us section:
-
-.home-about-us {
-  background-color: black;
-}
 
 #about-us .left-side {
   color: $charcoal;
@@ -173,5 +92,114 @@
   margin-right: 44px;
   img {
     margin-bottom: 56px;
+  }
+}
+
+
+// Home steps:
+
+#home-step {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 16px;
+  font-weight: 650;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+#home-step:after {
+  content: "";
+  left: 0;
+  bottom: -4px;
+  width: 35px;
+  position: absolute;
+  border-bottom: 4px solid;
+  border-image: linear-gradient(to right, $green, $orange) 1;
+}
+
+#home-title {
+  font-size: 32px;
+  font-weight: 600;
+  padding-right: 70px;
+  margin-bottom: 37px;
+}
+
+#home-description {
+  font-family: "Lato";
+  font-size: 14px;
+  padding-right: 38px;
+  margin-bottom: 40px;
+}
+
+// ------------------
+
+
+// Services section:
+
+#services {
+  height: 700px;
+  .right-side {
+    width: 520px;
+  }
+}
+
+
+//-----------------------------
+
+// Main container section (fixed color section):
+
+.home-main-container {
+  background-color: white;
+  width: 100%;
+}
+
+#process {
+  height: 700px;
+  .left-side {
+    width: 519px;
+    padding-right: 22px;
+  }
+  .right-side {
+    width: 517px;
+    padding-right: 25px;
+  }
+}
+
+// Next MVP section:
+
+.mvp-container {
+  width: 100%;
+  background-color: black;
+}
+
+#next-mvp {
+  width: 1040px;
+  margin: 0 auto;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $bone;
+  position: relative;
+}
+
+.mvp-icon {
+  position: absolute;
+  left: 0;
+  top: 171px;
+}
+
+.counter {
+  text-align: center;
+  margin-bottom: 26px;
+  font-family: "Montserrat", "sans-serif";
+  h1 {
+    margin-bottom: 228px;
+    font-size: 48px;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 22px;
+    font-weight: 600;
   }
 }
