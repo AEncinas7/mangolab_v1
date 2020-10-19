@@ -195,15 +195,68 @@
 }
 
 .counter {
-  text-align: center;
+  // text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 26px;
   font-family: "Montserrat", "sans-serif";
   h1 {
-    margin-bottom: 228px;
+    margin-bottom: 82px;
     font-size: 48px;
     font-weight: 600;
   }
-  h3 {
+
+  #timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    text-align: center;
+    margin-bottom: 28px;
+    font-size: 48px;
+    font-weight: 500;
+    div {
+      margin: 0 10px;
+      width: 65px;
+    }
+  }
+
+  .timer-text {
+    width: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 66px;
+    position: relative;
+    h3 {
+      // margin: 0 48px;
+      font-size: 16px;
+      font-weight: 500;
+      color: $charcoal;
+    }
+    
+    #day, #hour, #minute, #second {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    #day {
+      left: 6%;
+    }
+    #hour {
+      left: 30%;
+    }
+    #minute {
+      right: 28%;
+    }
+    #second{
+      right: 2%;
+    }
+  }
+  .counter-text {
     font-size: 22px;
     font-weight: 600;
   }
