@@ -28,8 +28,10 @@ const initNavbarScrolldown = () => {
       selectElement('#logo-big').style.fill = charcoalColor;
       selectElement('#logo-small').style.fill = charcoalColor;
     }
+    
+    //3052
 
-    if (window.scrollY >= 3052) {
+    if (window.scrollY >= 2927) {
       selectElement('.menu-bar').style.backgroundColor = 'black';
       selectElementAll('.btn-white').forEach(ele => ele.style.color = boneColor);
 

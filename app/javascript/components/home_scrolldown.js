@@ -31,10 +31,9 @@ const initHomeChangeColorOnScroll = () => {
       selectElement('.what-we-do-btn-js-change').classList.add('what-we-do-btn');
 
     }
+      //3052
 
-    // if (window.scrollY >= 1526 && window.scrollY <= 3756) {
-      
-    if (window.scrollY >= 3052) {
+    if (window.scrollY >= 2927) {
       selectElement('.verticals-container').style.backgroundColor = 'black';
       selectElement('#verticals-js-change').style.color = boneColor;
       selectElement('.learn-more-btn-js-change').classList.remove('learn-more-btn');
