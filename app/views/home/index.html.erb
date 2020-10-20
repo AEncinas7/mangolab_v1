@@ -15,9 +15,9 @@
     </div>
   </div>
 
-  <div class="home-container" id="about-us">
-    <div class="left-side" id="about-us-js-change">
-      <div class="ceo">
+  <div class="home-container carousel-about-us" id="about-us">
+    <div class="left-side carousel-about-us-container" id="about-us-js-change">
+      <div class="ceo carousel-about-us-slide">
         <div class="details">
           <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602778732/MangoLab.io%20-%20Website/Home_Page/Marcos_Bitmoji_wvp51e.png" %>
           <h3 class="name">Marcos Gutierrez</h3>
@@ -29,7 +29,7 @@
           <p>My mission now is to share and help entrepreneurs scale their businesses through a personalized process on their journey to success.</p>
         </div>
       </div>
-      <div class="cto">
+      <div class="cto carousel-about-us-slide">
         <div class="details">
           <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602778732/MangoLab.io%20-%20Website/Home_Page/Alex_Bitmoji_o8wb50.png" %>
           <h3 class="name">Alexander Encinas</h3>
@@ -41,6 +41,10 @@
           <p>I am ready now to craft, build and revamp products that will deliver meaningful experiences at scale.</p>
         </div>
       </div>
+    </div>
+    <div class="carousel-about-us-nav">
+      <button class="carousel-about-us-indicator current-about-us-slide"></button>
+      <button class="carousel-about-us-indicator"></button>
     </div>
     <div class="right-side">
       <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1601953830/MangoLab.io%20-%20Website/Home_Page/HomePage_Bio_hkybcv.png" %>

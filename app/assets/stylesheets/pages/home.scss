@@ -1,6 +1,5 @@
 .color-container {
   width: 100%;
-  // background-color: white;
   transition: background-color 1.5s;
 }
 
@@ -56,7 +55,8 @@
   .ceo, .cto {
     display: flex;
     width: 508px;
-    height: 292px;;
+    height: 292px;
+    transition: background-color 1.5s;
   }
   .details {
     display: flex;
@@ -100,6 +100,13 @@
   }
 }
 
+// About us carousel
+
+.carousel-about-us-nav {
+  display: none;
+}
+
+// --------------------
 
 // Home steps:
 

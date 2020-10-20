@@ -22,6 +22,7 @@ import { initNavbarScrolldown } from '../components/navbar_scrolldown';
 import { initHomeChangeColorOnScroll } from '../components/home_scrolldown';
 import { initLogoScrolling } from '../components/logo_scrolling';
 import { initTimer } from '../components/timer';
+import { initAboutUsCarousel } from '../components/about-us-carousel';
 
 document.addEventListener('turbolinks:load', () => {
   initNavbarDropdown();
@@ -29,4 +30,5 @@ document.addEventListener('turbolinks:load', () => {
   initHomeChangeColorOnScroll();
   initLogoScrolling();
   initTimer();
+  initAboutUsCarousel();
 });

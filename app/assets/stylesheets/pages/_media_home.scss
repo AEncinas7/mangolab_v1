@@ -28,6 +28,35 @@
       height: 23px;
     }
   }
+
+  #about-us .left-side {
+    width: 412px;
+    .ceo, .cto {
+      width: 100%;
+    }
+    .details {
+      align-items: center;
+      img {
+        width: 70px;
+      }
+      .name {
+        font-size: 12px;
+      }
+      .role {
+        font-size: 10px;
+      }
+    }
+    p {
+      font-size: 12px;
+      width: 266px;
+    }
+  }
+
+  #about-us .right-side {
+    img {
+      width: 300px;
+    }
+  }
     
   @media screen and (max-width: 812px) {
     .home-container {
@@ -49,6 +78,25 @@
         width: 300px;
       }
     }
+
+    #about-us .right-side {
+      display: none;
+    }
+
+    #about-us .left-side {
+      width: 100%;
+      .ceo, .cto {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .details{
+        width: 104px;
+      }
+      p {
+        width: 505px;
+      }
+    }
+
   }
 
   @media screen and (max-width: 654px) {
@@ -71,6 +119,73 @@
         width: 270px;
       }
     }
+
+    // About us carousel
+    
+    .carousel-about-us {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .carousel-about-us-nav {
+      display: block;
+      .carousel-about-us-indicator {
+        border: 0;
+        border-radius: 50%;
+        width: 11px;
+        height: 11px;
+        background: $bone;
+        margin: 0 5px;
+      }
+      .carousel-about-us-indicator.current-about-us-slide {
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    .carousel-about-us-container {
+      position: relative;
+      height: 500px;
+    }
+
+    #about-us .left-side {
+      width: 530px;
+      .ceo, .cto {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 530px;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+        margin: 0;
+      }
+      .details{
+        margin-bottom: 38px;
+        img {
+          width: 80px;
+        }
+        .name {
+          font-size: 14px;
+        }
+        .role {
+          font-size: 12px;
+        }
+      }
+      .about-details {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        align-items: center;
+      }
+      p {
+        // width: 100%;
+        font-size: 14px;
+      }
+      
+    }
+
   }
 
   @media screen and (max-width: 530px) {

@@ -12,6 +12,8 @@ const initHomeChangeColorOnScroll = () => {
       selectElement('.lets-talk-btn-js-change').classList.remove('lets-talk-btn');
       selectElement('.lets-talk-btn-js-change').classList.add('lets-talk-btn-change');
       selectElement('#about-us-js-change').style.color = boneColor;
+      selectElement('.ceo').style.backgroundColor = 'black';
+      selectElement('.cto').style.backgroundColor = 'black';
       selectElement('#home-title').style.color = boneColor;
       selectElement('#home-description').style.color = boneColor;
       selectElement('#home-step').style.color = boneColor;
@@ -24,6 +26,8 @@ const initHomeChangeColorOnScroll = () => {
       selectElement('.lets-talk-btn-js-change').classList.add('lets-talk-btn');
       selectElement('.lets-talk-btn-js-change').classList.remove('lets-talk-btn-change');
       selectElement('#about-us-js-change').style.color = charcoalColor;
+      selectElement('.ceo').style.backgroundColor = 'white';
+      selectElement('.cto').style.backgroundColor = 'white';
       selectElement('#home-title').style.color = charcoalColor;
       selectElement('#home-description').style.color = charcoalColor;
       selectElement('#home-step').style.color = charcoalColor;
