@@ -121,77 +121,83 @@
     }
 
     // About us carousel
-    
-  
-    // .carousel-about-us {
-    //   display: flex;
-    //   flex-direction: column;
-    //   justify-content: center;
-    //   overflow: hidden;
-    // }
-
-    // .carousel-about-us-nav {
-    //   display: block;
-    //   .carousel-about-us-indicator {
-    //     border: 0;
-    //     border-radius: 50%;
-    //     width: 11px;
-    //     height: 11px;
-    //     background: $bone;
-    //     margin: 0 5px;
-    //     cursor: pointer;
-    //   }
-    //   .carousel-about-us-indicator.current-about-us-slide {
-    //     width: 15px;
-    //     height: 15px;
-    //   }
-    // }
-
-    // .carousel-about-us-container {
-    //   position: relative;
-    //   height: 500px;
-    //   transition: transform 250ms ease-in;
-    //   margin: 0;
-    //   padding: 0;
-    // }
-
-    // #about-us .left-side {
-    //   width: 530px;
-    //   .ceo, .cto {
-    //     position: absolute;
-    //     top: 0;
-    //     bottom: 0;
-    //     width: 530px;
-    //     flex-direction: column;
-    //     align-items: center;
-    //     height: 500px;
-    //     margin: 0;
-    //   }
-    //   .details{
-    //     margin-bottom: 38px;
-    //     img {
-    //       width: 80px;
-    //     }
-    //     .name {
-    //       font-size: 14px;
-    //     }
-    //     .role {
-    //       font-size: 12px;
-    //     }
-    //   }
-    //   .about-details {
-    //     margin: 0;
-    //     text-align: center;
-    //     width: 100%;
-    //     align-items: center;
-    //   }
-    //   p {
-    //     // width: 100%;
-    //     font-size: 14px;
-    //   }
       
-    // }
+    .carousel-about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
+   
+
+    .carousel-about-nav {
+      display: block;
+      .carousel-about-indicator {
+        border: 0;
+        border-radius: 50%;
+        width: 11px;
+        height: 11px;
+        background: $bone;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+      .carousel-about-indicator.current-about-slide {
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    .carousel-about-container {
+      position: relative;
+      height: 500px;
+      transition: transform .9s ease-in-out;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      user-select: none;
+    }
+    
+    ::-webkit-scrollbar {
+      display: none;
+    }   
+
+    #about-us .left-side {
+      // width: 530px;
+      .ceo, .cto {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 530px;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+        margin: 0;
+      }
+      .details{
+        margin-bottom: 38px;
+        img {
+          width: 80px;
+        }
+        .name {
+          font-size: 14px;
+        }
+        .role {
+          font-size: 12px;
+        }
+      }
+      .about-details {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        align-items: center;
+      }
+      p {
+        font-size: 14px;
+      } 
+    }
+    // ----------------------
   }
 
   @media screen and (max-width: 530px) {

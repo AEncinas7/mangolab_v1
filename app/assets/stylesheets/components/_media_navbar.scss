@@ -17,6 +17,7 @@
   }
 
   .navbar-brand {
+    width: 200px; 
     svg {
       width: 200px; 
       height: 75px;
@@ -24,9 +25,19 @@
   }
 
   .nav-list {
-    visibility: hidden;
+    
     opacity: 0;
-    transition: opacity 1s, visibility 1s;
+    transition: opacity 1s;
+    display: none;
+    height : 0;
+    -webkit-transition:height, 1s linear;
+    -moz-transition: height, 1s linear;
+    -ms-transition: height, 1s linear;
+    -o-transition: height, 1s linear;
+    transition: height, 1s linear;
+    
+
+
     flex-direction: column;
     align-items: flex-start;
     margin-top: 58px;
@@ -37,6 +48,16 @@
 
   .close-btn {
     display: none;
+  }
+
+  //width: 30px;
+  //height: 20px;
+
+  //witdh: 24px;
+  //height: 17px;
+
+  .z-index {
+    z-index: 999;
   }
 
   .btn-displayed {
@@ -50,10 +71,21 @@
   .menu-bar.active {
     height: 100vh;
   }
+
+  .menu-bar.active .menu-icons {
+    top: 8%;
+  }
   
   .menu-bar.active .nav-list {
-    visibility: visible;
     opacity: 1;
+    display: block;
+    height: 100%;
+    -webkit-transition:height, 1s linear;
+    -moz-transition: height, 1s linear;
+    -ms-transition: height, 1s linear;
+    -o-transition: height, 1s linear;
+    transition: height, 1s linear;
+
   }
 
   .menu-bar.active .menu-bar {
@@ -114,6 +146,7 @@
     }
 
     .navbar-brand {
+      width: 150px; 
       svg {
         width: 150px; 
         height: 75px;

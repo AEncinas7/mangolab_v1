@@ -30,11 +30,16 @@
 
 .menu-icons {
   position: absolute;
-  top: 10%;
+
+  top: 40%;
+  // transition: top .1s;
   transform: translateY(-50%);
   right: 0px;
   cursor: pointer;
   z-index: 1500;
+  svg {
+    position: absolute;
+  }
 }
 
 .navbar-brand {
