@@ -23,7 +23,6 @@ import { initNavbarScrolldown } from '../components/navbar_scrolldown';
 import { initHomeChangeColorOnScroll } from '../components/home_scrolldown';
 import { initLogoScrolling } from '../components/logo_scrolling';
 import { initTimer } from '../components/timer';
-// import { initAboutUsCarousel } from '../components/about-us-carousel';
 import { initSwiper } from '../plugins/swiper';
 
 document.addEventListener('turbolinks:load', () => {
@@ -32,6 +31,5 @@ document.addEventListener('turbolinks:load', () => {
   initHomeChangeColorOnScroll();
   initLogoScrolling();
   initTimer();
-  // initAboutUsCarousel();
   initSwiper();
 });
