@@ -102,7 +102,11 @@
 
 // About us carousel
 
-.swiper-pagination {
+#swiper-about {
+  display: none!important;
+}
+
+.swiper-pagination-about {
   display: none;
 }
 // --------------------

@@ -2,10 +2,10 @@ import swiper from 'swiper/bundle';
 
 const initSwiper = () => {
   
-  new swiper('.swiper-container', {
+  new swiper('.swiper-about', {
 
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-pagination-about',
       type: 'bullets',
     },
 

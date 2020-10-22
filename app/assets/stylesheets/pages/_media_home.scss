@@ -124,47 +124,6 @@
 
     // About us carousel
       
-    // .carousel-about {
-    //   display: flex;
-    //   flex-direction: column;
-    //   justify-content: center;
-    // }
-
-   
-
-    // .carousel-about-nav {
-    //   display: block;
-    //   .carousel-about-indicator {
-    //     border: 0;
-    //     border-radius: 50%;
-    //     width: 11px;
-    //     height: 11px;
-    //     background: $bone;
-    //     margin: 0 5px;
-    //     cursor: pointer;
-    //   }
-    //   .carousel-about-indicator.current-about-slide {
-    //     width: 15px;
-    //     height: 15px;
-    //   }
-    // }
-
-    // .carousel-about-container {
-    //   position: relative;
-    //   height: 500px;
-    //   transition: transform .9s ease-in-out;
-    //   margin: 0;
-    //   padding: 0;
-    //   cursor: pointer;
-    //   overflow-x: scroll;
-    //   overflow-y: hidden;
-    //   user-select: none;
-    // }
-    
-    // ::-webkit-scrollbar {
-    //   display: none;
-    // }   
-
     #about-us {
       height: 696px;
       flex-direction: column;
@@ -200,6 +159,13 @@
       p {
         font-size: 14px;
       } 
+    }
+    #about-us-js-change {
+      display: none!important;
+    }
+
+    #swiper-about {
+      display: block!important;
     }
 
     .swiper-pagination {
@@ -252,11 +218,31 @@
         display: none;
       }
     }
+
+    // About swiper:
+    #swiper-about {
+      .about-details {
+        p {
+          width: 420px;
+        }
+      }
+    }
+    // ---------------
   }
 
   @media screen and (max-width: 420px) {
     .home-container {
       width: 364px;
     }
+
+    // About swiper:
+    #swiper-about {
+      .about-details {
+        p {
+          width: 364px;
+        }
+      }
+    }
+    // ---------------
   }
 }
