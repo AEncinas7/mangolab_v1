@@ -64,7 +64,7 @@ const initNavbarScrolldown = () => {
         selectElement('#close-color-two').style.stroke = boneColor;
       }
 
-    } else if (window.location.pathname === '/services') {
+    } else if (window.location.pathname === '/services' || window.location.pathname === '/process' || window.location.pathname === '/verticals') {
       // window.scrollY >= 206.5 && 
       if (window.scrollY >= 0 && window.scrollY <= 1032.5) {
         selectElement('.menu-bar').style.backgroundColor = 'black';
