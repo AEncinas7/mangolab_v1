@@ -26,19 +26,24 @@ const initTimer = () => {
     m = m < 10 ? '0' + m : m;
     s = s < 10 ? '0' + s : s;
     
-    if (Math.floor(delta/1000) === 0) {
-      document.querySelector('#d').innerText =  "00";
-      document.querySelector('#h').innerText =  "00";
-      document.querySelector('#m').innerText =  "00";
-      document.querySelector('#s').innerText =  "00";
-      clearInterval(repeat);
-    } else {
-      document.querySelector('#d').innerText = d;
-      document.querySelector('#h').innerText = h;
-      document.querySelector('#m').innerText = m;
-      document.querySelector('#s').innerText = s;
-      // timer.innerHTML = `${d} : ${h} : ${m} : ${s}`;  
+    if (window.location.pathname === '/home') {
+      
+      if (Math.floor(delta/1000) === 0) {
+        document.querySelector('#d').innerText =  "00";
+        document.querySelector('#h').innerText =  "00";
+        document.querySelector('#m').innerText =  "00";
+        document.querySelector('#s').innerText =  "00";
+        clearInterval(repeat);
+      } else {
+        document.querySelector('#d').innerText = d;
+        document.querySelector('#h').innerText = h;
+        document.querySelector('#m').innerText = m;
+        document.querySelector('#s').innerText = s;
+        // timer.innerHTML = `${d} : ${h} : ${m} : ${s}`;  
+      }
+      
     }
+
   }
 }
 
