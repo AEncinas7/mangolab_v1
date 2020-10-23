@@ -82,11 +82,34 @@
     }
   }
 
+  // Verticals section:
+  #verticals .left-side {
+    img {
+      width: 400px;
+    }
+  }
+
+  // MVP section:
+  #next-mvp {
+    width: 812px;  
+    .mvp-icon { top: 176px; }
+    h1, #timer { font-size: 40px; }
+    .timer-text {
+      h3 {
+        font-size: 14px;
+      }
+    }
+    #day { left: 7.5%; }
+    #hours { left: 32%; }
+    #minute { right: 29%; }
+    #second { right: 3.5%; }
+    .counter-text { font-size: 20px; } 
+  }
+
   @media screen and (max-width: 812px) {
     .home-container {
       width: 654px;
     }
-
 
     #intro .left-side {
       h3{
@@ -144,13 +167,24 @@
     #process .left-side {
       padding: 0;
     }
+
+    // Verticals section:
+    #verticals {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    // MVP Section:
+    #next-mvp { width: 654px; }
+    .mvp-icon {
+      display: none;
+    }
   }
 
   @media screen and (max-width: 654px) {
     .home-container {
       width: 530px;
     }
-
 
     #intro .left-side {
       h3{
@@ -176,7 +210,7 @@
     }
 
     #about-us .left-side {
-      margin-top: 103px;
+      // margin-top: 103px;
       .ceo, .cto {
         flex-direction: column;
         align-items: center;
@@ -242,12 +276,38 @@
         display: none;
       }
     }
+
+    // Verticals Section:
+    #verticals .right-side {
+      width: 530px;
+      p {
+        display: none;
+      }
+    }
+
+    // MVP Section:
+    #next-mvp { 
+      width: 530px; 
+      h1, #timer { font-size: 34px; }
+      .timer-text {
+        h3 {
+          font-size: 12px;
+        }
+      }
+      #day { left: 8.5%; }
+      #hours { left: 32.5%; }
+      #minute { right: 30%; }
+      #second { right: 5%; }
+      .counter-text { font-size: 18px; }
+    }
   }
 
   @media screen and (max-width: 530px) {
     .home-container {
       width: 420px;
     }
+
+    #intro { height: 796px; }
 
     #intro .left-side {
       h3{
@@ -265,6 +325,7 @@
     }
 
     // About swiper:
+    #about-us { height: 696px; }
     #swiper-about {
       .about-details {
         p {
@@ -275,11 +336,13 @@
     // ---------------
 
     // Services Section:
+    #services { height: 696px; }
     #services .right-side {
       width: 420px;
     }
     
     // Process Section:
+    #process { height: 696px; }
     #process .left-side {
       width: 420px;
     }
@@ -295,6 +358,38 @@
 
     #home-title {
       font-size: 32px;
+    }
+
+    // Verticals Section:
+    #verticals { height: 696px; }
+    #verticals .right-side {
+      width: 420px;
+    }
+
+    // MVP Section:
+    #next-mvp { 
+      height: 696px;
+      width: 420px; 
+      .mvp-icon {
+        display: block;
+        top: 546px;
+        img {
+          width: 100px;
+        }
+      }
+      h1, #timer { font-size: 36px; text-align: center; }
+      .counter h1 { margin-bottom: 52px; }
+      .timer-text {
+        margin-bottom: 42px;
+        h3 {
+          font-size: 14px;
+        }
+      }
+      #day { left: 7.5%; }
+      #hours { left: 32%; }
+      #minute { right: 29%; }
+      #second { right: 3.5%; }
+      .counter-text { font-size: 18px; }
     }
   }
 
@@ -322,6 +417,13 @@
     #process .left-side {
       width: 364px;
     }
-  
+    
+    // Verticals section:
+    #verticals .right-side {
+      width: 364px;
+    }
+
+    // MVP Section:
+    #next-mvp { width: 364px; }
   }
 }
