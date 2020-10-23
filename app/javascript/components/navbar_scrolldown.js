@@ -17,16 +17,30 @@ const initNavbarScrolldown = () => {
 
       selectElement('#logo-big').style.fill = boneColor;
       selectElement('#logo-small').style.fill = boneColor;
+
+      selectElement('#menu-color-one').style.fill = boneColor;
+      selectElement('#menu-color-two').style.fill = boneColor;
+      selectElement('#menu-color-three').style.fill = boneColor;
+
+      selectElement('#close-color-one').style.stroke = boneColor;
+      selectElement('#close-color-two').style.stroke = boneColor;
     } else {
       selectElement('.menu-bar').style.backgroundColor = 'white';
       selectElementAll('.btn-white').forEach(ele => ele.style.color = charcoalColor);
-
+      
       selectElement('.free-consultation-btn').classList.remove('white-background');
       selectElement('.free-consultation-btn').classList.add('black-background');
       selectElement('.btn-black').style.color = 'white';
-
+      
       selectElement('#logo-big').style.fill = charcoalColor;
       selectElement('#logo-small').style.fill = charcoalColor;
+
+      selectElement('#menu-color-one').style.fill = charcoalColor;
+      selectElement('#menu-color-two').style.fill = charcoalColor;
+      selectElement('#menu-color-three').style.fill = charcoalColor;
+
+      selectElement('#close-color-one').style.stroke = charcoalColor;
+      selectElement('#close-color-two').style.stroke = charcoalColor;
     }
     
     //3052
@@ -41,6 +55,13 @@ const initNavbarScrolldown = () => {
 
       selectElement('#logo-big').style.fill = boneColor;
       selectElement('#logo-small').style.fill = boneColor;
+
+      selectElement('#menu-color-one').style.fill = boneColor;
+      selectElement('#menu-color-two').style.fill = boneColor;
+      selectElement('#menu-color-three').style.fill = boneColor;
+
+      selectElement('#close-color-one').style.stroke = boneColor;
+      selectElement('#close-color-two').style.stroke = boneColor;
     }
   });
 }

@@ -17,11 +17,13 @@ require("channels")
 
 // External Imports:
 import 'bootstrap';
+import 'slick-carousel/slick/slick';
 import { initNavbarDropdown } from '../components/navbar_dropdown';
 import { initNavbarScrolldown } from '../components/navbar_scrolldown';
 import { initHomeChangeColorOnScroll } from '../components/home_scrolldown';
 import { initLogoScrolling } from '../components/logo_scrolling';
 import { initTimer } from '../components/timer';
+import { initSwiper } from '../plugins/swiper';
 
 document.addEventListener('turbolinks:load', () => {
   initNavbarDropdown();
@@ -29,4 +31,5 @@ document.addEventListener('turbolinks:load', () => {
   initHomeChangeColorOnScroll();
   initLogoScrolling();
   initTimer();
+  initSwiper();
 });
