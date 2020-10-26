@@ -15,25 +15,54 @@
   align-items: center;
 }
 
+//Services intro section:
 #services-intro {
-  .right-side {
+  .left-side {
     // Into the js change:
     color: $bone;
     //-------------------
-    width: 630px;
-    margin-left: 12px;
+    font-family: "Montserrat", "sans-serif";
+    width: 520px;
     h1 {
-      font-family: "Montserrat", "sans-serif";
-      font-size: 40px;
+      font-size: 60px;
       font-weight: bold;
-      text-align: center;
-      margin-bottom: 39px;
+      margin-bottom: 43px;
     }
-    .back-home-btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
     }
   }
+}
 
+// Services UX/UI section:
+#services-ux-ui {
+  height: 700px;
+  display: flex;
+  justify-content: space-between;
+  // Into js change:
+  background-color: white;
+  // ------------------------
+}
+
+#services-ux-ui .left-side {
+  // Into js change:
+  color: $charcoal;
+  // ----------------
+  width: 520px;
+  h1 { 
+    font-family: "Montserrat", "sans-serif";
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 32px;
+  }
+  p {
+    font-family: "Lato";
+    font-size: 14px;
+    letter-spacing: 0.05rem;
+  }
+}
+
+#services-ux-ui-swiper {
+  display: none;
 }
