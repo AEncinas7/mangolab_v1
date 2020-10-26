@@ -1,11 +1,15 @@
 const initHomeChangeColorOnScroll = () => {
   const selectElement = (element) => document.querySelector(element);
   const selectElementAll = (element) => document.querySelectorAll(element);
+
   const boneColor = '#F0F0F0';
   const charcoalColor = '#454545';
 
+  const rootPath = '/';
+  const homePath = '/home';
+
   window.addEventListener('scroll', () => {
-    if (window.location.pathname === '/') {
+    if (window.location.pathname === rootPath || window.location.pathname === homePath) {
 
       if (window.scrollY >= 206.5 && window.scrollY <= 1032.5) {
         selectElement('.color-container').style.backgroundColor = 'black';

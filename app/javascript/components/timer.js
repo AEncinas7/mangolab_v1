@@ -2,6 +2,9 @@ const initTimer = () => {
   const releaseDate = 'Nov 20, 2020 16:00:00';
   
   const timer = document.querySelector('#timer');
+
+  const rootPath = '/';
+  const homePath = '/home';
   
   const repeat = setInterval(function () {
     releaseCounter();
@@ -26,7 +29,7 @@ const initTimer = () => {
     m = m < 10 ? '0' + m : m;
     s = s < 10 ? '0' + s : s;
     
-    if (window.location.pathname === '/') {
+    if (window.location.pathname === rootPath || window.location.pathname === homePath) {
       
       if (Math.floor(delta/1000) === 0) {
         document.querySelector('#d').innerText =  "00";
