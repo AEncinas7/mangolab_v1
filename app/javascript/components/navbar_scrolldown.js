@@ -7,7 +7,7 @@ const initNavbarScrolldown = () => {
 
   window.addEventListener('scroll', () => {   
 
-    if (window.location.pathname === '/home') {
+    if (window.location.pathname === '/') {
 
       if (window.scrollY >= 206.5 && window.scrollY <= 1032.5) {
         selectElement('.menu-bar').style.backgroundColor = 'black';

@@ -5,7 +5,7 @@ const initHomeChangeColorOnScroll = () => {
   const charcoalColor = '#454545';
 
   window.addEventListener('scroll', () => {
-    if (window.location.pathname === '/home') {
+    if (window.location.pathname === '/') {
 
       if (window.scrollY >= 206.5 && window.scrollY <= 1032.5) {
         selectElement('.color-container').style.backgroundColor = 'black';

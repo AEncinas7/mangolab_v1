@@ -26,7 +26,7 @@ const initTimer = () => {
     m = m < 10 ? '0' + m : m;
     s = s < 10 ? '0' + s : s;
     
-    if (window.location.pathname === '/home') {
+    if (window.location.pathname === '/') {
       
       if (Math.floor(delta/1000) === 0) {
         document.querySelector('#d').innerText =  "00";
