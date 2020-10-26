@@ -9,11 +9,23 @@ const initServicesChangeColorOnScroll = () => {
   const servicesPath = '/services';
 
   const transformToBlackTop = () => {
-    selectElement('.services-color-container').style.backgroundColor = 'white';
-    selectElement('#services-intro').style.color = charcoalColor;
+
+    selectElement('.services-color-container').style.backgroundColor = 'black';
+    selectElement('#services-intro-js-change').style.color = boneColor;
+
+    selectElement('#services-ux-ui').style.color = boneColor;
+    selectElement('#services-ux-ui-swiper').style.color = boneColor;
+    Array.from(selectElement('.swiper-pagination-services-ux-ui').children).forEach(e => e.style.background = boneColor);
+
   }
 
   const transformToWhiteTop = () => {
+    selectElement('.services-color-container').style.backgroundColor = 'white';
+    selectElement('#services-intro-js-change').style.color = charcoalColor;
+
+    selectElement('#services-ux-ui').style.color = charcoalColor;
+    selectElement('#services-ux-ui-swiper').style.color = charcoalColor;
+    Array.from(selectElement('.swiper-pagination-services-ux-ui').children).forEach(e => e.style.background = charcoalColor);
 
   }
 
@@ -21,16 +33,20 @@ const initServicesChangeColorOnScroll = () => {
     if (window.location.pathname === servicesPath) {
 
       if (window.scrollY >= 206.5 && window.scrollY <= 1032.5) {
-
-      } else {
-        
+        transformToWhiteTop();
+      }
+      else {
+        transformToBlackTop();
       }
 
-      if (window.scrollY >= 2927) {
+      // if (window.scrollY >= 2927) {
 
-      }
+      // }
 
     }
 
-  }
+  });
+
 }
+
+export { initServicesChangeColorOnScroll };
