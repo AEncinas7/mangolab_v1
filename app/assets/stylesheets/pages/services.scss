@@ -1,9 +1,6 @@
 .services-color-container {
   width: 100%;
   transition: background-color 1.5s;
-  // Into the js changes:
-  // background-color: black;
-  // -----------------------
 }
 
 .services-container {
@@ -18,9 +15,6 @@
 //Services intro section:
 #services-intro {
   .left-side {
-    // Into the js change:
-    color: $bone;
-    //-------------------
     font-family: "Montserrat", "sans-serif";
     width: 520px;
     h1 {
@@ -35,34 +29,57 @@
   }
 }
 
+// Sercives common sections:
+#services-title { 
+  font-family: "Montserrat", "sans-serif";
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+.services-description {
+  font-family: "Lato";
+  font-size: 14px;
+  letter-spacing: 0.05rem;
+}
+
+// ------------------------
+
 // Services UX/UI section:
 #services-ux-ui {
   height: 700px;
   display: flex;
   justify-content: space-between;
-  // Into js change:
-  // background-color: white;
-  // ------------------------
 }
 
 #services-ux-ui .left-side {
-  // Into js change:
-  // color: $charcoal;
-  // ----------------
   width: 520px;
-  h1 { 
-    font-family: "Montserrat", "sans-serif";
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 32px;
-  }
-  p {
-    font-family: "Lato";
-    font-size: 14px;
-    letter-spacing: 0.05rem;
-  }
 }
 
 #services-ux-ui-swiper {
+  display: none;
+}
+
+// Services Website Dev section:
+.website-dev-container {
+  width: 100%;
+  background-color: white;
+}
+
+#services-website-dev {
+  height: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#services-website-dev .left-side {
+  img { margin-right: 20px; }
+}
+
+#services-website-dev .right-side {
+  width: 520px;
+  h1 { margin-bottom: 19px; }
+}
+
+#services-website-dev-swiper {
   display: none;
 }

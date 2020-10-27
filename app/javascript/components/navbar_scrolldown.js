@@ -60,15 +60,11 @@ const initNavbarScrolldown = () => {
         navbarBlackColor();
       }
 
-      // || window.location.pathname === '/process' || window.location.pathname === '/verticals'
     } else if (window.location.pathname === '/services') {
-      if (window.scrollY >= 206.5 && window.scrollY <= 1032.5) {
-        navbarWhiteColor();
-      } else {
-        navbarBlackColor();
-      }
 
-      if (window.scrollY >= 2927) {
+      if (window.scrollY <= 413) {
+        navbarBlackColor();
+      } else {
         navbarWhiteColor();
       }
 

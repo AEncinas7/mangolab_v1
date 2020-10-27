@@ -32,16 +32,12 @@ const initServicesChangeColorOnScroll = () => {
   window.addEventListener('scroll', () => {
     if (window.location.pathname === servicesPath) {
 
-      if (window.scrollY >= 206.5 && window.scrollY <= 1032.5) {
-        transformToWhiteTop();
-      }
-      else {
+      if (window.scrollY <= 413) {
         transformToBlackTop();
       }
-
-      // if (window.scrollY >= 2927) {
-
-      // }
+      else {
+        transformToWhiteTop();
+      }
 
     }
 

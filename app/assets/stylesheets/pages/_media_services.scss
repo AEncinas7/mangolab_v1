@@ -13,16 +13,26 @@
     img { width: 450px; }
   }
 
+  // Services common sections:
+
+  #services-title { font-size: 28px; }
+  .services-description { font-size: 12px; }
+
   // Services UX-UI section:
-  #services-ux-ui .left-side {
-    width: 420px;
-    h1 { font-size: 28px; }
-    p { font-size: 12px; }
-  }
+  #services-ux-ui .left-side { width: 420px; }
   
   #services-ux-ui .right-side {
     img { width: 350px; }
   }
+
+  // Services website dev section:
+  #services-website-dev .left-side {
+    img { width: 400px; }
+  }
+
+  #services-website-dev .righ-side { width: 420px; }
+
+
 
   @media screen and (max-width: 812px) {
     .services-container {
@@ -35,16 +45,32 @@
       justify-content: center;
     }
 
-    // Services UX-UI section:
-    #services-ux-ui .left-side {
-    width: 336px;
-    h1 { font-size: 22px; }
-    p { font-size: 11px; }
+    // Services intro section: 
+    #services-intro .left-side {
+      h1 { font-size: 22px; }
+      h3 { font-size: 11px; }
     }
+
+    // Services common sections:
+    #services-title { font-size: 22px; }
+    .services-description { font-size: 11px; }
+
+    // Services UX-UI section:
+    #services-ux-ui .left-side { width: 336px; }
   
     #services-ux-ui .right-side {
       img { width: 300px; }
     }
+
+    // Services website dev section:
+    #services-website-dev .left-side {
+    img { width: 300px; }
+    }
+
+    #services-website-dev .righ-side { width: 336px; }
+
+
+
   }
 
   @media screen and (max-width: 654px) {
@@ -62,16 +88,9 @@
       height: 696px;
       display: flex;
       flex-direction: column;
-      // Into js change:
-      // background-color: white;
-      // -----------------------
     }
 
     #services-ux-ui-swiper .left-side {
-      // Into js change:
-      // color: $charcoal;
-      // ---------------
-      // width: 530px;
       img { width: 300px; }
       h1 { 
         font-family: "Montserrat", "sans-serif";
@@ -110,9 +129,6 @@
     .swiper-pagination-services-ux-ui {
       margin-bottom: 93px;
       .swiper-pagination-bullet {
-        // Into js change:
-        // background: $charcoal;
-        // --------------------
         margin: 0 5px!important;
       }
     }
