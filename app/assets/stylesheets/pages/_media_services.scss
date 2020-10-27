@@ -12,11 +12,14 @@
   #services-intro .right-side {
     img { width: 450px; }
   }
+  // --------------------------
+
 
   // Services common sections:
 
   #services-title { font-size: 28px; }
   .services-description { font-size: 12px; }
+  // ---------------------------
 
   // Services UX-UI section:
   #services-ux-ui .left-side { width: 420px; }
@@ -24,14 +27,25 @@
   #services-ux-ui .right-side {
     img { width: 350px; }
   }
+  // -------------------------
+
 
   // Services website dev section:
   #services-website-dev .left-side {
     img { width: 400px; }
   }
 
-  #services-website-dev .righ-side { width: 420px; }
+  #services-website-dev .right-side { width: 420px; }
+  // -------------------------------
 
+
+  // Services Dev and test section:
+  #services-dev-test .right-side {
+    img { width: 350px; }
+  }
+
+  #services-dev-test .left-side { width: 420px; }
+  // ---------------------------------
 
 
   @media screen and (max-width: 812px) {
@@ -44,16 +58,19 @@
       flex-direction: column-reverse;
       justify-content: center;
     }
-
-    // Services intro section: 
+   
     #services-intro .left-side {
       h1 { font-size: 22px; }
       h3 { font-size: 11px; }
     }
+    // ------------------------
+
 
     // Services common sections:
     #services-title { font-size: 22px; }
     .services-description { font-size: 11px; }
+    // --------------------------
+
 
     // Services UX-UI section:
     #services-ux-ui .left-side { width: 336px; }
@@ -61,6 +78,8 @@
     #services-ux-ui .right-side {
       img { width: 300px; }
     }
+    // -----------------------------
+
 
     // Services website dev section:
     #services-website-dev .left-side {
@@ -68,8 +87,15 @@
     }
 
     #services-website-dev .righ-side { width: 336px; }
+    // ----------------------------------
 
+    
+    // Services Dev and test section:
+    #services-dev-test .right-side {
+      img { width: 300px; }
+    }
 
+    #services-dev-test .left-side { width: 336px; }
 
   }
 
@@ -77,6 +103,36 @@
     .services-container {
       width: 530px;
     }
+    
+    // Services common sections:
+    #swiper-services-title { 
+      font-family: "Montserrat", "sans-serif";
+      font-size: 32px;
+      font-weight: 600;
+      width: 354px;
+      text-align: center;
+      margin-top: 80px; 
+    }
+
+    .swiper-services-description { 
+      font-family: "Lato";
+      font-size: 14px;
+      width: 530px;
+    }
+
+    .first-services-description { position: relative; }
+
+    .first-services-description:after {
+      content: "";
+      left: 0;
+      top: -4px;
+      width: 29px;
+      position: absolute;
+      border-bottom: 4px solid;
+      border-image: linear-gradient(to right, $green, $orange) 1;
+    }
+    // --------------------------
+
 
     // Services UX-UI section:
     #services-ux-ui {
@@ -92,14 +148,6 @@
 
     #services-ux-ui-swiper .left-side {
       img { width: 300px; }
-      h1 { 
-        font-family: "Montserrat", "sans-serif";
-        font-size: 32px;
-        font-weight: 600;
-        width: 354px;
-        text-align: center;
-        margin-top: 80px;
-      }
     }
 
     #services-ux-ui-swiper .right-side {
@@ -107,25 +155,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      p {
-        font-family: "Lato";
-        font-size: 14px;
-        width: 530px;
-      }
     }
     
-    #ux-ui-description { position: relative; }
-
-    #ux-ui-description:after {
-      content: "";
-      left: 0;
-      top: -4px;
-      width: 29px;
-      position: absolute;
-      border-bottom: 4px solid;
-      border-image: linear-gradient(to right, $green, $orange) 1;
-    }
-
     .swiper-pagination-services-ux-ui {
       margin-bottom: 93px;
       .swiper-pagination-bullet {
@@ -139,6 +170,83 @@
       justify-content: center;
       align-items: center;
     }
+    // ----------------------------------
+
+
+    // Services website dev section:
+    #services-website-dev { display: none; }
+
+    #services-website-dev-swiper {
+      display: block;
+      height: 696px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    #services-website-dev-swiper .left-side {
+      img { width: 300px; }
+    }
+
+    #services-website-dev-swiper .right-side {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-pagination-services-website-dev {
+      margin-bottom: 93px;
+      .swiper-pagination-bullet {
+        margin: 0 5px!important;
+        background: $charcoal;
+      }
+    }
+
+    #services-website-dev-wrapper .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    // ---------------------------------------
+
+    
+    // Services Dev and test section:
+    #services-dev-test { display: none; }
+
+    #services-dev-test-swiper {
+      display: block;
+      height: 696px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #services-dev-test-swiper .left-side {
+      img { width: 300px; }
+    }
+
+    #services-dev-test-swiper .right-side {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-pagination-services-dev-test {
+      margin-bottom: 93px;
+      .swiper-pagination-bullet {
+        margin: 0 5px!important;
+        background: $charcoal;
+      }
+    }
+
+    #services-dev-test-wrapper .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    // ---------------------------------------
   }
 
   @media screen and (max-width: 530px) {
@@ -157,11 +265,12 @@
     #services-intro .right-side {
       img { width: 300px; }
     }
-    
-     // Services UX-UI section:
-     #services-ux-ui-swiper .right-side {
-       p { width: 420px; }
-     }
+    // ----------------------------
+
+
+    // Services common section:
+    .swiper-services-description { width: 420px; }
+    // -------------------------------
   }
 
   @media screen and (max-width: 420px) {
@@ -173,10 +282,12 @@
     #services-intro .left-side {
       width: 364px;
     }
-    
-    // Services UX-UI section:
-    #services-ux-ui-swiper .right-side {
-      p { width: 364px; }
-    }
+    // -------------------------
+
+
+    // Services common section:
+    .swiper-services-description { width: 364px; }
+    // ----------------------------------
   }
+
 }

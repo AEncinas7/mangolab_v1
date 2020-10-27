@@ -83,3 +83,81 @@
 #services-website-dev-swiper {
   display: none;
 }
+
+// Services Dev and test section:
+.dev-test-container {
+  width: 100%;
+  background-color: white;
+}
+
+#services-dev-test {
+  height: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#services-dev-test .left-side {
+  width: 520px;
+  h1 { margin-bottom: 44px; }
+}
+
+#services-dev-test-swiper { display: none; }
+// -----------------------------------
+
+
+// Services Tools section:
+.services-tools-container {
+  width: 100%;
+  height: 700px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#services-tools-title { 
+  font-family: "Montserrat", "sans-serif";
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 73px;
+}
+
+#services-tools { height: 362px; }
+
+#services-tools-wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  width: 1040px;
+}
+
+#services-tools-wrapper .swiper-slide {
+  width: 300px!important;
+  height: 336px;
+  padding: 29px 32px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // margin: 0 33px;
+  img { width: 200px; }
+}
+
+#tool-title {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 28px;
+}
+
+#tool-description {
+  font-family: "Lato";
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  font-weight: 500;
+  line-height: 15px;
+}

@@ -21,6 +21,41 @@ const initSwiper = () => {
     },
 
   })
+
+  // Services Website Dev section:
+  new swiper('.swiper-services-website', {
+
+    pagination: {
+      el: '.swiper-pagination-services-website-dev',
+      type: 'bullets',
+    },
+
+  })
+
+  // Services Dev and test section:
+  new swiper('.swiper-dev-test', {
+
+    pagination: {
+      el: '.swiper-pagination-services-dev-test',
+      type: 'bullets',
+    },
+
+  })
+
+  // Services Tools section:
+  new swiper('.swiper-services-tools', {
+
+    slidesPerView: 3,
+    spaceBetween: 67,
+    // slidesPerGroup: 3,
+    loop: true,
+    // centeredSlides: true,
+    pagination: {
+      el: '.swiper-pagination-services-tools',
+      type: 'bullets',
+    },
+
+  })
 }
 
 export { initSwiper };
