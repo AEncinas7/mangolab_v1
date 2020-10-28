@@ -43,19 +43,19 @@ const initSwiper = () => {
   })
 
   // Services Tools section:
-  new swiper('.swiper-services-tools', {
+  const tools = new swiper('.swiper-services-tools', {
 
     slidesPerView: 3,
-    spaceBetween: 67,
-    // slidesPerGroup: 3,
-    loop: true,
-    // centeredSlides: true,
+    spaceBetween: 70,
+    // slidesOffsetBefore : 10,
+    centeredSlides: false,
     pagination: {
       el: '.swiper-pagination-services-tools',
       type: 'bullets',
     },
-
+  
   })
+
 }
 
 export { initSwiper };
