@@ -50,7 +50,7 @@
   
   // Services Tools Section:
   #services-tools { width: 300px; }
-
+  #services-tools-title { font-size: 56px; }
 
   @media screen and (max-width: 812px) {
     .services-container {
@@ -102,7 +102,8 @@
     #services-dev-test .left-side { width: 336px; }
     // ------------------------------------
 
-
+    // Services tools section: 
+     #services-tools-title { font-size: 52px; }
   }
 
   @media screen and (max-width: 654px) {
@@ -254,8 +255,11 @@
     }
     // ---------------------------------------
 
-
-  
+    // Services tools section:
+    .services-tools-container { height: 696px; }
+    #services-tools-title { font-size: 40px; }
+    #swiper-pagination-tools { position: absolute; }
+    // -------------------------
   }
 
   @media screen and (max-width: 530px) {
@@ -281,7 +285,8 @@
     .swiper-services-description { width: 420px; }
     // -------------------------------
 
-
+    // Services tools section:
+    #services-tools-title { font-size: 36px; }
   
   }
 
