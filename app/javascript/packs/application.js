@@ -21,6 +21,7 @@ import 'slick-carousel/slick/slick';
 import { initNavbarDropdown } from '../components/navbar_dropdown';
 import { initNavbarScrolldown } from '../components/navbar_scrolldown';
 import { initHomeChangeColorOnScroll } from '../components/home_scrolldown';
+import { initServicesChangeColorOnScroll } from '../components/services_scrolldown';
 import { initLogoScrolling } from '../components/logo_scrolling';
 import { initTimer } from '../components/timer';
 import { initSwiper } from '../plugins/swiper';
@@ -29,6 +30,7 @@ document.addEventListener('turbolinks:load', () => {
   initNavbarDropdown();
   initNavbarScrolldown();
   initHomeChangeColorOnScroll();
+  initServicesChangeColorOnScroll();
   initLogoScrolling();
   initTimer();
   initSwiper();
