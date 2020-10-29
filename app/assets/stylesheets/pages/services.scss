@@ -196,6 +196,7 @@
 #services-lets-talk {
   width: 1040px;
   margin: 0 auto;
+  color: $bone;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -205,4 +206,28 @@
 
 .lets-talk-icon {
   position: absolute;
+  left: 0;
+  top: 69px;
+}
+
+.lets-talk-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-family: "Montserrat", "sans-serif";
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+  }
+  p {
+    font-family: "Lato";
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    width: 920px;
+    margin-top: 43px;
+    margin-bottom: 53px;
+  }
 }

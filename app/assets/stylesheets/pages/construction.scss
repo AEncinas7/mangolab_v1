@@ -1,0 +1,39 @@
+.services-color-container {
+  width: 100%;
+  transition: background-color 1.5s;
+  // Into the js changes:
+  background-color: black;
+  // -----------------------
+}
+
+.services-container {
+  width: 1040px;
+  margin: 0 auto;
+  height: 826px;
+  display: flex;
+  justify-self: space-between;
+  align-items: center;
+}
+
+#construction-intro {
+  .right-side {
+    // Into the js change:
+    color: $bone;
+    //-------------------
+    width: 630px;
+    margin-left: 12px;
+    h1 {
+      font-family: "Montserrat", "sans-serif";
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 39px;
+    }
+    .back-home-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+}

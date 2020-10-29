@@ -7,6 +7,9 @@ const initNavbarScrolldown = () => {
   
   const rootPath = '/';
   const homePath = '/home';
+  const servicesPath = '/services';
+  const processPath = '/process';
+  const verticalsPath = '/verticals';
 
   const navbarBlackColor = () => {
     selectElement('.menu-bar').style.backgroundColor = 'black';
@@ -60,14 +63,20 @@ const initNavbarScrolldown = () => {
         navbarBlackColor();
       }
 
-    } else if (window.location.pathname === '/services') {
+    } else if (window.location.pathname === servicesPath) {
 
       if (window.scrollY <= 413) {
         navbarBlackColor();
       } else {
         navbarWhiteColor();
       }
-
+      
+      if (window.scrollY >= 3504) {
+        navbarBlackColor();
+      }
+      
+    } else if (window.location.pathname === processPath || window.location.pathname === verticalsPath) {
+        navbarBlackColor();
     }
 
   });
