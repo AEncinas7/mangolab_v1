@@ -49,6 +49,14 @@ const initNavbarScrolldown = () => {
     selectElement('#close-color-two').style.stroke = charcoalColor;
   }
 
+  if (window.location.pathname === servicesPath) {
+    navbarBlackColor();
+  }
+  
+  if (window.location.pathname === processPath || window.location.pathname === verticalsPath) {
+    navbarBlackColor();
+  }
+
   window.addEventListener('scroll', () => {   
 
     if (window.location.pathname === rootPath || window.location.pathname === homePath) {
@@ -64,16 +72,16 @@ const initNavbarScrolldown = () => {
       }
 
     } else if (window.location.pathname === servicesPath) {
-
+  
       if (window.scrollY <= 413) {
-        navbarBlackColor();
-      } else {
-        navbarWhiteColor();
-      }
-      
-      if (window.scrollY >= 3504) {
-        navbarBlackColor();
-      }
+          navbarBlackColor();
+        } else {
+          navbarWhiteColor();
+        }
+        
+        if (window.scrollY >= 3504) {
+          navbarBlackColor();
+        }
       
     } else if (window.location.pathname === processPath || window.location.pathname === verticalsPath) {
         navbarBlackColor();

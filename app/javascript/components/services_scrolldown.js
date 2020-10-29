@@ -29,6 +29,10 @@ const initServicesChangeColorOnScroll = () => {
 
   }
 
+  if (window.location.pathname === servicesPath) {
+    transformToBlackTop();
+  }
+
   window.addEventListener('scroll', () => {
     if (window.location.pathname === servicesPath) {
 
