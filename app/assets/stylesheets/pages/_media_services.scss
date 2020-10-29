@@ -47,6 +47,10 @@
   #services-dev-test .left-side { width: 420px; }
   // ---------------------------------
 
+  
+  // Services Tools Section:
+  #services-tools { width: 300px; }
+
 
   @media screen and (max-width: 812px) {
     .services-container {
@@ -96,6 +100,8 @@
     }
 
     #services-dev-test .left-side { width: 336px; }
+    // ------------------------------------
+
 
   }
 
@@ -247,6 +253,9 @@
       align-items: center;
     }
     // ---------------------------------------
+
+
+  
   }
 
   @media screen and (max-width: 530px) {
@@ -271,6 +280,9 @@
     // Services common section:
     .swiper-services-description { width: 420px; }
     // -------------------------------
+
+
+  
   }
 
   @media screen and (max-width: 420px) {
@@ -288,6 +300,8 @@
     // Services common section:
     .swiper-services-description { width: 364px; }
     // ----------------------------------
+
+  
   }
 
 }

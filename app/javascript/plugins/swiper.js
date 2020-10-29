@@ -44,16 +44,25 @@ const initSwiper = () => {
 
   // Services Tools section:
   const tools = new swiper('.swiper-services-tools', {
-
-    slidesPerView: 3,
-    spaceBetween: 70,
-    // slidesOffsetBefore : 10,
-    centeredSlides: false,
+    loop: true,
     pagination: {
       el: '.swiper-pagination-services-tools',
       type: 'bullets',
     },
-  
+    breakpoints: {
+      // when window width is >= 1039px
+      1039: {
+        slidesPerView: 3,
+        spaceBetween: 70,
+        // initialSlide: 1
+      },
+      // when window width is >= 812px
+      364: {
+        slidesPerView: 1,
+        // spaceBetween: 10
+      }
+
+    }
   })
 
 }
