@@ -17,7 +17,9 @@ require("channels")
 
 // External Imports:
 import 'bootstrap';
-import 'slick-carousel/slick/slick';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+
 import { initNavbarDropdown } from '../components/navbar_dropdown';
 import { initNavbarScrolldown } from '../components/navbar_scrolldown';
 import { initHomeChangeColorOnScroll } from '../components/home_scrolldown';
