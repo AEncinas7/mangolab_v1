@@ -3,6 +3,15 @@ import swiper from 'swiper/bundle';
 const initSwiper = () => {
   
   // Intro About us section:
+  new swiper('.swiper-about-it', {
+
+    autoPlay: {
+      delay: 5000,
+    }
+
+  })
+
+
   new swiper('.swiper-about', {
 
     pagination: {

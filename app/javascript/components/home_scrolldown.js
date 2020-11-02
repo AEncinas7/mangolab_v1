@@ -13,6 +13,9 @@ const initHomeChangeColorOnScroll = () => {
     selectElement('#intro-js-change').style.color = boneColor;
     selectElement('.lets-talk-btn-js-change').classList.remove('lets-talk-btn');
     selectElement('.lets-talk-btn-js-change').classList.add('lets-talk-btn-change');
+
+    selectElement('#about-it').style.color = boneColor;
+
     selectElement('#about-us-js-change').style.color = boneColor;
     selectElement('#swiper-about').style.color = boneColor;
     selectElement('.ceo').style.backgroundColor = 'black';
@@ -29,6 +32,11 @@ const initHomeChangeColorOnScroll = () => {
     selectElement('#intro-js-change').style.color = charcoalColor;
     selectElement('.lets-talk-btn-js-change').classList.add('lets-talk-btn');
     selectElement('.lets-talk-btn-js-change').classList.remove('lets-talk-btn-change');
+
+    selectElement('#about-it').style.color = charcoalColor;
+
+
+
     selectElement('#about-us-js-change').style.color = charcoalColor;
     selectElement('#swiper-about').style.color = charcoalColor;
     selectElement('.ceo').style.backgroundColor = 'white';

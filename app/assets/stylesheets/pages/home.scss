@@ -44,6 +44,53 @@
   align-items: flex-start;
   justify-content: center;
 }
+// --------------------
+
+// About it section:
+#about-it {
+  height: 400px;
+  justify-content: initial;
+}
+
+#about-it .left-side {
+  width: 520px;
+  height: 150px;
+  margin: 0;
+  position: relative;
+}
+
+#about-it .swiper-slide {
+  width: 520px!important;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 17px;
+  
+  h1{
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 600;
+    font-size: 28px;
+    margin: 0;
+  }
+}
+
+#colored-bar {
+  position: absolute;
+  height: 150px;
+  width: 5.5px;
+  background: linear-gradient(to top, $green, $orange);
+  left: 0;
+  border-radius: 5px;
+}
+
+#about-it .right-side {
+  margin-left: 110px; 
+}
+
+
 
 // About us section:
 
