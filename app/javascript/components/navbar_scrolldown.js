@@ -60,8 +60,8 @@ const initNavbarScrolldown = () => {
   window.addEventListener('scroll', () => {   
 
     if (window.location.pathname === rootPath || window.location.pathname === homePath) {
-
-      if (window.scrollY >= 206.5 && window.scrollY <= 1032.5) {
+      // 1032.5
+      if (window.scrollY >= 206.5 && window.scrollY <= 1676) {
         navbarBlackColor();
       } else {
         navbarWhiteColor();

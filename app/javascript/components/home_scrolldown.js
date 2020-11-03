@@ -27,8 +27,8 @@ const initHomeChangeColorOnScroll = () => {
     selectElement('#home-title').style.color = boneColor;
     selectElement('#home-description').style.color = boneColor;
     selectElement('#home-step').style.color = boneColor;
-    selectElement('.what-we-do-btn-js-change').classList.remove('what-we-do-btn');
-    selectElement('.what-we-do-btn-js-change').classList.add('what-we-do-btn-change');
+    // selectElement('.what-we-do-btn-js-change').classList.remove('what-we-do-btn');
+    // selectElement('.what-we-do-btn-js-change').classList.add('what-we-do-btn-change');
   }
 
   const transformToWhiteTop = () => {
@@ -49,8 +49,8 @@ const initHomeChangeColorOnScroll = () => {
     selectElement('#home-title').style.color = charcoalColor;
     selectElement('#home-description').style.color = charcoalColor;
     selectElement('#home-step').style.color = charcoalColor;
-    selectElement('.what-we-do-btn-js-change').classList.remove('what-we-do-btn-change');
-    selectElement('.what-we-do-btn-js-change').classList.add('what-we-do-btn');
+    // selectElement('.what-we-do-btn-js-change').classList.remove('what-we-do-btn-change');
+    // selectElement('.what-we-do-btn-js-change').classList.add('what-we-do-btn');
   }
 
   const transformToBlackBottom = () => {
@@ -70,7 +70,7 @@ const initHomeChangeColorOnScroll = () => {
   window.addEventListener('scroll', () => {
     if (window.location.pathname === rootPath || window.location.pathname === homePath) {
       // 1032.5
-      if (window.scrollY >= 206.5 && window.scrollY <= 1851) {
+      if (window.scrollY >= 206.5 && window.scrollY <= 1676) {
         transformToBlackTop();       
       } else {
         transformToWhiteTop(); 
