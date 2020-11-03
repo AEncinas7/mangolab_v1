@@ -1,5 +1,94 @@
 // Home Buttons:
 
+// Home Services Common specs:
+
+.home-button {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none!important;
+  color: $charcoal;
+  border-radius: 12px;
+  border: 3px solid $charcoal;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+  &:hover {
+    color: $charcoal;
+  }
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+  }
+  .chevron-right {
+    transform: rotate(0deg);
+    transition: .6s;
+    width: 12px;
+    height: 25px;
+  }
+}
+
+.home-button:hover .chevron-right {
+  transform: rotate(90deg);
+}
+
+.home-button-change {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none!important;
+  color: $bone;
+
+  border-radius: 12px;
+  border: 3px solid transparent;
+  background-image: linear-gradient(black, black), radial-gradient(circle at left, $green, $orange);
+  background-origin: border-box;
+  background-clip: content-box, border-box;   
+ 
+  &:hover {
+    color: $bone;
+  }
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+  }
+  .chevron-right {
+    transform: rotate(0deg);
+    transition: .6s;
+    width: 12px;
+    height: 25px;
+  }
+}
+
+.home-button-change:hover .chevron-right {
+  transform: rotate(90deg);
+}
+
+
+// 1- Home Services Web Development button:
+.web-dev-btn-js {
+  width: 280px;
+  height: 44px;
+  span { width: 240px; }
+  .chevron-right { 
+    margin-right: 25px;
+  }
+}
+
+
+
+
+
+
+
 // 1- Lets talk:
 
 .lets-talk-btn {
@@ -73,6 +162,8 @@
 .lets-talk-btn-change:hover .chevron-right {
   transform: rotate(90deg);
 }
+
+
 
 // 2- What we do:
 

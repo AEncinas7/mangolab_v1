@@ -3,13 +3,19 @@ import swiper from 'swiper/bundle';
 const initSwiper = () => {
   
   // Intro About us section:
-  new swiper('.swiper-about-it', {
-
-    autoPlay: {
-      delay: 5000,
-    }
+  const aboutIt = new swiper('.swiper-about-it', {
+    
+    loop: true,
+    speed: 1500,
+    simulateTouch: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
 
   })
+
+  // aboutIt.slideNext(2000, false);
 
 
   new swiper('.swiper-about', {

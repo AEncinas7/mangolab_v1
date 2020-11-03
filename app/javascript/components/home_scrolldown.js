@@ -15,6 +15,10 @@ const initHomeChangeColorOnScroll = () => {
     selectElement('.lets-talk-btn-js-change').classList.add('lets-talk-btn-change');
 
     selectElement('#about-it').style.color = boneColor;
+    
+    selectElement('.web-dev-btn-js').classList.remove('home-button');
+    selectElement('.web-dev-btn-js').classList.add('home-button-change');
+
 
     selectElement('#about-us-js-change').style.color = boneColor;
     selectElement('#swiper-about').style.color = boneColor;
@@ -35,7 +39,8 @@ const initHomeChangeColorOnScroll = () => {
 
     selectElement('#about-it').style.color = charcoalColor;
 
-
+    selectElement('.web-dev-btn-js').classList.remove('home-button-change');
+    selectElement('.web-dev-btn-js').classList.add('home-button');
 
     selectElement('#about-us-js-change').style.color = charcoalColor;
     selectElement('#swiper-about').style.color = charcoalColor;
@@ -64,8 +69,8 @@ const initHomeChangeColorOnScroll = () => {
 
   window.addEventListener('scroll', () => {
     if (window.location.pathname === rootPath || window.location.pathname === homePath) {
-
-      if (window.scrollY >= 206.5 && window.scrollY <= 1032.5) {
+      // 1032.5
+      if (window.scrollY >= 206.5 && window.scrollY <= 1851) {
         transformToBlackTop();       
       } else {
         transformToWhiteTop(); 
