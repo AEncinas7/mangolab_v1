@@ -9,48 +9,56 @@ const initHomeChangeColorOnScroll = () => {
   const homePath = '/home';
 
   const transformToBlackTop = () => {
+    // Main colored container:
     selectElement('.color-container').style.backgroundColor = 'black';
+
+    // Home intro changes:
     selectElement('#intro-js-change').style.color = boneColor;
     selectElement('.lets-talk-btn-js-change').classList.remove('lets-talk-btn');
     selectElement('.lets-talk-btn-js-change').classList.add('lets-talk-btn-change');
-
+        
+    // Home IT Services:
     selectElement('#about-it').style.color = boneColor;
-    
-    selectElement('.web-dev-btn-js').classList.remove('home-button');
-    selectElement('.web-dev-btn-js').classList.add('home-button-change');
+    selectElementAll('.home-btn').forEach(btn => btn.style.color = boneColor);
 
 
+    selectElement('#home-title').style.color = boneColor;
+    selectElement('#home-description').style.color = boneColor;
+    selectElement('#home-step').style.color = boneColor;
+
+
+    // Home About us changes:
     selectElement('#about-us-js-change').style.color = boneColor;
     selectElement('#swiper-about').style.color = boneColor;
     selectElement('.ceo').style.backgroundColor = 'black';
     selectElement('.cto').style.backgroundColor = 'black';
-    selectElement('#home-title').style.color = boneColor;
-    selectElement('#home-description').style.color = boneColor;
-    selectElement('#home-step').style.color = boneColor;
-    // selectElement('.what-we-do-btn-js-change').classList.remove('what-we-do-btn');
-    // selectElement('.what-we-do-btn-js-change').classList.add('what-we-do-btn-change');
   }
 
   const transformToWhiteTop = () => {
+    // Main colored container:
     selectElement('.color-container').style.backgroundColor = 'white';
+
+    // Home intro changes:
     selectElement('#intro-js-change').style.color = charcoalColor;
     selectElement('.lets-talk-btn-js-change').classList.add('lets-talk-btn');
     selectElement('.lets-talk-btn-js-change').classList.remove('lets-talk-btn-change');
-
+    
+    // Home IT Services:
     selectElement('#about-it').style.color = charcoalColor;
+    selectElementAll('.home-btn').forEach(btn => btn.style.color = charcoalColor);
+    
 
-    selectElement('.web-dev-btn-js').classList.remove('home-button-change');
-    selectElement('.web-dev-btn-js').classList.add('home-button');
+   
+    selectElement('#home-title').style.color = charcoalColor;
+    selectElement('#home-description').style.color = charcoalColor;
+    selectElement('#home-step').style.color = charcoalColor;
 
+
+    // Home About us changes:
     selectElement('#about-us-js-change').style.color = charcoalColor;
     selectElement('#swiper-about').style.color = charcoalColor;
     selectElement('.ceo').style.backgroundColor = 'white';
     selectElement('.cto').style.backgroundColor = 'white';
-    selectElement('#home-title').style.color = charcoalColor;
-    selectElement('#home-description').style.color = charcoalColor;
-    selectElement('#home-step').style.color = charcoalColor;
-    // selectElement('.what-we-do-btn-js-change').classList.remove('what-we-do-btn-change');
-    // selectElement('.what-we-do-btn-js-change').classList.add('what-we-do-btn');
   }
 
   const transformToBlackBottom = () => {
