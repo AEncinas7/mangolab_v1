@@ -78,7 +78,7 @@
   }
 }
 
-#about-it-colored-bar {
+#about-it-mangobar {
   position: absolute;
   height: 150px;
   width: 5.5px;
@@ -91,6 +91,7 @@
   margin-left: 100px; 
 }
 
+.swiper-pagination-about-it { display: none; }
 
 // About us section:
 .about-us-container {
@@ -230,11 +231,51 @@
 }
 
 #services .bottom-side {
+  margin-top: 51px;
   display: flex;
-  
+  justify-content: center;
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+ .right-side {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 50%;
+   .it-services-head {
+     margin-bottom: 18px;
+   }
+  h3 {
+    font-family: "Montserrat", "sans-serif";
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .it-services-btn {
+    display: flex;
+    justify-content: center;
+  }
+ }
 }
 
+#it-services-mangobar {
+  height: 5px;
+  width: 36px;
+  background: linear-gradient(to right, $green, $orange);
+  left: 0;
+  border-radius: 5px;
+  margin-top: 5px;
+}
 
+#it-services-description{ 
+  font-family: "Lato";
+  font-size: 14px;
+  text-align: justify; 
+  letter-spacing: 0.05em;
+  margin-bottom: 25px;
+}
 //-----------------------------
 
 // Main container section (fixed color section):

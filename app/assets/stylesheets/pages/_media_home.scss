@@ -17,6 +17,55 @@
       font-size: 36px;
     }
   }
+  // ---------------------
+
+  // About it section:
+  #about-it {
+    height: 360px;
+    justify-content: center;
+  }
+  #about-it .left-side {
+    width: 338px;
+    height: 290px;
+    margin-left: 14px;
+    // position: relative;
+    // .swiper-wrapper {
+    //   height: 160px;
+    // }
+  }
+
+  #about-it-mangobar {
+    width: 4px;
+    height: 120px;
+    left: 230px;
+  }
+
+  #about-it .swiper-slide {
+    width: 338px!important;
+  }
+ 
+  .about {
+    h1 {
+      font-size: 20px;
+    }
+  }
+  
+  .swiper-pagination-about-it { 
+    display: block;
+    .swiper-pagination-bullet {
+      background-color : $bone;
+      margin: 0 5px; 
+      width: 7.5px;
+      height: 7.5px;
+    }
+    .swiper-pagination-bullet-active {
+      width: 11px;
+      height: 11px;
+    }
+  }
+
+  #about-it .right-side { display: none;  }
+  
 
   // About us section:
 

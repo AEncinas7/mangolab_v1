@@ -20,7 +20,7 @@ const initHomeChangeColorOnScroll = () => {
     // Home IT Services:
     selectElement('#about-it').style.color = boneColor;
     selectElementAll('.home-btn').forEach(btn => btn.style.color = boneColor);
-
+    selectElement('#it-services-text').style.color = boneColor;
 
     selectElement('#home-title').style.color = boneColor;
     selectElement('#home-description').style.color = boneColor;
@@ -46,7 +46,8 @@ const initHomeChangeColorOnScroll = () => {
     // Home IT Services:
     selectElement('#about-it').style.color = charcoalColor;
     selectElementAll('.home-btn').forEach(btn => btn.style.color = charcoalColor);
-    
+    selectElement('#it-services-text').style.color = charcoalColor;
+
 
    
     selectElement('#home-title').style.color = charcoalColor;
