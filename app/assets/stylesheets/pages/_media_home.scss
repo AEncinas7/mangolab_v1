@@ -2,21 +2,31 @@
   .home-container {
     width: 812px;
   }
+  
+  #intro { 
+    height: 760px;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  #intro .intro-icon {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    img { width: 350px; }
+  }
+  
+  #intro .left-side {
+    width: 358px;
+    margin-top: 180px;
+  }
 
   #intro .right-side {
-    img {
-      width: 400px;
-    }
+    display: none;
   }
 
-  #intro .left-side {
-    h3{
-      font-size: 18px;
-    }
-    h1{
-      font-size: 36px;
-    }
-  }
+
   // ---------------------
 
   // About it section:
@@ -159,20 +169,9 @@
     .home-container {
       width: 654px;
     }
-
-    #intro .left-side {
-      h3{
-        font-size: 16px;
-      }
-      h1{
-        font-size: 32px;
-      }
-    }
     
-    #intro .right-side {
-      img {
-        width: 300px;
-      }
+    #intro .intro-icon {
+      img { width: 300px; }
     }
     
     // About us section:
@@ -233,21 +232,6 @@
   @media screen and (max-width: 654px) {
     .home-container {
       width: 530px;
-    }
-
-    #intro .left-side {
-      h3{
-        font-size: 14px;
-      }
-      h1{
-        font-size: 28px;
-      }
-    }
-    
-    #intro .right-side {
-      img {
-        width: 270px;
-      }
     }
 
     // About us carousel
@@ -350,13 +334,12 @@
       .counter-text { font-size: 18px; }
     }
   }
-
+  
+  // SmartPhone Sizes:
   @media screen and (max-width: 530px) {
     .home-container {
       width: 420px;
     }
-
-    #intro { height: 796px; }
 
     #intro .left-side {
       h3{
@@ -367,10 +350,9 @@
       }
     }
     
-    #intro .right-side {
-      img {
-        display: none;
-      }
+    #intro .intro-icon {
+      bottom: 80px;
+      img { width: 200px; }
     }
 
     // About swiper:
