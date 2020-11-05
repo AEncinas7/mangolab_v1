@@ -1,0 +1,72 @@
+.home-container {
+  width: 654px;
+}
+
+#intro .intro-icon {
+  img { width: 300px; }
+}
+// --------------------
+
+// About it section:
+#about-it-mangobar {
+  left: 151px;
+}
+// -----------------
+
+// IT Services Section:
+
+
+
+// About us section:
+
+#about-us .right-side {
+  display: none;
+}
+
+#about-us .left-side {
+  width: 100%;
+  .ceo, .cto {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .details{
+    width: 104px;
+  }
+  p {
+    width: 505px;
+  }
+}
+
+// Services Section:
+
+#services {
+  flex-direction: column;
+  justify-content: center;
+}
+
+// Process Section:
+#process {
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+#process .right-side {
+  width: 400px;
+  padding: 0;
+}
+
+#process .left-side {
+  padding: 0;
+}
+
+// Verticals section:
+#verticals {
+  flex-direction: column;
+  justify-content: center;
+}
+
+// MVP Section:
+#next-mvp { width: 654px; }
+.mvp-icon {
+  display: none;
+}

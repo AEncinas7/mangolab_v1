@@ -28,6 +28,7 @@ import { initLogoScrolling } from '../components/logo_scrolling';
 import { initTimer } from '../components/timer';
 import { initSwiper } from '../plugins/swiper';
 import { initItServicesClick } from '../components/it_services_click';
+import { initItServicesClickV2 } from '../components/it_services_click_v2';
 
 document.addEventListener('turbolinks:load', () => {
   initNavbarDropdown();
@@ -38,4 +39,5 @@ document.addEventListener('turbolinks:load', () => {
   initTimer();
   initSwiper();
   initItServicesClick();
+  initItServicesClickV2();
 });

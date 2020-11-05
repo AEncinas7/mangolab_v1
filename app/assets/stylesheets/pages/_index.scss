@@ -3,7 +3,9 @@
 @import "services";
 @import "process";
 @import "verticals";
-@import "media_home";
-@import "media_services";
 @import "construction";
+
+// Medias section:
 @import "media_construction";
+@import "medias_home/media_home";
+@import "medias_services/media_services";

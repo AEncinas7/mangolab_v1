@@ -1,0 +1,109 @@
+.home-container {
+  width: 530px;
+}
+// -----------------
+
+// About it section:
+#about-it-mangobar {
+  left: 89px;
+}
+
+// About us carousel
+  
+#about-us {
+  height: 696px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#about-us .left-side {
+  // margin-top: 103px;
+  .ceo, .cto {
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    margin: 0;
+  }
+  .details{
+    margin-bottom: 38px;
+    img {
+      width: 80px;
+    }
+    .name {
+      font-size: 14px;
+    }
+    .role {
+      font-size: 12px;
+    }
+  }
+  .about-details {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+  }
+  p {
+    font-size: 14px;
+  } 
+}
+#about-us-js-change {
+  display: none!important;
+}
+
+#swiper-about {
+  display: block!important;
+}
+
+.swiper-about .swiper-pagination {
+  display: block;
+  position: static;
+  .swiper-pagination-bullet {
+    background-color: $bone;
+    width: 11px;
+    height: 11px;
+    margin: 0 5px;
+  }
+  .swiper-pagination-bullet-active {
+    width: 15px;
+    height: 15px;
+  }
+}
+// ----------------------
+
+// Services Section:
+#services .right-side {
+  p {
+    display: none;
+  }
+}
+
+// Process Section:
+#process .left-side {
+  p {
+    display: none;
+  }
+}
+
+// Verticals Section:
+#verticals .right-side {
+  width: 530px;
+  p {
+    display: none;
+  }
+}
+
+// MVP Section:
+#next-mvp { 
+  width: 530px; 
+  h1, #timer { font-size: 34px; }
+  .timer-text {
+    h3 {
+      font-size: 12px;
+    }
+  }
+  #day { left: 8.5%; }
+  #hours { left: 32.5%; }
+  #minute { right: 30%; }
+  #second { right: 5%; }
+  .counter-text { font-size: 18px; }
+}

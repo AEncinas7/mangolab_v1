@@ -1,0 +1,199 @@
+.home-container {
+    width: 812px;
+  }
+  
+#intro { 
+  height: 760px;
+  align-items: flex-start;
+  position: relative;
+}
+
+#intro .intro-icon {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  img { width: 350px; }
+}
+
+#intro .left-side {
+  width: 358px;
+  margin-top: 180px;
+}
+
+#intro .right-side {
+  display: none;
+}
+// ---------------------
+
+// About it section:
+#about-it {
+  height: 360px;
+  justify-content: center;
+}
+#about-it .left-side {
+  width: 338px;
+  height: 290px;
+  margin-left: 14px;
+  // position: relative;
+  // .swiper-wrapper {
+  //   height: 160px;
+  // }
+}
+
+#about-it-mangobar {
+  width: 4px;
+  height: 120px;
+  left: 230px;
+}
+
+#about-it .swiper-slide {
+  width: 338px!important;
+}
+
+.about {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+.swiper-pagination-about-it { 
+  display: block;
+  .swiper-pagination-bullet {
+    background-color : $bone;
+    margin: 0 5px; 
+    width: 7.5px;
+    height: 7.5px;
+  }
+  .swiper-pagination-bullet-active {
+    width: 11px;
+    height: 11px;
+  }
+}
+
+.swiper-about-it .swiper-pagination-about-it { left: -14px; }
+
+#about-it .right-side { display: none;  }
+// ----------------------
+
+
+// IT Services Section:
+#services { height: 1146px; }
+
+#services .top-side {
+  flex-direction: column-reverse;
+  align-items: center;
+  img {
+    width: 450px;
+  }
+}
+
+#home-title {
+  text-align: center; 
+}
+
+#services .bottom-side { display: none; }
+
+#services .bottom-side-v2 { 
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom-container .section {
+  width: 280px;
+  height: 44px;
+  margin-bottom: 38px;
+}
+
+.section .section-description {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+}
+
+.show-description {
+  height: 156px;
+}
+
+.home-btn {
+  margin-bottom: 25px;
+}
+
+.home-small-btn {
+  font-size: 10px;
+  width: 105px;
+  height: 26px;
+}
+
+
+// About us section:
+#about-us .left-side {
+  width: 412px;
+  .ceo, .cto {
+    width: 100%;
+  }
+  .details {
+    align-items: center;
+    img {
+      width: 70px;
+    }
+    .name {
+      font-size: 12px;
+    }
+    .role {
+      font-size: 10px;
+    }
+  }
+  p {
+    font-size: 12px;
+    width: 266px;
+  }
+}
+
+#about-us .right-side {
+  img {
+    width: 300px;
+  }
+}
+
+// Home Steps:
+
+#home-step {
+  font-size: 14px;
+}
+
+#home-step:after {
+  width: 30px;
+}
+
+// Process section:
+#process .right-side {
+  img {
+    width: 400px;
+  }
+}
+
+// Verticals section:
+#verticals .left-side {
+  img {
+    width: 400px;
+  }
+}
+
+// MVP section:
+#next-mvp {
+  width: 812px;  
+  .mvp-icon { top: 176px; }
+  h1, #timer { font-size: 40px; }
+  .timer-text {
+    h3 {
+      font-size: 14px;
+    }
+  }
+  #day { left: 7.5%; }
+  #hours { left: 32%; }
+  #minute { right: 29%; }
+  #second { right: 3.5%; }
+  .counter-text { font-size: 20px; } 
+}

@@ -1,0 +1,101 @@
+.home-container {
+      width: 420px;
+    }
+
+    #intro .left-side {
+      h3{
+        font-size: 20px;
+      }
+      h1{
+        font-size: 40px;
+      }
+    }
+    
+    #intro .intro-icon {
+      bottom: 80px;
+      img { width: 200px; }
+    }
+    // -----------------
+
+    // About it section:
+    #about-it .left-side {
+      width: 240px;
+      margin-left: 15px;
+    }
+   
+    #about-it .swiper-slide {
+      width: 240px!important;
+    }
+
+    #about-it-mangobar { left: 83px; }
+
+    .swiper-about-it .swiper-pagination-about-it { left: -15px; }
+    // ---------------------
+
+    // About swiper:
+    #about-us { height: 696px; }
+    #swiper-about {
+      .about-details {
+        p {
+          width: 420px;
+        }
+      }
+    }
+    // ---------------
+
+    // Services Section:
+    #services { height: 696px; }
+    #services .right-side {
+      width: 420px;
+    }
+    
+    // Process Section:
+    #process { height: 696px; }
+    #process .left-side {
+      width: 420px;
+    }
+  
+    // Home Steps:
+      #home-step {
+        font-size: 16px;
+      }
+
+    #home-step:after {
+      width: 35px;
+    }
+
+    #home-title {
+      font-size: 32px;
+    }
+
+    // Verticals Section:
+    #verticals { height: 696px; }
+    #verticals .right-side {
+      width: 420px;
+    }
+
+    // MVP Section:
+    #next-mvp { 
+      height: 696px;
+      width: 420px; 
+      .mvp-icon {
+        display: block;
+        top: 546px;
+        img {
+          width: 100px;
+        }
+      }
+      h1, #timer { font-size: 36px; text-align: center; }
+      .counter h1 { margin-bottom: 52px; }
+      .timer-text {
+        margin-bottom: 42px;
+        h3 {
+          font-size: 14px;
+        }
+      }
+      #day { left: 7.5%; }
+      #hours { left: 32%; }
+      #minute { right: 29%; }
+      #second { right: 3.5%; }
+      .counter-text { font-size: 18px; }
+    }
