@@ -92,6 +92,10 @@
   text-align: center; 
 }
 
+#home-description {
+  text-align: center;
+}
+
 #services .bottom-side { display: none; }
 
 #services .bottom-side-v2 { 
@@ -100,24 +104,40 @@
   align-items: center;
 }
 
-.bottom-container .section {
+.section {
   width: 280px;
   height: 44px;
-  margin-bottom: 38px;
-}
-
-.section .section-description {
-  height: 0px;
+  margin-bottom: 20px;
   overflow: hidden;
   transition: height 0.5s ease-in-out;
 }
+.section .home-btn-v2 { margin-bottom: 25px; }
 
-.show-description {
-  height: 156px;
+.show-description-web-dev {
+  height: 226px;
 }
 
-.home-btn {
-  margin-bottom: 25px;
+.show-description-mobile-app {
+  height: 289px;
+}
+
+.show-description-prod-design {
+  height: 310px;
+}
+
+.show-description-analytics-seo {
+  height: 226px;
+}
+
+.show-description-api-dev {
+  height: 268px;
+}
+
+
+
+.it-services-btn {
+  display:flex;
+  justify-content: center;
 }
 
 .home-small-btn {
@@ -128,6 +148,7 @@
 
 
 // About us section:
+.about-us-container #about-us { width: 812px; }
 #about-us .left-side {
   width: 412px;
   .ceo, .cto {

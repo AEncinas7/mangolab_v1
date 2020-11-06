@@ -9,7 +9,8 @@
 }
 
 // About us carousel
-  
+.about-us-container #about-us { width: 530px; }
+
 #about-us {
   height: 696px;
   flex-direction: column;
@@ -17,7 +18,6 @@
 }
 
 #about-us .left-side {
-  // margin-top: 103px;
   .ceo, .cto {
     flex-direction: column;
     align-items: center;
@@ -70,12 +70,6 @@
 }
 // ----------------------
 
-// Services Section:
-#services .right-side {
-  p {
-    display: none;
-  }
-}
 
 // Process Section:
 #process .left-side {

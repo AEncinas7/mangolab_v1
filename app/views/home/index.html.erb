@@ -120,7 +120,7 @@
 
      <div class="bottom-side-v2">
       <div class="bottom-container">
-        <div class="section">
+        <div class="section show-description" style="height: 244px;">
           <%= link_to "#", class: "home-btn-v2 home-btn-black-v2 active-v2" do %>
             <span class="btn-title">WEB DEVELOPMENT</span>
             <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg" }, alt: "mango chevron" %>
@@ -197,50 +197,60 @@
 
 </div>
 
-<div class="process-container">
-  <div class="home-container" id="process">
-    <div class="left-side">
-      <h2 id="home-step">PROCESS</h2>
-      <h1 id="home-title">Set, Ready & Launch</h1>
-      <p id="home-description">
-        As any new project in life, planning is key. That’s why we’ve tailored our process to reduce risk during each step of the development and
-        minimize the time wasted to focus primarly on accelerating the launch of your product. We get to know your vision, help craft your product,
-        and bring it to market fast, keeping you appraised of every step along the way. Teamwork is everything.
-      </p>
-      <%= link_to process_index_path, class: "view-our-process-btn-js-change view-our-process-btn" do %>
-        <span>
-          VIEW OUR PROCESS 
-          <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg" }, alt: "mango chevron" %>
-        </span>
-      <% end %>
-    </div>
-    <div class="right-side">
-      <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Process_dhzknq.webp", class: "lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Process_dhzknq.webp" }, alt: "Set, Ready and Launch image" %>
+
+<%# Home Process & Industries section: %>
+<div class="process-industries-container">
+  <div class="process-container">
+    <div class="home-container" id="process">
+      <div class="left-side">
+        <div class="process-industries-head">
+          <h2 id="home-step">PROCESS</h2>
+          <div class="pro-ind-mangobar"></div>
+        </div>
+        <h1 id="home-title">Bringing Structure Scheme</h1>
+        <p id="home-description">
+          As any new project in life, planning is key. That’s why we’ve tailored our process to reduce risk during each step of the development and
+          minimize the time wasted to focus primarly on accelerating the launch of your product. We get to know your vision, help craft your product,
+          and bring it to market fast, keeping you appraised of every step along the way. Teamwork is everything.
+        </p>
+        <%= link_to process_index_path, class: "view-our-process-btn-js-change view-our-process-btn" do %>
+          <span>
+            VIEW OUR PROCESS 
+            <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg" }, alt: "mango chevron" %>
+          </span>
+        <% end %>
+      </div>
+      <div class="right-side">
+        <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Process_dhzknq.webp", class: "lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Process_dhzknq.webp" }, alt: "Set, Ready and Launch image" %>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="verticals-container">
-  <div class="home-container" id="verticals">
-    <div class="left-side">
-      <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Verticals_a7abq9.webp", class: "lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Verticals_a7abq9.webp" }, alt: "Our expertise image" %>
-    </div>
-    <div class="right-side" id="verticals-js-change">
-      <h2 id="home-step">VERTICALS</h2>
-      <h1 id="home-title">Our expertise</h1>
-      <p id="home-description">
-        A deep understanding of your industry is required to create successful products. What sets us apart is our ability to learn and understand the
-        ecosystem in which you operate. Our team has developed products, services and organizations in a variety of industries, from healthcare and sports to nonprofit.
-         Whether you are launching a networking app, a patient portal, or a SaaS platform, we will bring your product to market, fast.
-      </p>
-      <%= link_to verticals_path, class: "learn-more-btn-js-change learn-more-btn" do %>
-        <span>
-          LEARN MORE 
-          <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg" }, alt: "mango chevron" %>
-        </span>
-      <% end %>
-    </div>
-  </div>  
+  <div class="verticals-container">
+    <div class="home-container" id="verticals">
+      <div class="left-side">
+        <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Verticals_a7abq9.webp", class: "lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Verticals_a7abq9.webp" }, alt: "Our expertise image" %>
+      </div>
+      <div class="right-side" id="verticals-js-change">
+        <div class="process-industries-head">
+          <h2 id="home-step">INDUSTRIES</h2>
+          <div class="pro-ind-mangobar"></div>
+        </div>
+        <h1 id="home-title">Covering Business Needs</h1>
+        <p id="home-description">
+          A deep understanding of your industry is required to create successful products. What sets us apart is our ability to learn and understand the
+          ecosystem in which you operate. Our team has developed products, services and organizations in a variety of industries, from healthcare and sports to nonprofit.
+          Whether you are launching a networking app, a patient portal, or a SaaS platform, we will bring your product to market, fast.
+        </p>
+        <%= link_to verticals_path, class: "discover-more-btn-js-change discover-more-btn" do %>
+          <span>
+            DISCOVER MORE 
+            <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg" }, alt: "mango chevron" %>
+          </span>
+        <% end %>
+      </div>
+    </div>  
+  </div>
 </div>
 
 <%# Home about us section: %>

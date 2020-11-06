@@ -3,10 +3,6 @@
   transition: background-color 1.5s;
 }
 
-.verticals-container {
-  width: 100%;
-  transition: background-color 1.5s;
-}
 
 .home-container {
   width: 1040px;
@@ -69,7 +65,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // padding-left: 17px;
   
   h1{
     font-family: "Montserrat", "sans-serif";
@@ -94,77 +89,6 @@
 
 .swiper-pagination-about-it { display: none; }
 
-// About us section:
-.about-us-container {
-  width: 100%;
-  #about-us { 
-    width: 1040px;
-    height: 900px; 
-  }
-}
-
-#about-us .left-side {
-  color: $charcoal;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  .ceo, .cto {
-    display: flex;
-    width: 508px;
-    height: 292px;
-    transition: background-color 1.5s;
-  }
-  .details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    img {
-      width: 80px;
-      margin-bottom: 10px;
-    }
-    .name {
-      font-family: "Montserrat", "sans-serif";
-      font-size: 14px;
-    }
-    .role {
-      font-family: "Lato";
-      font-weight: 550;
-      font-size: 12px;
-    }
-  }
-  p {
-    font-family: "Lato";
-    font-size: 14px;
-  }
-  .about-details {
-    font-family: "Lato";
-    font-weight: 550;
-    letter-spacing: 0.05rem;
-    margin-left: 42px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
-#about-us .right-side {
-  margin-right: 44px;
-  img {
-    margin-bottom: 56px;
-  }
-}
-
-// About us carousel
-
-#swiper-about {
-  display: none!important;
-}
-
-.swiper-pagination-about {
-  display: none;
-}
-// --------------------
 
 // Home steps:
 
@@ -176,22 +100,20 @@
   margin-bottom: 15px;
 }
 
-#home-step:after {
-  content: "";
-  left: 0;
-  bottom: -4px;
-  width: 35px;
-  position: absolute;
-  border-bottom: 4px solid;
-  border-image: linear-gradient(to right, $green, $orange) 1;
-}
+// #home-step:after {
+//   content: "";
+//   left: 0;
+//   bottom: -4px;
+//   width: 35px;
+//   position: absolute;
+//   border-bottom: 4px solid;
+//   border-image: linear-gradient(to right, $green, $orange) 1;
+// }
 
 #home-title {
   font-family: "Montserrat", "sans-serif";
   font-size: 32px;
   font-weight: 600;
-  // padding-right: 70px;
-  // margin-bottom: 37px;
 }
 
 #home-description {
@@ -199,8 +121,7 @@
   font-size: 14px;
   text-align: justify; 
   letter-spacing: 0.05em;
-  // padding-right: 38px;
-  // margin-bottom: 40px;
+  line-height: 24px;
 }
 
 // ------------------
@@ -281,24 +202,144 @@
 }
 //-----------------------------
 
-// Main container section (fixed color section):
+// Process & Industries Section:
+.process-industries-container { 
+  width: 100%; 
+  height: 1070px;
+}
 
 .process-container {
   background-color: white;
   width: 100%;
+  height: 50%;
 }
 
 #process {
-  height: 700px;
+  height: 100%;
+  align-items: flex-start;
+  padding-top: 120px;
   .left-side {
-    width: 519px;
-    padding-right: 22px;
-  }
-  .right-side {
-    width: 517px;
-    padding-right: 25px;
+    width: 521px;
+    height: 314px;
+    padding-right: 18px;
+    .process-industries-head { margin-bottom: 20px; }
+    h2 { margin-bottom: 5px; }
+    h1 { margin-bottom: 34px; }
+    p { 
+      line-height: 24px; 
+      margin-bottom: 30px;
+    }
   }
 }
+
+.verticals-container {
+  width: 100%;
+  height: 50%;
+  transition: background-color 1.5s;
+}
+
+#verticals {
+  height: 100%;
+  align-items: flex-start;
+  padding-top: 100px;
+  .right-side {
+    width: 513px;
+    height: 315px;
+    .process-industries-head { margin-bottom: 20px; }
+    h2 { margin-bottom: 5px; }
+    h1 { margin-bottom: 34px; }
+    p { 
+      line-height: 24px; 
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+
+
+.pro-ind-mangobar {
+  height: 5px;
+  width: 36px;
+  background: linear-gradient(to right, $green, $orange);
+  left: 0;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+// -------------------
+
+
+// About us section:
+.about-us-container {
+  width: 100%;
+  #about-us { 
+    width: 1040px;
+    height: 900px; 
+  }
+}
+
+#about-us .left-side {
+  color: $charcoal;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  .ceo, .cto {
+    display: flex;
+    width: 508px;
+    height: 292px;
+    transition: background-color 1.5s;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+    .name {
+      font-family: "Montserrat", "sans-serif";
+      font-size: 14px;
+    }
+    .role {
+      font-family: "Lato";
+      font-weight: 550;
+      font-size: 12px;
+    }
+  }
+  p {
+    font-family: "Lato";
+    font-size: 14px;
+  }
+  .about-details {
+    font-family: "Lato";
+    font-weight: 550;
+    letter-spacing: 0.05rem;
+    margin-left: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+#about-us .right-side {
+  margin-right: 44px;
+  img {
+    margin-bottom: 56px;
+  }
+}
+
+// About us carousel
+
+#swiper-about {
+  display: none!important;
+}
+
+.swiper-pagination-about {
+  display: none;
+}
+// --------------------
 
 // Next MVP section:
 

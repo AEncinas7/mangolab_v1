@@ -32,7 +32,37 @@
     .swiper-about-it .swiper-pagination-about-it { left: -15px; }
     // ---------------------
 
+    // IT Services section:
+    #services { height: 1146px; }
+
+    #services .top-side {
+      width: 420px;
+      .left-side, .right-side{
+        width: 100%; 
+      }
+    }
+    #services .top-side .left-side { 
+      text-align: center; 
+      margin-bottom: 20px;
+    }
+    #services .top-side .left-side img {
+      margin-right: 0;
+      width: 350px;
+    }
+
+    #services .right-side {
+      h1 {
+        margin-bottom: 28px;
+      }
+      p {
+        margin-bottom: 32px;
+      }
+    }
+
+
     // About swiper:
+    .about-us-container #about-us { width: 420px; }
+
     #about-us { height: 696px; }
     #swiper-about {
       .about-details {
@@ -43,11 +73,7 @@
     }
     // ---------------
 
-    // Services Section:
-    #services { height: 696px; }
-    #services .right-side {
-      width: 420px;
-    }
+     
     
     // Process Section:
     #process { height: 696px; }

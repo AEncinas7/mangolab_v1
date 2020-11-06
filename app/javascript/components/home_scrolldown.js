@@ -67,32 +67,102 @@ const initHomeChangeColorOnScroll = () => {
   const transformToBlackBottom = () => {
     selectElement('.verticals-container').style.backgroundColor = 'black';
     selectElement('#verticals-js-change').style.color = boneColor;
-    selectElement('.learn-more-btn-js-change').classList.remove('learn-more-btn');
-    selectElement('.learn-more-btn-js-change').classList.add('learn-more-btn-change');
+    selectElement('.discover-more-btn-js-change').classList.remove('discover-more-btn');
+    selectElement('.discover-more-btn-js-change').classList.add('discover-more-btn-change');
   }
 
   const transformToWhiteBottom = () => {
     selectElement('.verticals-container').style.backgroundColor = 'white';
     selectElement('#verticals-js-change').style.color = charcoalColor;
-    selectElement('.learn-more-btn-js-change').classList.remove('learn-more-btn-change');
-    selectElement('.learn-more-btn-js-change').classList.add('learn-more-btn');
+    selectElement('.discover-more-btn-js-change').classList.remove('discover-more-btn-change');
+    selectElement('.discover-more-btn-js-change').classList.add('discover-more-btn');
   }
 
   window.addEventListener('scroll', () => {
     if (window.location.pathname === rootPath || window.location.pathname === homePath) {
-      // 1032.5
-      if (window.scrollY >= 206.5 && window.scrollY <= 1676) {
-        transformToBlackTop();       
-      } else {
-        transformToWhiteTop(); 
+    
+      if (window.screen.width > 1039) {
+
+        if (window.scrollY >= 206.5 && window.scrollY <= 1886) {
+          transformToBlackTop();       
+        } else {
+          transformToWhiteTop(); 
+        }
+    
+
+        if (window.scrollY >= 2927) {
+          transformToBlackBottom();
+        }
+         else {
+          transformToWhiteBottom();
+        }
+
+      } else if (window.screen.width > 654) {
+
+        if (window.scrollY >= 206.5 && window.scrollY <= 2107) {
+          transformToBlackTop();
+        } else {
+          transformToWhiteTop();
+        }
+
+
+        if (window.scrollY >= 2927) {
+          transformToBlackBottom();
+        }
+        else {
+          transformToWhiteBottom();
+        }
+
+      } else if (window.screen.width > 530) {
+
+        if (window.scrollY >= 206.5 && window.scrollY <= 2097) {
+          transformToBlackTop();
+        } else {
+          transformToWhiteTop();
+        }
+
+
+        if (window.scrollY >= 2927) {
+          transformToBlackBottom();
+        }
+        else {
+          transformToWhiteBottom();
+        }
+
+      } else if (window.screen.width > 420) {
+
+        if (window.scrollY >= 206.5 && window.scrollY <= 2124) {
+          transformToBlackTop();
+        } else {
+          transformToWhiteTop();
+        }
+
+
+        if (window.scrollY >= 2927) {
+          transformToBlackBottom();
+        }
+        else {
+          transformToWhiteBottom();
+        }
+
+      } else if (window.screen.width > 364) {
+
+        if (window.scrollY >= 206.5 && window.scrollY <= 2135) {
+          transformToBlackTop();
+        } else {
+          transformToWhiteTop();
+        }
+
+
+        if (window.scrollY >= 2927) {
+          transformToBlackBottom();
+        }
+        else {
+          transformToWhiteBottom();
+        }
+
       }
-  
-      if (window.scrollY >= 2927) {
-        transformToBlackBottom();
-      }
-       else {
-        transformToWhiteBottom();
-      }
+
     }
   });
 
