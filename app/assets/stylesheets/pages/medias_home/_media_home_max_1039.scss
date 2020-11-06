@@ -133,8 +133,6 @@
   height: 268px;
 }
 
-
-
 .it-services-btn {
   display:flex;
   justify-content: center;
@@ -145,6 +143,40 @@
   width: 105px;
   height: 26px;
 }
+// -------------------------
+
+// Process & Industries section:
+.process-industries-container { height: 1440px; }
+
+.process-industries-head { display: none; }
+
+#home-title { display: none; }
+
+#home-title-v2 { 
+  display: block; 
+  font-family: "Montserrat", "sans-serif";
+  font-size: 32px;
+  font-weight: 600;
+}
+
+#process {
+  flex-direction: column-reverse;
+}
+
+#process .right-side {
+  img {
+    width: 400px;
+  }
+}
+
+#verticals { flex-direction: column; }
+
+#verticals .left-side {
+  img {
+    width: 400px;
+  }
+}
+// -------------------
 
 
 // About us section:
@@ -188,19 +220,7 @@
   width: 30px;
 }
 
-// Process section:
-#process .right-side {
-  img {
-    width: 400px;
-  }
-}
 
-// Verticals section:
-#verticals .left-side {
-  img {
-    width: 400px;
-  }
-}
 
 // MVP section:
 #next-mvp {
