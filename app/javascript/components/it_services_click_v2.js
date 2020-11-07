@@ -7,7 +7,6 @@ const initItServicesClickV2 = () => {
     btn.addEventListener('click', (event) => {
       event.preventDefault();
       const textHeight = btn.nextElementSibling.offsetHeight;
-      console.log(textHeight);
 
       if (btn.classList != 'home-btn-black-v2') {
         selectElement('.home-btn-v2.home-btn-black-v2.active-v2').classList.remove('home-btn-black-v2', 'active-v2');
