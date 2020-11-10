@@ -6,24 +6,25 @@ const initSwiper = () => {
   new swiper('.swiper-about-it', {
 
     spaceBetween: 10,
-    // loop: true,
-    // speed: 1500,
-    // simulateTouch: true,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+    loop: true,
+    speed: 1500,
+    simulateTouch: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
 
     breakpoints: {
       // when window width is >= 1039px
       1039: {
-        loop: true,
-        speed: 1500,
-        simulateTouch: true,
+        // loop: true,
+        // speed: 1500,
+        // simulateTouch: true,
         autoplay: {
           delay: 3000,
           disableOnInteraction: false,
-        },
+        }
+  
       },
        // when window width is >= 364px
       364: {
@@ -31,6 +32,7 @@ const initSwiper = () => {
           el: '.swiper-pagination-about-it',
           type: 'bullets',
         },
+        autoplay: false,
       }
     }
 

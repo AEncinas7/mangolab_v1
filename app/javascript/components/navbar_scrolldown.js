@@ -9,7 +9,7 @@ const initNavbarScrolldown = () => {
   const homePath = '/home';
   const servicesPath = '/services';
   const processPath = '/process';
-  const verticalsPath = '/verticals';
+  const industriesPath = '/industries';
 
   const navbarBlackColor = () => {
     selectElement('.menu-bar').style.backgroundColor = 'black';
@@ -53,7 +53,7 @@ const initNavbarScrolldown = () => {
     navbarBlackColor();
   }
   
-  if (window.location.pathname === processPath || window.location.pathname === verticalsPath) {
+  if (window.location.pathname === processPath || window.location.pathname === industriesPath) {
     navbarBlackColor();
   }
 
@@ -141,7 +141,7 @@ const initNavbarScrolldown = () => {
           navbarBlackColor();
         }
       
-    } else if (window.location.pathname === processPath || window.location.pathname === verticalsPath) {
+    } else if (window.location.pathname === processPath || window.location.pathname === industriesPath) {
         navbarBlackColor();
     }
 
