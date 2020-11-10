@@ -12,6 +12,7 @@
 
 
 <div class="color-container">
+  <%# Home Intro section: %>
   <div class="home-container" id="intro">
     <div class="left-side" id="intro-js-change">
       <h3>We are MangoLab.io</h3>
@@ -26,41 +27,245 @@
     <div class="right-side">
       <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Intro_slkigt.webp", class: "lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Intro_slkigt.webp" }, alt: "Home Page Intro" %>
     </div>
+    <div class="intro-icon">
+      <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1604354843/MangoLab.io%20-%20Website/Home_Page/WebP/home_about_it_bicrpc.webp" %>
+    </div>
   </div>
 
-  <div class="home-container" id="about-us">
-    <div class="left-side " id="about-us-js-change">
-      <div class="ceo">
-        <div class="details">
-          <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/Marcos_Bitmoji_a66awd.webp", class: "lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/Marcos_Bitmoji_a66awd.webp" }, alt: "CTO bitmoji image" %>
-          <h2 class="name">Marcos Gutierrez</h2>
-          <h3 class="role">CEO</h3>
+
+  <%# Home about it section: %>
+  <div class="home-container" id="about-it">
+    <div id="about-it-mangobar"></div>
+    <div class="left-side swiper-container swiper-about-it">
+      <div class="swiper-wrapper">
+        <div class="about swiper-slide">
+          <h1 class="about-card">For entrepreneurs and startups who want to revolutionize their industries.</h1>
         </div>
-        <div class="about-details">
-          <p>Hi!👋 For the past 9 years, I’ve been helping entrepreneurs, startups and companies build and shape products & services that can have a human impact and change positively user’s behaviour.</p>
-          <p>Thanks to an in-depth knowledge in psychology, specially through digital behaviour, I’ve built the right recipes that aim to drastically change the way we live.</p>
-          <p>My mission now is to share and help entrepreneurs scale their businesses through a personalized process on their journey to success.</p>
+        <div class="about swiper-slide">
+          <h1 class="about-card">For corporate and nonprofit healthcare providers who want to improve access to medical care.</h1>
+        </div>
+        <div class="about swiper-slide">
+          <h1 class="about-card">For nonprofit and charity organizations who want to fulfill their mission.</h1>
+        </div>
+        <div class="about swiper-slide">
+          <h1 class="about-card">For coaches and gym owners who want to make the community become more active.</h1>
+        </div>
+        <div class="about swiper-slide">
+          <h1 class="about-card">For financial advisors and accountants who want to growth their businesses.</h1>
+        </div>
+        <div class="about swiper-slide">
+          <h1 class="about-card">For schools and teachers who want to make knowledge more accessible. </h1>
         </div>
       </div>
-      <div class="cto">
-        <div class="details">
-          <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/Alex_Bitmoji_jldlxq.webp", class: "lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/Alex_Bitmoji_jldlxq.webp" }, alt: "CTO bitmoji image" %>
-          <h2 class="name">Alexander Encinas</h2>
-          <h3 class="role">CTO</h3>
+      <div class="swiper-pagination swiper-pagination-about-it"></div>
+    </div>
+    <div class="right-side">
+      <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1604354843/MangoLab.io%20-%20Website/Home_Page/WebP/home_about_it_bicrpc.webp" %>
+    </div>
+  </div>
+
+ 
+  <%# Home IT services section: %>
+  <div class="home-container" id="services">
+    <div class="top-side">
+      <div class="left-side">
+        <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Services_dpcang.webp", class: "lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Services_dpcang.webp" }, alt: "Strategy, Design and Development image" %>
+      </div>
+      <div class="right-side">
+        <%# <h2 id="home-step">SERVICES</h2> %>
+        <h1 id="home-title">Providing IT Services</h1>
+        <p id="home-description">
+          MangoLab turns your business idea into a launched product by guiding your journey through a personalized and custom software development to meet your goals.
+          We strategize, design and build platforms and digital experiences that connect to the heart of your organization to scale onto the next level.
+          Whether you require an E-Commerce, SaaS platform or a Web/Native Application to engage with your audience — we’ve got you covered.
+        </p>
+      </div>
+    </div>
+    <div class="bottom-side">
+      <div class="left-side">
+        <%= link_to "#", class: "home-btn home-btn-black active" do %>
+          <span class="btn-title">WEB DEVELOPMENT</span>
+          <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg" }, alt: "mango chevron" %>
+        <% end %>
+        <%= link_to "#", class: "home-btn" do %>
+          <span class="btn-title">MOBILE APPLICATION</span>
+          <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg" }, alt: "mango chevron" %>
+        <% end %>
+        <%= link_to "#", class: "home-btn" do %>
+          <span class="btn-title">PRODUCT DESIGN</span>
+          <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg" }, alt: "mango chevron" %>
+        <% end %>
+        <%= link_to "#", class: "home-btn" do %>
+          <span class="btn-title">ANALYTICS & SEO</span>
+          <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg" }, alt: "mango chevron" %>
+        <% end %>
+        <%= link_to "#", class: "home-btn" do %>
+          <span class="btn-title">API DEVELOPMENT</span>
+          <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg" }, alt: "mango chevron" %>
+        <% end %>
+      </div>
+      <div class="right-side" id="it-services-text">
+        <div class="it-services-head">
+          <h3 id="it-services-title">Website Development</h3>
+          <div id="it-services-mangobar"></div>
         </div>
-        <div class="about-details">
-          <p>✌️Hey! I’ve been managing and developing projects and products for the past decade. The ability to combine multidisciplinary skills through project engineering and software development helped me to deeply understand two things for a business to be successful:</p>
-          <p>1. The People (Employees & Customers)<br>2. The Product (Process & Quality)</p> 
-          <p>I am ready now to craft, build and revamp products that will deliver meaningful experiences at scale.</p>
+        <p id="it-services-description">Dive into our deep web development expertise to build any web solution your company feels the need to receive: from single-page websites to online stores and including everything in between.</p>
+        <div class="it-services-btn">
+          <%= link_to services_path, class: "home-small-btn" do %>
+            <span>LEARN MORE</span>
+          <% end %>
         </div>
       </div>
     </div>
-    <%# About us swiper %>
-    <div class="left-side swiper-container swiper-about" id="swiper-about">
-      <div class="swiper-wrapper">
-        <div class="ceo swiper-slide">
+
+     <div class="bottom-side-v2">
+      <div class="bottom-container">
+        <div class="section show-description" style="height: 244px;">
+          <%= link_to "#", class: "home-btn-v2 home-btn-black-v2 active-v2" do %>
+            <span class="btn-title">WEB DEVELOPMENT</span>
+            <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg" }, alt: "mango chevron" %>
+          <% end %>
+          <div class="section-description">
+            <p id="it-services-description">Dive into our deep web development expertise to build any web solution your company feels the need to receive: from single-page websites to online stores and including everything in between.</p>
+            <div class="it-services-btn">
+              <%= link_to "#", class: "home-small-btn" do %>
+                <span>LEARN MORE</span>
+              <% end %>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <%= link_to "#", class: "home-btn-v2" do %>
+           <span class="btn-title">MOBILE APPLICATION</span>
+           <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg" }, alt: "mango chevron" %>
+          <% end %>
+          <div class="section-description">
+            <p id="it-services-description">Get the best experience for your users utilizing the expertise of MangoLab mobile software developers. We build Android, iOS, and PWA solutions to meet all the modern requirements and utilize best practices in terms of functionality, security, scalability and other parameters.</p>
+            <div class="it-services-btn">
+              <%= link_to "#", class: "home-small-btn" do %>
+                <span>LEARN MORE</span>
+              <% end %>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <%= link_to "#", class: "home-btn-v2" do %>
+            <span class="btn-title">PRODUCT DESIGN</span>
+            <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg" }, alt: "mango chevron" %>
+          <% end %>
+          <div class="section-description">
+            <p id="it-services-description">MangoLab delivers value to customers by focusing on their needs and understanding their behavior. We believe that the most effective way to introduce technology into an organization is by delivering a user-friendly interface and delivering outstanding user experience. Naturally, those are the services we focus on.</p>
+            <div class="it-services-btn">
+              <%= link_to "#", class: "home-small-btn" do %>
+                <span>LEARN MORE</span>
+              <% end %>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <%= link_to "#", class: "home-btn-v2" do %>
+            <span class="btn-title">ANALYTICS & SEO</span>
+            <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg" }, alt: "mango chevron" %>
+          <% end %>
+          <div class="section-description">
+            <p id="it-services-description">Develop sustainable strategies to bring more traffic, boost sales and increase sign ups thanks to our team of experts that will optimize each part of your product.</p>
+            <div class="it-services-btn">
+              <%= link_to "#", class: "home-small-btn" do %>
+                <span>LEARN MORE</span>
+              <% end %>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <%= link_to "#", class: "home-btn-v2" do %>
+            <span class="btn-title">API DEVELOPMENT</span>
+            <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg" }, alt: "mango chevron" %>
+          <% end %>
+          <div class="section-description">
+            <p id="it-services-description">At MangoLab, we deliver web API development services, enabling smooth integration with your existing apps. According to your specific requirements, we will help you to streamline business processes, while leveraging reliable and secure development approaches.</p>
+            <div class="it-services-btn">
+              <%= link_to "#", class: "home-small-btn" do %>
+                <span>LEARN MORE</span>
+              <% end %>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<%# Home Process & Industries section: %>
+<div class="process-industries-container">
+  <div class="process-container">
+    <div class="home-container" id="process">
+      <div class="left-side">
+        <div class="process-industries-head">
+          <h2 id="home-step">PROCESS</h2>
+          <div class="pro-ind-mangobar"></div>
+        </div>
+        <h1 class="none-title" id="home-title">Bringing Structure Scheme</h1>
+        <p id="home-description">
+          As any new project in life, planning is key. That’s why we’ve tailored our process to reduce risk during each step of the development and
+          minimize the time wasted to focus primarly on accelerating the launch of your product. We get to know your vision, help craft your product,
+          and bring it to market fast, keeping you appraised of every step along the way. Teamwork is everything.
+        </p>
+        <%= link_to process_index_path, class: "view-our-process-btn-js-change view-our-process-btn" do %>
+          <span>
+            VIEW OUR PROCESS 
+            <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg" }, alt: "mango chevron" %>
+          </span>
+        <% end %>
+      </div>
+      <div class="right-side">
+        <h1 id="home-title-v2">Bringing Structure Scheme</h1>
+        <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Process_dhzknq.webp", class: "lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Process_dhzknq.webp" }, alt: "Set, Ready and Launch image" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="industries-container">
+    <div class="home-container" id="industries">
+      <div class="left-side">
+        <h1 class="industries-title" id="home-title-v2">Covering Business Needs</h1>
+        <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Verticals_a7abq9.webp", class: "lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Verticals_a7abq9.webp" }, alt: "Our expertise image" %>
+      </div>
+      <div class="right-side" id="industries-js-change">
+        <div class="process-industries-head">
+          <h2 id="home-step">INDUSTRIES</h2>
+          <div class="pro-ind-mangobar"></div>
+        </div>
+        <h1 class="none-title" id="home-title">Covering Business Needs</h1>
+        <p class="industries-description" id="home-description">
+          A deep understanding of your industry is required to create successful products. What sets us apart is our ability to learn and understand the
+          ecosystem in which you operate. Our team has developed products, services and organizations in a variety of industries, from healthcare and sports to nonprofit.
+          Whether you are launching a networking app, a patient portal, or a SaaS platform, we will bring your product to market, fast.
+        </p>
+        <%= link_to verticals_path, class: "discover-more-btn-js-change discover-more-btn" do %>
+          <span>
+            DISCOVER MORE 
+            <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg" }, alt: "mango chevron" %>
+          </span>
+        <% end %>
+      </div>
+    </div>  
+  </div>
+</div>
+
+<%# Home about us section: %>
+<div class="about-us-container">
+  <div class="home-container" id="about-us">
+    <div class="about-us-head">
+      <h1> About us</h1>
+    </div>
+    <div class="about-us-body">
+      <div class="left-side " id="about-us-js-change">
+        <div class="ceo">
           <div class="details">
-            <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/Marcos_Bitmoji_a66awd.webp", class: "lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/Marcos_Bitmoji_a66awd.webp" }, alt: "CEO bitmoji image" %>
+            <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/Marcos_Bitmoji_a66awd.webp", class: "lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/Marcos_Bitmoji_a66awd.webp" }, alt: "CTO bitmoji image" %>
             <h2 class="name">Marcos Gutierrez</h2>
             <h3 class="role">CEO</h3>
           </div>
@@ -70,7 +275,7 @@
             <p>My mission now is to share and help entrepreneurs scale their businesses through a personalized process on their journey to success.</p>
           </div>
         </div>
-        <div class="cto swiper-slide">
+        <div class="cto">
           <div class="details">
             <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/Alex_Bitmoji_jldlxq.webp", class: "lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/Alex_Bitmoji_jldlxq.webp" }, alt: "CTO bitmoji image" %>
             <h2 class="name">Alexander Encinas</h2>
@@ -83,82 +288,44 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="swiper-pagination swiper-pagination-about"></div>
-  <%# -------------- %>
-    <div class="right-side">
-      <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Bio_ns0v7y.webp", class: "lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Bio_ns0v7y.webp" }, alt: "CEO and CTO bitmoji image" %>
-    </div>
-  </div>
-  
-  <div class="home-container" id="services">
-    <div class="left-side">
-      <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Services_dpcang.webp", class: "lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Services_dpcang.webp" }, alt: "Strategy, Design and Development image" %>
-    </div>
-    <div class="right-side">
-      <h2 id="home-step">SERVICES</h2>
-      <h1 id="home-title">Strategy, Design & Development</h1>
-      <p id="home-description">
-        MangoLab turns your business idea into a launched product by guiding your journey through a personalized and custom software development to meet your goals.
-        We strategize, design and build platforms and digital experiences that connect to the heart of your organization to scale onto the next level.
-        Whether you require an E-Commerce, SaaS platform or a Web/Native Application to engage with your audience — we’ve got you covered.
-      </p>
-      <%= link_to services_path, class: "what-we-do-btn-js-change what-we-do-btn" do %>
-        <span>
-          WHAT WE DO 
-          <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg" }, alt: "mango chevron" %>
-        </span>
-      <% end %>
-    </div>
-  </div>
-
-</div>
-
-<div class="process-container">
-  <div class="home-container" id="process">
-    <div class="left-side">
-      <h2 id="home-step">PROCESS</h2>
-      <h1 id="home-title">Set, Ready & Launch</h1>
-      <p id="home-description">
-        As any new project in life, planning is key. That’s why we’ve tailored our process to reduce risk during each step of the development and
-        minimize the time wasted to focus primarly on accelerating the launch of your product. We get to know your vision, help craft your product,
-        and bring it to market fast, keeping you appraised of every step along the way. Teamwork is everything.
-      </p>
-      <%= link_to process_index_path, class: "view-our-process-btn-js-change view-our-process-btn" do %>
-        <span>
-          VIEW OUR PROCESS 
-          <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg" }, alt: "mango chevron" %>
-        </span>
-      <% end %>
-    </div>
-    <div class="right-side">
-      <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Process_dhzknq.webp", class: "lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Process_dhzknq.webp" }, alt: "Set, Ready and Launch image" %>
+      <%# About us swiper %>
+      <div class="left-side swiper-container swiper-about" id="swiper-about">
+        <div class="swiper-wrapper">
+          <div class="ceo swiper-slide">
+            <div class="details">
+              <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/Marcos_Bitmoji_a66awd.webp", class: "lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/Marcos_Bitmoji_a66awd.webp" }, alt: "CEO bitmoji image" %>
+              <h2 class="name">Marcos Gutierrez</h2>
+              <h3 class="role">CEO</h3>
+            </div>
+            <div class="about-details">
+              <p>Hi!👋 For the past 9 years, I’ve been helping entrepreneurs, startups and companies build and shape products & services that can have a human impact and change positively user’s behaviour.</p>
+              <p>Thanks to an in-depth knowledge in psychology, specially through digital behaviour, I’ve built the right recipes that aim to drastically change the way we live.</p>
+              <p>My mission now is to share and help entrepreneurs scale their businesses through a personalized process on their journey to success.</p>
+            </div>
+          </div>
+          <div class="cto swiper-slide">
+            <div class="details">
+              <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/Alex_Bitmoji_jldlxq.webp", class: "lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/Alex_Bitmoji_jldlxq.webp" }, alt: "CTO bitmoji image" %>
+              <h2 class="name">Alexander Encinas</h2>
+              <h3 class="role">CTO</h3>
+            </div>
+            <div class="about-details">
+              <p>✌️Hey! I’ve been managing and developing projects and products for the past decade. The ability to combine multidisciplinary skills through project engineering and software development helped me to deeply understand two things for a business to be successful:</p>
+              <p>1. The People (Employees & Customers)<br>2. The Product (Process & Quality)</p> 
+              <p>I am ready now to craft, build and revamp products that will deliver meaningful experiences at scale.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination swiper-pagination-about"></div>
+      <%# -------------- %>
+      <div class="right-side">
+        <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Bio_ns0v7y.webp", class: "lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Bio_ns0v7y.webp" }, alt: "CEO and CTO bitmoji image" %>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="verticals-container">
-  <div class="home-container" id="verticals">
-    <div class="left-side">
-      <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Verticals_a7abq9.webp", class: "lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1604076284/MangoLab.io%20-%20Website/Home_Page/WebP/HomePage_Verticals_a7abq9.webp" }, alt: "Our expertise image" %>
-    </div>
-    <div class="right-side" id="verticals-js-change">
-      <h2 id="home-step">VERTICALS</h2>
-      <h1 id="home-title">Our expertise</h1>
-      <p id="home-description">
-        A deep understanding of your industry is required to create successful products. What sets us apart is our ability to learn and understand the
-        ecosystem in which you operate. Our team has developed products, services and organizations in a variety of industries, from healthcare and sports to nonprofit.
-         Whether you are launching a networking app, a patient portal, or a SaaS platform, we will bring your product to market, fast.
-      </p>
-      <%= link_to verticals_path, class: "learn-more-btn-js-change learn-more-btn" do %>
-        <span>
-          LEARN MORE 
-          <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right lazyload", data: { src: "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg" }, alt: "mango chevron" %>
-        </span>
-      <% end %>
-    </div>
-  </div>  
-</div>
 
 <div class="mvp-container">
   <div id="next-mvp">

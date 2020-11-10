@@ -3,10 +3,6 @@
   transition: background-color 1.5s;
 }
 
-.verticals-container {
-  width: 100%;
-  transition: background-color 1.5s;
-}
 
 .home-container {
   width: 1040px;
@@ -19,6 +15,7 @@
 
 #intro {
   font-family: "Montserrat", "sans-serif";
+  .intro-icon { display: none; }
 }
 
 #intro .left-side {
@@ -44,17 +41,263 @@
   align-items: flex-start;
   justify-content: center;
 }
+// --------------------
+
+// About it section:
+#about-it {
+  height: 400px;
+  justify-content: initial;
+  position: relative;
+}
+
+#about-it .left-side {
+  width: 518px;
+  height: 150px;
+  margin-left: 25.5px;
+  margin-right: 0;
+}
+
+#about-it .swiper-slide {
+  width: 518px!important;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  h1{
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 600;
+    font-size: 28px;
+    margin: 0;
+  }
+}
+
+#about-it-mangobar {
+  position: absolute;
+  height: 150px;
+  width: 5.5px;
+  background: linear-gradient(to top, $green, $orange);
+  left: 0;
+  border-radius: 5px;
+}
+
+#about-it .right-side {
+  margin-left: 100px; 
+}
+
+.swiper-pagination-about-it { display: none; }
+
+
+// Home steps:
+
+#home-step {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 16px;
+  font-weight: 650;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+#home-title {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 32px;
+  font-weight: 600;
+}
+
+#home-description {
+  font-family: "Lato";
+  font-size: 14px;
+  text-align: justify; 
+  letter-spacing: 0.05em;
+  line-height: 24px;
+}
+// ------------------
+
+
+// IT Services section:
+
+#services {
+  height: 900px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#services .top-side {
+  display: flex;
+  justify-content: center;
+  .left-side {
+    img { margin-right: 20px; }
+  }
+  .right-side {
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  h1 {
+    margin-bottom: 18px;
+  }
+}
+
+#services .bottom-side-v2 { display: none; }
+
+#services .bottom-side {
+  margin-top: 51px;
+  display: flex;
+  justify-content: center;
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+ .right-side {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 50%;
+   .it-services-head {
+     margin-bottom: 18px;
+   }
+  h3 {
+    font-family: "Montserrat", "sans-serif";
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .it-services-btn {
+    display: flex;
+    justify-content: center;
+  }
+ }
+}
+
+#it-services-mangobar {
+  height: 5px;
+  width: 36px;
+  background: linear-gradient(to right, $green, $orange);
+  left: 0;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#it-services-description{ 
+  font-family: "Lato";
+  font-size: 14px;
+  text-align: justify; 
+  letter-spacing: 0.05em;
+  margin-bottom: 25px;
+}
+//-----------------------------
+
+// Process & Industries Section:
+#home-title-v2 { display: none; }
+.process-industries-container { 
+  width: 100%; 
+  height: 1070px;
+}
+
+.process-container {
+  transition: background-color 1.5s;
+  width: 100%;
+  height: 50%;
+}
+
+#process {
+  height: 100%;
+  align-items: flex-start;
+  padding-top: 120px;
+  .left-side {
+    width: 521px;
+    height: 314px;
+    padding-right: 18px;
+    .process-industries-head { margin-bottom: 20px; }
+    h2 { margin-bottom: 5px; }
+    h1 { margin-bottom: 34px; }
+    p { 
+      line-height: 24px; 
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.industries-container {
+  width: 100%;
+  height: 50%;
+  transition: background-color 1.5s;
+}
+
+#industries {
+  height: 100%;
+  align-items: flex-start;
+  padding-top: 100px;
+  .right-side {
+    width: 513px;
+    height: 315px;
+    .process-industries-head { margin-bottom: 20px; }
+    h2 { margin-bottom: 5px; }
+    h1 { margin-bottom: 34px; }
+    p { 
+      line-height: 24px; 
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+.pro-ind-mangobar {
+  height: 5px;
+  width: 36px;
+  background: linear-gradient(to right, $green, $orange);
+  left: 0;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+// -------------------
+
 
 // About us section:
+.about-us-container {
+  width: 100%;
+  transition: background-color 1.5s;
+  #about-us { 
+    width: 1040px;
+    height: 900px; 
+  }
+}
+
+#about-us {
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-head { 
+  margin-bottom: 75px;
+  h1 {
+    font-family: "Montserrat", "sans-serif";
+    font-size: 32px;
+  } 
+}
+
+.about-us-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 #about-us .left-side {
   color: $charcoal;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  width: 518px;
   .ceo, .cto {
     display: flex;
-    width: 508px;
+    // width: 508px;
     height: 292px;
     transition: background-color 1.5s;
   }
@@ -70,6 +313,7 @@
     .name {
       font-family: "Montserrat", "sans-serif";
       font-size: 14px;
+      font-weight: bold;
     }
     .role {
       font-family: "Lato";
@@ -85,6 +329,7 @@
     font-family: "Lato";
     font-weight: 550;
     letter-spacing: 0.05rem;
+    line-height: 20px;
     margin-left: 42px;
     display: flex;
     flex-direction: column;
@@ -96,6 +341,7 @@
   margin-right: 44px;
   img {
     margin-bottom: 56px;
+    margin-left: 76px;
   }
 }
 
@@ -109,74 +355,6 @@
   display: none;
 }
 // --------------------
-
-// Home steps:
-
-#home-step {
-  font-family: "Montserrat", "sans-serif";
-  font-size: 16px;
-  font-weight: 650;
-  position: relative;
-  margin-bottom: 15px;
-}
-
-#home-step:after {
-  content: "";
-  left: 0;
-  bottom: -4px;
-  width: 35px;
-  position: absolute;
-  border-bottom: 4px solid;
-  border-image: linear-gradient(to right, $green, $orange) 1;
-}
-
-#home-title {
-  font-size: 32px;
-  font-weight: 600;
-  padding-right: 70px;
-  margin-bottom: 37px;
-}
-
-#home-description {
-  font-family: "Lato";
-  font-size: 14px;
-  padding-right: 38px;
-  margin-bottom: 40px;
-}
-
-// ------------------
-
-
-// Services section:
-
-#services {
-  height: 700px;
-  .right-side {
-    width: 520px;
-  }
-}
-
-
-//-----------------------------
-
-// Main container section (fixed color section):
-
-.process-container {
-  background-color: white;
-  width: 100%;
-}
-
-#process {
-  height: 700px;
-  .left-side {
-    width: 519px;
-    padding-right: 22px;
-  }
-  .right-side {
-    width: 517px;
-    padding-right: 25px;
-  }
-}
 
 // Next MVP section:
 

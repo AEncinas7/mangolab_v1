@@ -1,0 +1,125 @@
+// IT Services buttons:
+
+// Button Specs:
+.home-btn {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 16px;
+  font-weight: bold;
+  width: 280px;
+  height: 44px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none!important;
+  color: $bone;
+  &:hover {
+    color: $bone;
+  }
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 240px;
+  }
+  .chevron-right {
+    transform: rotate(90deg);
+    transition: .6s;
+    width: 12px;
+    height: 25px;
+    margin-right: 25px;
+  }
+}
+
+.home-btn:hover {
+  border-radius: 12px;
+  border: 3px solid transparent;
+  background-image: linear-gradient(black, black), radial-gradient(circle at left, $green, $orange);
+  background-origin: border-box;
+  background-clip: content-box, border-box; 
+  .chevron-right {
+    transform: rotate(0deg);
+  }
+}
+
+.home-btn-black {
+  border-radius: 12px;
+  border: 3px solid transparent;
+  background-image: linear-gradient(black, black), radial-gradient(circle at left, $green, $orange);
+  background-origin: border-box;
+  background-clip: content-box, border-box; 
+}
+
+.active {
+  .chevron-right { transform: rotate(0deg); }
+}
+
+// --------------------------------------------
+
+.home-small-btn {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  width: 120px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none!important;
+  color: $bone;
+  &:hover {
+    color: $bone;
+  }
+  border-radius: 12px;
+  border: 1.5px solid transparent;
+  background-image: linear-gradient(black, black), radial-gradient(circle at left, $green, $orange);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+// ------------------------------------------------
+
+.home-btn-v2 {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 16px;
+  font-weight: bold;
+  width: 280px;
+  height: 44px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none!important;
+  color: $bone;
+  &:hover {
+    color: $bone;
+  }
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 240px;
+  }
+  .chevron-right {
+    transform: rotate(90deg);
+    transition: .6s;
+    width: 12px;
+    height: 25px;
+    margin-right: 25px;
+  }
+}
+
+.home-btn-black-v2 {
+  border-radius: 12px;
+  border: 3px solid transparent;
+  background-image: linear-gradient(black, black), radial-gradient(circle at left, $green, $orange);
+  background-origin: border-box;
+  background-clip: content-box, border-box; 
+}
+
+.active-v2 {
+  .chevron-right { transform: rotate(-90deg); }
+}

@@ -3,6 +3,39 @@ import swiper from 'swiper/bundle';
 const initSwiper = () => {
   
   // Intro About us section:
+  new swiper('.swiper-about-it', {
+
+    spaceBetween: 10,
+    // loop: true,
+    // speed: 1500,
+    // simulateTouch: true,
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
+
+    breakpoints: {
+      // when window width is >= 1039px
+      1039: {
+        loop: true,
+        speed: 1500,
+        simulateTouch: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      },
+       // when window width is >= 364px
+      364: {
+        pagination: {
+          el: '.swiper-pagination-about-it',
+          type: 'bullets',
+        },
+      }
+    }
+
+  })
+
   new swiper('.swiper-about', {
 
     pagination: {
@@ -56,7 +89,7 @@ const initSwiper = () => {
         spaceBetween: 70,
         // initialSlide: 1
       },
-      // when window width is >= 812px
+      // when window width is >= 364px
       364: {
         slidesPerView: 1,
         // spaceBetween: 10

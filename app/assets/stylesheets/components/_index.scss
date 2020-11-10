@@ -2,8 +2,13 @@
 @import "alert";
 @import "avatar";
 @import "navbar";
-@import "media_navbar";
-@import "buttons";
 @import "footer";
+
+// Buttons:
+@import "buttons";
+@import "buttons_it_services";
+
+//Medias:
+@import "media_navbar";
 @import "media_buttons";
 @import "media_footer";

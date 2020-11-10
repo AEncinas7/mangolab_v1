@@ -1,0 +1,42 @@
+.home-container {
+  width: 530px;
+}
+// -----------------
+
+// About it section:
+#about-it-mangobar {
+  left: 89px;
+}
+// --------------------
+
+
+// Process & Industries section:
+// --------------------
+
+
+// About us carousel
+.about-us-container #about-us { width: 530px; }
+
+#about-us .about-us-body {
+  .left-side {
+    height: 440px;
+  }
+}
+// ----------------------
+
+
+// MVP Section:
+#next-mvp { 
+  width: 530px; 
+  h1, #timer { font-size: 34px; }
+  .timer-text {
+    h3 {
+      font-size: 12px;
+    }
+  }
+  #day { left: 8.5%; }
+  #hours { left: 32.5%; }
+  #minute { right: 30%; }
+  #second { right: 5%; }
+  .counter-text { font-size: 18px; }
+}

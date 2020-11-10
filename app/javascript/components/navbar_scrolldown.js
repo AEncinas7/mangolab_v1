@@ -60,15 +60,72 @@ const initNavbarScrolldown = () => {
   window.addEventListener('scroll', () => {   
 
     if (window.location.pathname === rootPath || window.location.pathname === homePath) {
-
-      if (window.scrollY >= 206.5 && window.scrollY <= 1032.5) {
-        navbarBlackColor();
-      } else {
-        navbarWhiteColor();
-      }
   
-      if (window.scrollY >= 2927) {
-        navbarBlackColor();
+      if (window.screen.width > 1039) {
+
+        if (window.scrollY >= 206.5 && window.scrollY <= 1886) {
+          navbarBlackColor();
+        } else {
+          navbarWhiteColor();
+        }
+
+    
+        if (window.scrollY >= 2760) {
+          navbarBlackColor();
+        }
+
+      } else if (window.screen.width > 654) {
+
+        if (window.scrollY >= 206.5 && window.scrollY <= 2107) {
+          navbarBlackColor();
+        } else {
+          navbarWhiteColor();
+        }
+
+
+        if (window.scrollY >= 2927) {
+          navbarBlackColor();
+        }
+
+      } else if (window.screen.width > 530) {
+
+        if (window.scrollY >= 206.5 && window.scrollY <= 2097) {
+          navbarBlackColor();
+        } else {
+          navbarWhiteColor();
+        }
+
+
+        if (window.scrollY >= 2927) {
+          navbarBlackColor();
+        }
+
+      } else if (window.screen.width > 420) {
+
+        if (window.scrollY >= 206.5 && window.scrollY <= 2124) {
+          navbarBlackColor();
+        } else {
+          navbarWhiteColor();
+        }
+
+
+        if (window.scrollY >= 2927) {
+          navbarBlackColor();
+        }
+
+      } else if (window.screen.width > 364) {
+
+        if (window.scrollY >= 206.5 && window.scrollY <= 2135) {
+          navbarBlackColor();
+        } else {
+          navbarWhiteColor();
+        }
+
+
+        if (window.scrollY >= 2927) {
+          navbarBlackColor();
+        }
+
       }
 
     } else if (window.location.pathname === servicesPath) {
@@ -79,6 +136,7 @@ const initNavbarScrolldown = () => {
           navbarWhiteColor();
         }
         
+
         if (window.scrollY >= 3504) {
           navbarBlackColor();
         }
