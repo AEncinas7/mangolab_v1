@@ -12,14 +12,13 @@
     #services .top-side {
       width: 364px;
     }
-    // About swiper:
+
+    // About-us swiper:
     .about-us-container #about-us { width: 364px; }
 
-    #swiper-about {
-      .about-details {
-        p {
-          width: 364px;
-        }
+    #about-us .about-us-body {
+      .left-side {
+        height: 480px;
       }
     }
     // ---------------

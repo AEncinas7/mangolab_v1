@@ -70,7 +70,7 @@ const initNavbarScrolldown = () => {
         }
 
     
-        if (window.scrollY >= 2927) {
+        if (window.scrollY >= 2760) {
           navbarBlackColor();
         }
 

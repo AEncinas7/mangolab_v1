@@ -100,16 +100,6 @@
   margin-bottom: 15px;
 }
 
-// #home-step:after {
-//   content: "";
-//   left: 0;
-//   bottom: -4px;
-//   width: 35px;
-//   position: absolute;
-//   border-bottom: 4px solid;
-//   border-image: linear-gradient(to right, $green, $orange) 1;
-// }
-
 #home-title {
   font-family: "Montserrat", "sans-serif";
   font-size: 32px;
@@ -209,7 +199,7 @@
 }
 
 .process-container {
-  background-color: white;
+  transition: background-color 1.5s;
   width: 100%;
   height: 50%;
 }
@@ -232,13 +222,13 @@
   }
 }
 
-.verticals-container {
+.industries-container {
   width: 100%;
   height: 50%;
   transition: background-color 1.5s;
 }
 
-#verticals {
+#industries {
   height: 100%;
   align-items: flex-start;
   padding-top: 100px;
@@ -256,8 +246,6 @@
 }
 
 
-
-
 .pro-ind-mangobar {
   height: 5px;
   width: 36px;
@@ -272,10 +260,33 @@
 // About us section:
 .about-us-container {
   width: 100%;
+  transition: background-color 1.5s;
   #about-us { 
     width: 1040px;
     height: 900px; 
   }
+}
+
+#about-us {
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-head { 
+  margin-bottom: 75px;
+  h1 {
+    font-family: "Montserrat", "sans-serif";
+    font-size: 32px;
+  } 
+}
+
+.about-us-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #about-us .left-side {
@@ -283,9 +294,10 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  width: 518px;
   .ceo, .cto {
     display: flex;
-    width: 508px;
+    // width: 508px;
     height: 292px;
     transition: background-color 1.5s;
   }
@@ -301,6 +313,7 @@
     .name {
       font-family: "Montserrat", "sans-serif";
       font-size: 14px;
+      font-weight: bold;
     }
     .role {
       font-family: "Lato";
@@ -316,6 +329,7 @@
     font-family: "Lato";
     font-weight: 550;
     letter-spacing: 0.05rem;
+    line-height: 20px;
     margin-left: 42px;
     display: flex;
     flex-direction: column;
@@ -327,6 +341,7 @@
   margin-right: 44px;
   img {
     margin-bottom: 56px;
+    margin-left: 76px;
   }
 }
 

@@ -83,7 +83,7 @@
   font-size: 16px;
   font-weight: 650;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   text-decoration: none!important;
   color: $charcoal;
@@ -99,6 +99,7 @@
     justify-content: center;
     height: 44px;
     width: 221px;
+    margin-right: 25px;
   }
   .chevron-right {
     margin-left: 36px;
@@ -140,6 +141,7 @@
     justify-content: center;
     height: 44px;
     width: 221px;
+    margin-right: 25px;
   }
   .chevron-right {
     margin-left: 36px;
@@ -163,7 +165,7 @@
   font-size: 16px;
   font-weight: 650;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   text-decoration: none!important;
   color: $charcoal;
@@ -179,6 +181,7 @@
     justify-content: center;
     height: 44px;
     width: 208px;
+    margin-right: 25px;
   }
   .chevron-right {
     margin-left: 52px;
@@ -200,7 +203,7 @@
   font-size: 16px;
   font-weight: 650;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   text-decoration: none!important;
   color: $bone;
@@ -220,6 +223,7 @@
     justify-content: center;
     height: 44px;
     width: 208px;
+    margin-right: 25px;
   }
   .chevron-right {
     margin-left: 52px;

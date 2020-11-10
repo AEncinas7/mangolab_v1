@@ -6,7 +6,6 @@
   position: fixed;
   display: flex;
   align-items: center;
-  // background-color: white;
   transition: background-color 1.5s;
   a {
     text-decoration: none;
@@ -32,7 +31,6 @@
   position: absolute;
 
   top: 40%;
-  // transition: top .1s;
   transform: translateY(-50%);
   right: 0px;
   cursor: pointer;
@@ -63,34 +61,39 @@
   align-items: center;
 }
 
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 26px;
+}
+
 .btn-white {
   font-family: "Montserrat", "sans-serif";
   color: $charcoal;
   font-size: 14px;
   font-weight: 650;
-  margin-right: 50px;
-  position: relative;
+  // margin-right: 50px;
   &:hover {
     color: $charcoal;
   }
 }
 
-.btn-white:after {
-  content: "";
-  left: 0;
-  bottom: -5px;
+#navbar-mangobar {
+  // position: absolute;
   width: 24px;
-  position: absolute;
-  border-bottom: 4px solid;
-  border-image: linear-gradient(to right, $green, $orange) 1;
-  transition: .35s;
+  height: 4px;
+  background: linear-gradient(to right, $green, $orange);
+  border-radius: 5px;
+  transition: width .35s;
 }
 
-.btn-white:hover:after {
-  width: 48px;
+.nav-item:hover {
+  #navbar-mangobar { width: 48px; }
 }
 
 .free-consultation-btn {
+  margin-left: 8px;
   a {
     color: white;
   }
