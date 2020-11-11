@@ -118,7 +118,7 @@ const initHomeChangeColorOnScroll = () => {
           transformToWhiteBottom();
         }
 
-      } else if (window.screen.width > 654) {
+      } else if (window.screen.width <= 1039 && window.screen.width > 654) {
 
         if (window.scrollY >= 206.5 && window.scrollY <= 2107) {
           transformToBlackTop();
@@ -134,7 +134,7 @@ const initHomeChangeColorOnScroll = () => {
           transformToWhiteBottom();
         }
 
-      } else if (window.screen.width > 530) {
+      } else if (window.screen.width <= 654 && window.screen.width > 530) {
 
         if (window.scrollY >= 206.5 && window.scrollY <= 2097) {
           transformToBlackTop();
@@ -150,7 +150,7 @@ const initHomeChangeColorOnScroll = () => {
           transformToWhiteBottom();
         }
 
-      } else if (window.screen.width > 420) {
+      } else if (window.screen.width <= 530 && window.screen.width > 420) {
 
         if (window.scrollY >= 206.5 && window.scrollY <= 2124) {
           transformToBlackTop();
@@ -166,7 +166,7 @@ const initHomeChangeColorOnScroll = () => {
           transformToWhiteBottom();
         }
 
-      } else if (window.screen.width > 364) {
+      } else if (window.screen.width <= 420 && window.screen.width > 364) {
 
         if (window.scrollY >= 206.5 && window.scrollY <= 2135) {
           transformToBlackTop();
