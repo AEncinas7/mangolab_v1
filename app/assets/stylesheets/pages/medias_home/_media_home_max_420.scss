@@ -12,6 +12,11 @@
     #services .top-side {
       width: 364px;
     }
+    // -----------------
+
+    // Process and Industries section:
+    .process-industries-container { height: 1562px; }
+    // -----------------
 
     // About-us swiper:
     .about-us-container #about-us { width: 364px; }
@@ -23,28 +28,6 @@
     }
     // ---------------
 
-
-    // Process Section:
-    #process .left-side {
-      width: 100%;
-    }
-    
-    #process .right-side {
-      width: 100%;
-      text-align: center;
-      img { width: 350px;  }
-    }
-    
-    // Verticals section:
-    #verticals .right-side {
-      width: 100%;
-    }
-
-    #verticals .left-side {
-      width: 100%;
-      text-align: center;
-      img { width: 350px; }
-    }
     // MVP Section:
     #next-mvp { width: 364px; }
     .counter { 
