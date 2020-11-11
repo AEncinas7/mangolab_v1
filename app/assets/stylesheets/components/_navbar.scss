@@ -79,7 +79,7 @@
   }
 }
 
-#navbar-mangobar {
+.navbar-mangobar {
   // position: absolute;
   width: 24px;
   height: 4px;
@@ -89,7 +89,7 @@
 }
 
 .nav-item:hover {
-  #navbar-mangobar { width: 48px; }
+  .navbar-mangobar { width: 48px; }
 }
 
 .free-consultation-btn {

@@ -74,7 +74,7 @@ const initNavbarScrolldown = () => {
           navbarBlackColor();
         }
 
-      } else if (window.screen.width > 654) {
+      } else if (window.screen.width <= 1039 && window.screen.width > 654) {
 
         if (window.scrollY >= 206.5 && window.scrollY <= 2107) {
           navbarBlackColor();
@@ -87,7 +87,7 @@ const initNavbarScrolldown = () => {
           navbarBlackColor();
         }
 
-      } else if (window.screen.width > 530) {
+      } else if (window.screen.width <= 654 && window.screen.width > 530) {
 
         if (window.scrollY >= 206.5 && window.scrollY <= 2097) {
           navbarBlackColor();
@@ -100,7 +100,7 @@ const initNavbarScrolldown = () => {
           navbarBlackColor();
         }
 
-      } else if (window.screen.width > 420) {
+      } else if (window.screen.width <= 530 && window.screen.width > 420) {
 
         if (window.scrollY >= 206.5 && window.scrollY <= 2124) {
           navbarBlackColor();
@@ -113,7 +113,7 @@ const initNavbarScrolldown = () => {
           navbarBlackColor();
         }
 
-      } else if (window.screen.width > 364) {
+      } else if (window.screen.width <= 420 && window.screen.width > 364) {
 
         if (window.scrollY >= 206.5 && window.scrollY <= 2135) {
           navbarBlackColor();
