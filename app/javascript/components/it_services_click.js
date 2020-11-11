@@ -31,19 +31,19 @@ const initItServicesClick = () => {
         selectElement('.home-btn.home-btn-black.active').classList.remove('home-btn-black', 'active');
         btn.classList.add('home-btn-black', 'active'); 
 
-        if (btn.innerText == 'WEB DEVELOPMENT') {
+        if (btn.innerText === 'WEB DEVELOPMENT') {
           title.innerText = webDevTitle;
           text.innerText = webDevText;
-        } else if (btn.innerText == 'MOBILE APPLICATION') {
+        } else if (btn.innerText === 'MOBILE APPLICATION') {
           title.innerText = mobileAppTitle;
           text.innerText = mobileAppText;
-        } else if (btn.innerText == 'PRODUCT DESIGN') {
+        } else if (btn.innerText === 'PRODUCT DESIGN') {
           title.innerText = prodDesignTitle;
           text.innerText = prodDesignText;
-        } else if (btn.innerText == 'ANALYTICS & SEO') {
+        } else if (btn.innerText === 'ANALYTICS & SEO') {
           title.innerText = analyticTitle;
           text.innerText = analyticText;
-        } else if (btn.innerText == 'API DEVELOPMENT') {
+        } else if (btn.innerText === 'API DEVELOPMENT') {
           title.innerText = apiDevTitle;
           text.innerText = apiDevText;
         }
