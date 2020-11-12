@@ -1,0 +1,133 @@
+<div class="webinars-main-container">
+  <div class="webinars-container">
+    <div class="webinars-head">
+      <h1>LOREM IPSUM</h1>
+      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat accumsan nunc, ac blandit velit condimentum non. Pellentesque ut tellus finibus, semper magna sed, finibus justo.</h2>
+    </div>
+
+    <%# Desktop view %>
+    <div class="webinars-body" id="webinars-desktop">
+
+      <%= link_to "#", class: "webinar" do %>
+        <div class="webinar-img">
+          <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1605195213/MangoLab.io%20-%20Website/Webinars_Page/PNG/website_in_2020_ks2ag0.png", alt: "hands pointing on laptop" %>
+        </div>
+        <div class="webinar-body">
+          <div class="webinar-head">
+            <h3 class="webinar-category">BUSINESS</h3>
+            <div class="webinar-mangobar"></div>
+          </div>
+          <h1 class="webinar-title">Is It Necessary To Have A Website In 2020?</h1>
+          <div class="webinar-details">
+            <p>26th November 2020</p>
+            <p>12:00 PM</p>
+            <p>FREE | In English</p>
+          </div>
+        </div>
+      <% end %>
+
+      <%= link_to "#", class: "webinar webinar-center" do %>
+        <div class="webinar-img">
+          <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1605195213/MangoLab.io%20-%20Website/Webinars_Page/PNG/boost_seo_suga0j.png", alt: "glasses with tech wardware as background" %>
+        </div>
+        <div class="webinar-body">
+          <div class="webinar-head">
+            <h3 class="webinar-category">OPTIMIZATION</h3>
+            <div class="webinar-mangobar"></div>
+          </div>
+          <h1 class="webinar-title">Learn How A Website Audit Will Boost Your SEO</h1>
+          <div class="webinar-details">
+            <p>3th december 2020</p>
+            <p>12:00 PM</p>
+            <p>FREE | In English</p>
+          </div>
+        </div>     
+      <% end %>
+
+      <%= link_to "#", class: "webinar" do %>
+        <div class="webinar-img">
+          <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1605195213/MangoLab.io%20-%20Website/Webinars_Page/PNG/behavioural_design_ptgzhh.png", alt: "group brainstorming on table" %>
+        </div>
+        <div class="webinar-body">
+          <div class="webinar-head">
+            <h3 class="webinar-category">USER EXPERIENCE</h3>
+            <div class="webinar-mangobar"></div>
+          </div>
+          <h1 class="webinar-title">Improve Your Website UX With Behavioural Design</h1>
+          <div class="webinar-details">
+            <p>8th December 2020</p>
+            <p>12:00 PM</p>
+            <p>FREE | In English</p>
+          </div>
+        </div>
+      <% end %>
+
+    </div>
+    
+    <%# Tablet - Mobile view %>
+    <div class="webinars-body swiper-container swiper-webinars" id="webinars-swiper">
+
+      <div class="swiper-wrapper">
+
+        <%= link_to "#", class: "webinar swiper-slide" do %>
+          <div class="webinar-img">
+            <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1605195213/MangoLab.io%20-%20Website/Webinars_Page/PNG/website_in_2020_ks2ag0.png", alt: "hands pointing on laptop" %>
+          </div>
+          <div class="webinar-body">
+            <div class="webinar-head">
+              <h3 class="webinar-category">BUSINESS</h3>
+              <div class="webinar-mangobar"></div>
+            </div>
+            <h1 class="webinar-title">Is It Necessary To Have A Website In 2020?</h1>
+            <div class="webinar-details">
+              <p>26th November 2020</p>
+              <p>12:00 PM</p>
+              <p>FREE | In English</p>
+            </div>
+          </div>
+        <% end %>
+
+        <%= link_to "#", class: "webinar swiper-slide" do %>
+          <div class="webinar-img">
+            <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1605195213/MangoLab.io%20-%20Website/Webinars_Page/PNG/boost_seo_suga0j.png", alt: "glasses with tech wardware as background" %>
+          </div>
+          <div class="webinar-body">
+            <div class="webinar-head">
+              <h3 class="webinar-category">OPTIMIZATION</h3>
+              <div class="webinar-mangobar"></div>
+            </div>
+            <h1 class="webinar-title">Learn How A Website Audit Will Boost Your SEO</h1>
+            <div class="webinar-details">
+              <p>3th december 2020</p>
+              <p>12:00 PM</p>
+              <p>FREE | In English</p>
+            </div>
+          </div>     
+        <% end %>
+
+        <%= link_to "#", class: "webinar swiper-slide" do %>
+          <div class="webinar-img">
+            <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1605195213/MangoLab.io%20-%20Website/Webinars_Page/PNG/behavioural_design_ptgzhh.png", alt: "group brainstorming on table" %>
+          </div>
+          <div class="webinar-body">
+            <div class="webinar-head">
+              <h3 class="webinar-category">USER EXPERIENCE</h3>
+              <div class="webinar-mangobar"></div>
+            </div>
+            <h1 class="webinar-title">Improve Your Website UX With Behavioural Design</h1>
+            <div class="webinar-details">
+              <p>8th December 2020</p>
+              <p>12:00 PM</p>
+              <p>FREE | In English</p>
+            </div>
+          </div>
+        <% end %>
+
+      </div>
+
+      <div class="swiper-pagination swiper-pagination-webinars"></div>
+
+    </div>
+
+  </div>
+</div>

@@ -78,7 +78,7 @@ const initSwiper = () => {
   })
 
   // Services Tools section:
-  const tools = new swiper('.swiper-services-tools', {
+  new swiper('.swiper-services-tools', {
     loop: true,
     pagination: {
       el: '.swiper-pagination-services-tools',
@@ -98,6 +98,19 @@ const initSwiper = () => {
       }
 
     }
+  })
+
+  // Webinars Section:
+  new swiper('.swiper-webinars', {
+
+    // loop: true,
+    slidesPerView: 1,
+    initialSlide: 0,
+    pagination: {
+      el: '.swiper-pagination-webinars',
+      type: 'bullets',
+    }
+
   })
 
 }

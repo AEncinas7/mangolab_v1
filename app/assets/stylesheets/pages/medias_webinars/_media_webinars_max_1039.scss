@@ -1,0 +1,14 @@
+#webinars-desktop { display: none; }
+
+#webinars-swiper { 
+  display: block;
+  width: 364px;
+  height: 420px;
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+

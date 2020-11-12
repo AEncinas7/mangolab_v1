@@ -29,6 +29,7 @@ import { initTimer } from '../components/timer';
 import { initSwiper } from '../plugins/swiper';
 import { initItServicesClick } from '../components/it_services_click';
 import { initItServicesClickV2 } from '../components/it_services_click_v2';
+import { initFooterColor } from '../components/footer_color';
 
 document.addEventListener('turbolinks:load', () => {
   initNavbarDropdown();
@@ -40,4 +41,5 @@ document.addEventListener('turbolinks:load', () => {
   initSwiper();
   initItServicesClick();
   initItServicesClickV2();
+  initFooterColor();
 });
