@@ -105,7 +105,8 @@ const initSwiper = () => {
 
     // loop: true,
     slidesPerView: 1,
-    initialSlide: 0,
+    // initialSlide: 0,
+    spaceBetween: 12,
     pagination: {
       el: '.swiper-pagination-webinars',
       type: 'bullets',

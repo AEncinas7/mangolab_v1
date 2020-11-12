@@ -1,12 +1,19 @@
 #webinars-desktop { display: none; }
 
+.webinars-head { margin-bottom: 30px; }
+
 #webinars-swiper { 
-  display: block;
-  width: 364px;
-  height: 420px;
+  display: flex;
+  width: 300px;
+  height: 400px;
+  justify-content: center;
   .swiper-wrapper {
     display: flex;
     align-items: center;
+  }
+  .swiper-slide {
+    width: 300px!important;
+    pointer-events: none;
   }
 }
 
