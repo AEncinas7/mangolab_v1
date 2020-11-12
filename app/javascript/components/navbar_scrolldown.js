@@ -50,11 +50,9 @@ const initNavbarScrolldown = () => {
     selectElement('#close-color-two').style.stroke = charcoalColor;
   }
 
-  if (window.location.pathname === servicesPath) {
-    navbarBlackColor();
-  }
-  
-  if (window.location.pathname === processPath || window.location.pathname === industriesPath) {
+  if (window.location.pathname === homePath || window.location.pathname === rootPath || window.location.pathname === webinarsPath) {
+    navbarWhiteColor();
+  } else {
     navbarBlackColor();
   }
 
