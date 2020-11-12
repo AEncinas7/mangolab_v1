@@ -1,3 +1,7 @@
+<% content_for :not_found do %>
+  <title>Page not found | MangoLab.io</title>
+<% end %>
+
 <div class="error-main-container">
   <div class="error-container">
     <div class="left-side">
@@ -7,7 +11,7 @@
         <%= link_to services_path, class:"error-btn" do %>
           <span>SERVICES</span>
         <% end %>
-        <%= link_to services_path, class:"error-btn" do %>
+        <%= link_to webinars_path, class:"error-btn" do %>
           <span>WEBINARS</span>
         <% end %>
       </div>

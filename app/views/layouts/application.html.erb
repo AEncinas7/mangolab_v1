@@ -41,6 +41,8 @@
           yield(:industries)
         elsif content_for?(:webinars)
           yield(:webinars)
+        elsif content_for?(:not_found)
+          yield(:not_found)
         end
     %>
     
