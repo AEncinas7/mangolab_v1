@@ -31,42 +31,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <%# <title>
-      <%= if content_for?(:home_title) 
-            yield(:home_title)
-          elsif content_for?(:services_title)
-            yield(:services_title)
-          end
-      %>
-    <%# </title> %>
-
-    <%# <meta name="description" property="description" content="We build digital products for entrepreneurs and startups who want to revolutionize their industries.">
-    <meta name="keywords" content="software development,free consultation,launch e-commerce,startups,ux/ui design,mvp development">
-    <meta name="og:title" property="og:title" content="MangoLab.io | Software Development">
-    <meta name="og:description" property="og:description" content="We build digital products for entrepreneurs and startups who want to revolutionize their industries.">
-    <meta property="og:image" content="https://res.cloudinary.com/mangolab-io/image/upload/v1602028500/MangoLab.io%20-%20Website/Home_Page/Social_Banner_xjlz2n.png" /> %>
-    <%# <meta name="og:url" property="og:url" content="https://www.mangolab.io"> %>
-
-
     <%= if content_for?(:home)
           yield(:home) 
         elsif content_for?(:services)
           yield(:services)
+        elsif content_for?(:process)
+          yield(:process)
+        elsif content_for?(:industries)
+          yield(:industries)
+        elsif content_for?(:webinars)
+          yield(:webinars)
         end
     %>
     
-
     <%= favicon_link_tag asset_path('favicon-32x32.png') %>
   
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <meta name="author" content="MangoLab.io">
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <link rel="canonical" href="https://www.mangolab.io">
-
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="og:site_name" content="MangoLab.io">    
