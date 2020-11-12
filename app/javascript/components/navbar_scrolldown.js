@@ -10,6 +10,7 @@ const initNavbarScrolldown = () => {
   const servicesPath = '/services';
   const processPath = '/process';
   const industriesPath = '/industries';
+  const webinarsPath = '/webinars';
 
   const navbarBlackColor = () => {
     selectElement('.menu-bar').style.backgroundColor = 'black';
@@ -142,7 +143,13 @@ const initNavbarScrolldown = () => {
         }
       
     } else if (window.location.pathname === processPath || window.location.pathname === industriesPath) {
+
         navbarBlackColor();
+
+    } else if (window.location.pathname === webinarsPath) {
+
+        navbarWhiteColor();
+        
     }
 
   });

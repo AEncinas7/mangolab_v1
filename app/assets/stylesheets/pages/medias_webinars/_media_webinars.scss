@@ -1,0 +1,20 @@
+@media screen and (max-width: 1039px) {
+  @import "media_webinars_max_1039";
+  
+  @media screen and (max-width: 812px) {
+    @import "media_webinars_max_812";
+  }
+
+  @media screen and (max-width: 654px) {
+    @import "media_webinars_max_654";
+  }
+
+  // SmartPhone Sizes:
+  @media screen and (max-width: 530px) {
+    @import "media_webinars_max_530";
+  }
+
+  @media screen and (max-width: 420px) {    
+    @import "media_webinars_max_420";      
+  } 
+}

@@ -6,5 +6,6 @@ resources :home, only: [:index]
 resources :services, only: [:index]
 resources :process, only: [:index]
 resources :industries, only: [:index]
+resources :webinars, only: [:index]
 
 end
