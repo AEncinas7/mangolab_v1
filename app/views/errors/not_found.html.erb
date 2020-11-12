@@ -1,0 +1,19 @@
+<div class="error-main-container">
+  <div class="error-container">
+    <div class="left-side">
+      <h1>Oops, something’s gone wrong!</h1>
+      <h2>Don’t worry, why you don’t try one of these helpful links:</h2>
+      <div class="buttons">
+        <%= link_to services_path, class:"error-btn" do %>
+          <span>SERVICES</span>
+        <% end %>
+        <%= link_to services_path, class:"error-btn" do %>
+          <span>WEBINARS</span>
+        <% end %>
+      </div>
+    </div>
+    <div class="right-side">
+      <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1605217141/MangoLab.io%20-%20Website/Error404_Page/error404_hh8cck.png", alt: "error bitmoji icon" %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+.error-main-container { 
+  height: 780px; 
+}
+
+.error-container {
+  width: 420px;
+}
+
+.error-container .right-side {
+  margin-bottom: 56px;
+  img { width: 200px; }
+}
+
+.error-container .left-side {
+  h1 { margin-bottom:25px; }
+  h2 { 
+    margin-bottom: 29px; 
+    text-align: center;
+  }
+}
+
+.error-container .left-side .buttons {
+  flex-direction: column;
+  .error-btn { margin: 10px 0 }
+}

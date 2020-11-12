@@ -1,0 +1,23 @@
+// Error buttons:
+
+.error-btn {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 16px;
+  font-weight: bold;
+  width: 160px;
+  height: 34px;
+  letter-spacing: 0.05em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none!important;
+  color: $bone;
+  &:hover {
+    color: $bone;
+  }
+  border-radius: 18px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(black, black), radial-gradient(circle at left, $green, $orange);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}

@@ -1,0 +1,20 @@
+.error-main-container { 
+  height: 735px; 
+  padding-top: 152px;
+}
+
+.error-container {
+  width: 812px;
+  flex-direction: column-reverse;
+}
+
+.error-container .right-side {
+  margin-left: 0;
+  margin-bottom: 20px;
+  img { width: 300px; }
+}
+
+.error-container .left-side {
+  h1 { font-size: 36px; }
+  h2 { font-size: 18px; }
+}
