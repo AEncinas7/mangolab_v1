@@ -103,10 +103,10 @@ const initSwiper = () => {
   // Webinars Section:
   new swiper('.swiper-webinars', {
 
-    // loop: true,
+    loop: true,
     slidesPerView: 1,
     // initialSlide: 0,
-    spaceBetween: 12,
+    // spaceBetween: 35,
     pagination: {
       el: '.swiper-pagination-webinars',
       type: 'bullets',
