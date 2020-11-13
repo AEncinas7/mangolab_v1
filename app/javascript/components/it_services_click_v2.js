@@ -20,8 +20,10 @@ const initItServicesClickV2 = () => {
         
         if (btn.innerText === 'WEB DEVELOPMENT') {
           btn.parentElement.style.height = `${88 + textHeight}px`;
+          console.log(btn.parentElement.style.height);
         } else if (btn.innerText === 'MOBILE APPLICATION') {
           btn.parentElement.style.height = `${88 + textHeight}px`;
+          console.log(btn.parentElement.style.height);
         } else if (btn.innerText === 'PRODUCT DESIGN') {
           btn.parentElement.style.height = `${88 + textHeight}px`;
         } else if (btn.innerText === 'ANALYTICS & SEO') {
