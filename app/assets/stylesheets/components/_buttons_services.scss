@@ -1,0 +1,31 @@
+// Services buttons:
+
+.services-btn {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height: 24px;
+  width: 134px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none!important;
+  color: $bone;
+  &:hover {
+    color: $bone;
+  }
+  border-radius: 12px;
+  border: 1.5px solid transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  transition: all 1.5s;
+}
+.services-btn-black {
+  background-image: linear-gradient(black, black), radial-gradient(circle at left, $green, $orange);
+}
+
+.services-btn-white {
+  background-image: linear-gradient(white, white), radial-gradient(circle at left, $green, $orange);
+}

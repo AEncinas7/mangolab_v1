@@ -1,19 +1,20 @@
 .services-color-container {
   width: 100%;
   transition: background-color 1.5s;
+  // background-color: white;
 }
 
 .services-container {
   width: 1040px;
   margin: 0 auto;
-  height: 826px;
   display: flex;
-  justify-self: space-between;
+  justify-content: space-between;
   align-items: center;
 }
 
 //Services intro section:
 #services-intro {
+  height: 826px;
   .left-side {
     font-family: "Montserrat", "sans-serif";
     width: 520px;
@@ -28,159 +29,207 @@
     }
   }
 }
+// --------------------------
 
-// Sercives common sections:
-#services-title { 
+// Common Sections:
+.left-side-head {
+  margin-bottom: 38px;
+}
+
+.services-title {
   font-family: "Montserrat", "sans-serif";
   font-size: 32px;
   font-weight: 600;
-  margin-bottom: 32px;
+  margin-bottom: 6px;
 }
+
+.services-title-mangobar {
+  width: 60px;
+  height: 5px;
+  border-radius: 5px;
+  background: linear-gradient(to right, $green, $orange);
+}
+
 .services-description {
   font-family: "Lato";
   font-size: 14px;
-  letter-spacing: 0.05rem;
-}
-
-// ------------------------
-
-// Services UX/UI section:
-#services-ux-ui {
-  height: 700px;
-  display: flex;
-  justify-content: space-between;
-}
-
-#services-ux-ui .left-side {
-  width: 520px;
-}
-
-#services-ux-ui-swiper {
-  display: none;
-}
-
-// Services Website Dev section:
-.website-dev-container {
-  width: 100%;
-  background-color: white;
-}
-
-#services-website-dev {
-  height: 700px;
-  display: flex;
-  justify-content: space-between;
-}
-
-#services-website-dev .left-side {
-  img { margin-right: 20px; }
-}
-
-#services-website-dev .right-side {
-  width: 520px;
-  h1 { margin-bottom: 19px; }
-}
-
-#services-website-dev-swiper {
-  display: none;
-}
-
-// Services Dev and test section:
-.dev-test-container {
-  width: 100%;
-  background-color: white;
-}
-
-#services-dev-test {
-  height: 700px;
-  display: flex;
-  justify-content: space-between;
-}
-
-#services-dev-test .left-side {
-  width: 520px;
-  h1 { margin-bottom: 44px; }
-}
-
-#services-dev-test-swiper { display: none; }
-// -----------------------------------
-
-
-// Services Tools section:
-.services-tools-container {
-  width: 100%;
-  height: 700px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#swiper-pagination-tools {
-  bottom: 52px;
-  span { 
-    background: $charcoal;
-    margin: 0 5px!important;
-    width: 7px; 
-    height: 7px;
-  }
-  .swiper-pagination-bullet-active { 
-    width: 11px; height: 11px;
-  }
-}
-
-#services-tools { 
-  width: 1040px;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#services-tools-title { 
-  font-family: "Montserrat", "sans-serif";
-  font-size: 60px;
-  font-weight: 600;
-  margin-top: 99px;
-  margin-bottom: 73px;
-}
-
-#services-tools-wrapper .swiper-slide {
-  width: 300px!important;
-  height: 336px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .tool {
-    width: 280px;
-    height: 316px;
-    padding: 29px 32px;
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    img { width: 180px; }
-  }
-}
-
-#tool-title {
-  font-family: "Montserrat", "sans-serif";
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 28px;
-}
-
-#tool-description {
-  font-family: "Lato";
-  font-size: 12px;
-  letter-spacing: 0.03em;
-  text-align: center;
   font-weight: 500;
-  line-height: 15px;
+  line-height: 24px;
+  text-align: justify;
+  letter-spacing: 0.01em;
+  margin-bottom: 40px;
 }
+
+.services-page-btn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.services-right-title {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 20px;
+  font-weight: 600;
+  width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 33px;
+}
+
+.swiper-services {
+  width: 206px;
+  svg { 
+    width: 50px;
+    height: 50px; 
+    margin-top: 6px;
+  }
+  .swiper-pagination-services {
+    position: static;
+    margin-top: 45px;
+    .swiper-pagination-bullet {
+      width: 7px;
+      height: 7px;
+      margin: 0 5px;
+      background-color: $bone;
+    }
+    .swiper-pagination-bullet-active {
+      width: 11px;
+      height: 11px;
+    }
+  }
+}
+
+.services-type-slide {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-left: 1px;
+}
+
+.services-type-mangobar {
+  width: 4px;
+  height: 62.76px;
+  border-radius: 5px;
+  background: linear-gradient(to top, $green, $orange);
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.services-icon-description {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 18px;
+  width: 120px;
+}
+
+
+// Web Development and Mobile Application Section:
+#web-dev-mob-app {
+  height: 1200px;
+  flex-direction: column;
+  .top-side, .middle-side, .bottom-side { 
+    width: 100%; 
+    display: flex;
+    align-content: center;
+  }
+  .top-side, .bottom-side { 
+    justify-content: space-between;
+  }
+  .middle-side { justify-content: center; }
+}
+
+#web-dev-mob-app .top-side, #web-dev-mob-app .bottom-side {
+  .left-side, .right-side { width: 50%; }
+}
+
+#web-dev-mob-app .top-side, #web-dev-mob-app .bottom-side{
+  .right-side {
+    text-align: center;
+  }
+  // .mob-app-1 { height: 52px; }
+}
+
+
+// // Services Tools section:
+// .services-tools-container {
+//   width: 100%;
+//   height: 700px;
+//   background-color: white;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// #swiper-pagination-tools {
+//   bottom: 52px;
+//   span { 
+//     background: $charcoal;
+//     margin: 0 5px!important;
+//     width: 7px; 
+//     height: 7px;
+//   }
+//   .swiper-pagination-bullet-active { 
+//     width: 11px; height: 11px;
+//   }
+// }
+
+// #services-tools { 
+//   width: 1040px;
+//   height: 100%;
+//   margin: 0 auto;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// }
+
+// #services-tools-title { 
+//   font-family: "Montserrat", "sans-serif";
+//   font-size: 60px;
+//   font-weight: 600;
+//   margin-top: 99px;
+//   margin-bottom: 73px;
+// }
+
+// #services-tools-wrapper .swiper-slide {
+//   width: 300px!important;
+//   height: 336px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   .tool {
+//     width: 280px;
+//     height: 316px;
+//     padding: 29px 32px;
+//     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+//     border-radius: 12px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     img { width: 180px; }
+//   }
+// }
+
+// #tool-title {
+//   font-family: "Montserrat", "sans-serif";
+//   font-size: 22px;
+//   font-weight: bold;
+//   margin-bottom: 28px;
+// }
+
+// #tool-description {
+//   font-family: "Lato";
+//   font-size: 12px;
+//   letter-spacing: 0.03em;
+//   text-align: center;
+//   font-weight: 500;
+//   line-height: 15px;
+// }
+
+
 
 // Services Let's talk section:
 .services-lets-talk-container {

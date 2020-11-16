@@ -238,7 +238,7 @@
   transform: rotate(90deg);
 }
 
-// 5- Let's go:
+// 4- Let's go:
 
 .lets-go-btn {
   font-family: "Montserrat", "sans-serif";
@@ -311,86 +311,5 @@
 }
 
 .lets-go-btn-change:hover .chevron-right {
-  transform: rotate(90deg);
-}
-
-
-
-// Services Buttons
-
-// 1- Back to home:
-.back-home-btn {
-  margin: 0 auto;
-  font-family: "Montserrat", "sans-serif";
-  width: 158px;
-  height: 44px;
-  font-size: 16px;
-  font-weight: 650;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  text-decoration: none!important;
-  color: $charcoal;
-  border-radius: 12px;
-  border: 3px solid $charcoal;
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
-  &:hover {
-    color: $charcoal;
-  }
-  span {
-    display: flex;
-    align-items: center;
-  }
-  .chevron-right {
-    margin-left: 32px;
-    margin-right: 8px;
-    transform: rotate(0deg);
-    transition: .6s;
-    width: 12px;
-    height: 24px;
-  }
-}
-
-.back-home-btn:hover .chevron-right {
-  transform: rotate(90deg);
-}
-
-.back-home-btn-change {
-  margin: 0 auto;
-  font-family: "Montserrat", "sans-serif";
-  width: 158px;
-  height: 44px;
-  font-size: 16px;
-  font-weight: 650;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  text-decoration: none!important;
-  color: $bone;
-
-  border-radius: 12px;
-  border: 3px solid transparent;
-  background-image: linear-gradient(black, black), radial-gradient(circle at left, $green, $orange);
-  background-origin: border-box;
-  background-clip: content-box, border-box;   
-
-  &:hover {
-    color: $bone;
-  }
-  span {
-    display: flex;
-    align-items: center;
-  }
-  .chevron-right {
-    margin-left: 32px;
-    margin-right: 8px;
-    transform: rotate(0deg);
-    transition: .6s;
-    width: 12px;
-    height: 24px;
-  }
-}
-
-.back-home-btn-change:hover .chevron-right {
   transform: rotate(90deg);
 }

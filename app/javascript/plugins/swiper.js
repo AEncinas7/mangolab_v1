@@ -38,6 +38,7 @@ const initSwiper = () => {
 
   })
 
+  // Home About us swiper:
   new swiper('.swiper-about', {
 
     pagination: {
@@ -47,31 +48,11 @@ const initSwiper = () => {
 
   })
 
-  // Services UX-UI section:
-  new swiper('.swiper-services-ux-ui', {
-
+  // Services Web Development swiper:
+  new swiper('.swiper-services', {
+    loop: true,
     pagination: {
-      el: '.swiper-pagination-services-ux-ui',
-      type: 'bullets',
-    },
-
-  })
-
-  // Services Website Dev section:
-  new swiper('.swiper-services-website', {
-
-    pagination: {
-      el: '.swiper-pagination-services-website-dev',
-      type: 'bullets',
-    },
-
-  })
-
-  // Services Dev and test section:
-  new swiper('.swiper-dev-test', {
-
-    pagination: {
-      el: '.swiper-pagination-services-dev-test',
+      el: '.swiper-pagination-services',
       type: 'bullets',
     },
 

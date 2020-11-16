@@ -9,23 +9,30 @@ const initServicesChangeColorOnScroll = () => {
   const servicesPath = '/services';
 
   const transformToBlackTop = () => {
-
+    // Services Intro section:
     selectElement('.services-color-container').style.backgroundColor = 'black';
     selectElement('#services-intro-js-change').style.color = boneColor;
 
-    selectElement('#services-ux-ui').style.color = boneColor;
-    selectElement('#services-ux-ui-swiper').style.color = boneColor;
-    Array.from(selectElement('.swiper-pagination-services-ux-ui').children).forEach(e => e.style.background = boneColor);
-
+    // Services Body section:
+    selectElement('#web-dev-mob-app').style.color = boneColor;
+    selectElementAll('.services-btn').forEach(ele => ele.classList.remove('services-btn-white'));
+    selectElementAll('.services-btn').forEach(ele => ele.classList.add('services-btn-black'));
+    selectElementAll('.services-btn').forEach(ele => ele.style.color = boneColor);
+    selectElementAll('.services-paths').forEach(ele => ele.style.fill = boneColor);
   }
-
+  
   const transformToWhiteTop = () => {
+    // Services Intro section:
     selectElement('.services-color-container').style.backgroundColor = 'white';
     selectElement('#services-intro-js-change').style.color = charcoalColor;
+    
+    // Services Body section:
+    selectElement('#web-dev-mob-app').style.color = charcoalColor;
+    selectElementAll('.services-btn').forEach(ele => ele.classList.remove('services-btn-black'));
+    selectElementAll('.services-btn').forEach(ele => ele.classList.add('services-btn-white'));
+    selectElementAll('.services-btn').forEach(ele => ele.style.color = charcoalColor);
+    selectElementAll('.services-paths').forEach(ele => ele.style.fill = charcoalColor);
 
-    selectElement('#services-ux-ui').style.color = charcoalColor;
-    selectElement('#services-ux-ui-swiper').style.color = charcoalColor;
-    Array.from(selectElement('.swiper-pagination-services-ux-ui').children).forEach(e => e.style.background = charcoalColor);
 
   }
 
@@ -36,11 +43,15 @@ const initServicesChangeColorOnScroll = () => {
   window.addEventListener('scroll', () => {
     if (window.location.pathname === servicesPath) {
 
-      if (window.scrollY <= 413) {
-        transformToBlackTop();
-      }
-      else {
-        transformToWhiteTop();
+      if (window.screen.width > 1039) {
+      
+        if (window.scrollY <= 1726) {
+          transformToBlackTop();
+        }
+        else {
+          transformToWhiteTop();
+        }
+
       }
 
     }
