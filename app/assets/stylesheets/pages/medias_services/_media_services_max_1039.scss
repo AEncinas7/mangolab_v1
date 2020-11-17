@@ -1,0 +1,117 @@
+.services-container {
+  width: 812px;
+}
+// ------------------
+
+// Services intro section: 
+#services-intro {
+  height: 769px;;
+  flex-direction: column-reverse; 
+  justify-content: center;
+}
+
+#services-intro .left-side {
+  h1, h3 { text-align: center; }
+  h1 { margin-bottom: 31px; }
+}
+
+#services-intro .right-side {
+  img { width: 500px; }
+}
+// --------------------------
+
+
+// Common sections:
+.services-title { font-size: 20px; }
+.services-title-mangobar { width: 36px; }
+// -------------------------
+
+
+// Web Development and Mobile Application Section:
+#web-dev-mob-app {
+  height: 1583px;
+  .top-side, .bottom-side {
+    flex-direction: column;
+    align-items: center;
+  }
+  .middle-side {
+    img { width: 400px; }
+    margin-bottom: 84px;
+  }
+}
+
+#web-dev-mob-app .top-side, #web-dev-mob-app .bottom-side {
+  .left-side, .right-side { width: 100%; }
+}
+
+#web-dev-mob-app .top-side, #web-dev-mob-app .bottom-side {
+  .left-side { margin-bottom: 40px; }
+}
+// --------------------------
+
+// Product Design and Analytics ans SEO section:
+#prod-design-ana-seo {
+  height: 1583px;
+  .top-side, .bottom-side {
+    flex-direction: column;
+    align-items: center;
+  }
+  .middle-side {
+    img { width: 400px; }
+    margin-bottom: 84px;
+  }
+}
+
+#prod-design-ana-seo .top-side, #prod-design-ana-seo .bottom-side {
+  .left-side, .right-side { width: 100%; }
+}
+
+#prod-design-ana-seo .top-side, #prod-design-ana-seo .bottom-side {
+  .left-side { margin-bottom: 40px; }
+}
+// -------------------------
+
+// API Development section:
+#api-development {
+  .top-side {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottom-side {
+    img { width: 400px; }
+  }
+}
+
+#api-development .top-side {
+  .left-side, .right-side { width: 100%; }
+}
+
+#api-development .top-side {
+  .left-side { margin-bottom: 40px; }
+}
+
+
+// // Services Tools Section:
+// #services-tools { width: 300px; }
+// #services-tools-title { font-size: 56px; }
+
+// Services lets talk section:
+.services-lets-talk-container { height: 569px; }
+
+#services-lets-talk {
+  width: 812px;
+}
+
+.lets-talk-icon {
+  img { width: 150px; }
+  top: auto;
+  bottom: 51px;
+}
+
+.lets-talk-body {
+  width: 100%;
+  p {
+    width: 611px;
+    font-size: 14px;
+  }
+}
