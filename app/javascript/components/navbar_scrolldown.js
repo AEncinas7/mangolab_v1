@@ -128,17 +128,16 @@ const initNavbarScrolldown = () => {
       }
 
     } else if (window.location.pathname === servicesPath) {
-  
-      if (window.scrollY <= 413) {
-          navbarBlackColor();
-        } else {
-          navbarWhiteColor();
-        }
+      
+      if (window.screen.width > 1039) {
         
-
-        if (window.scrollY >= 3504) {
+        if (window.scrollY >= 1825 && window.scrollY <= 3287) {
+          navbarWhiteColor();
+        } else {
           navbarBlackColor();
         }
+
+      }
       
     } else if (window.location.pathname === processPath || window.location.pathname === industriesPath) {
 

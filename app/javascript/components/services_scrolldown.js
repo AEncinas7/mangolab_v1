@@ -8,7 +8,7 @@ const initServicesChangeColorOnScroll = () => {
 
   const servicesPath = '/services';
 
-  const transformToBlackTop = () => {
+  const transformToBlack = () => {
     // Services Intro section:
     selectElement('.services-color-container').style.backgroundColor = 'black';
     selectElement('#services-intro-js-change').style.color = boneColor;
@@ -19,9 +19,18 @@ const initServicesChangeColorOnScroll = () => {
     selectElementAll('.services-btn').forEach(ele => ele.classList.add('services-btn-black'));
     selectElementAll('.services-btn').forEach(ele => ele.style.color = boneColor);
     selectElementAll('.services-paths').forEach(ele => ele.style.fill = boneColor);
+    selectElementAll('.swiper-pagination-services').forEach( ele => {
+      let bulletObject = ele.children;
+      Object.values(bulletObject).forEach(bullet => bullet.style.backgroundColor = boneColor);
+    });
+    
+    selectElement('#prod-design-ana-seo').style.color = boneColor;
+    selectElement('#api-development').style.color = boneColor;
+    selectElement('.services-lets-talk-container').style.backgroundColor = 'black';
+    selectElement('.services-lets-talk-container').style.color = boneColor;
   }
   
-  const transformToWhiteTop = () => {
+  const transformToWhite = () => {
     // Services Intro section:
     selectElement('.services-color-container').style.backgroundColor = 'white';
     selectElement('#services-intro-js-change').style.color = charcoalColor;
@@ -32,12 +41,20 @@ const initServicesChangeColorOnScroll = () => {
     selectElementAll('.services-btn').forEach(ele => ele.classList.add('services-btn-white'));
     selectElementAll('.services-btn').forEach(ele => ele.style.color = charcoalColor);
     selectElementAll('.services-paths').forEach(ele => ele.style.fill = charcoalColor);
-
-
+    selectElementAll('.swiper-pagination-services').forEach(ele => {
+      let bulletObject = ele.children;
+      Object.values(bulletObject).forEach(bullet => bullet.style.backgroundColor = charcoalColor);
+    });
+    
+    selectElement('#prod-design-ana-seo').style.color = charcoalColor;
+    selectElement('#api-development').style.color = charcoalColor;
+    selectElement('.services-lets-talk-container').style.backgroundColor = 'white';
+    selectElement('.services-lets-talk-container').style.color = charcoalColor;
+    
   }
 
   if (window.location.pathname === servicesPath) {
-    transformToBlackTop();
+    transformToBlack();
   }
 
   window.addEventListener('scroll', () => {
@@ -45,11 +62,11 @@ const initServicesChangeColorOnScroll = () => {
 
       if (window.screen.width > 1039) {
       
-        if (window.scrollY <= 1726) {
-          transformToBlackTop();
+        if (window.scrollY >= 1825 && window.scrollY <= 3287) {
+          transformToWhite();
         }
         else {
-          transformToWhiteTop();
+          transformToBlack();
         }
 
       }

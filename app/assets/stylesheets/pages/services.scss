@@ -1,7 +1,6 @@
 .services-color-container {
   width: 100%;
   transition: background-color 1.5s;
-  // background-color: white;
 }
 
 .services-container {
@@ -127,8 +126,9 @@
 
 // Web Development and Mobile Application Section:
 #web-dev-mob-app {
-  height: 1200px;
+  height: 1400px;
   flex-direction: column;
+  justify-content: space-around;
   .top-side, .middle-side, .bottom-side { 
     width: 100%; 
     display: flex;
@@ -148,7 +148,59 @@
   .right-side {
     text-align: center;
   }
-  // .mob-app-1 { height: 52px; }
+}
+
+// Product Design and Analytics ans SEO section:
+#prod-design-ana-seo {
+  height: 1400px;
+  flex-direction: column;
+  justify-content: space-around;
+  .top-side, .middle-side, .bottom-side { 
+    width: 100%; 
+    display: flex;
+    align-content: center;
+  }
+  .top-side, .bottom-side { 
+    justify-content: space-between;
+  }
+  .middle-side { justify-content: center; }
+}
+
+#prod-design-ana-seo .top-side, #prod-design-ana-seo .bottom-side {
+  .left-side, .right-side { width: 50%; }
+}
+
+#prod-design-ana-seo .top-side, #prod-design-ana-seo .bottom-side{
+  .right-side {
+    text-align: center;
+  }
+}
+
+// API Development section:
+#api-development {
+  height: 1000px;
+  flex-direction: column;
+  justify-content: center;
+  .top-side, .bottom-side { 
+    width: 100%; 
+    display: flex;
+    align-content: center;
+  }
+  .bottom-side { justify-content: center; }
+  .top-side { 
+    margin-bottom: 100px;
+    justify-content: space-around; 
+  }
+}
+
+#api-development .top-side {
+  .left-side, .right-side { width: 50%; }
+}
+
+#api-development .top-side {
+  .right-side {
+    text-align: center;
+  }
 }
 
 
@@ -235,7 +287,7 @@
 .services-lets-talk-container {
   width: 100%;
   height: 700px;
-  background-color: black;
+  transition: background-color 1.5s;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -245,7 +297,6 @@
 #services-lets-talk {
   width: 1040px;
   margin: 0 auto;
-  color: $bone;
   display: flex;
   flex-direction: column;
   justify-content: center;
