@@ -8,39 +8,67 @@ const initServicesChangeColorOnScroll = () => {
 
   const servicesPath = '/services';
 
-  const transformToBlackTop = () => {
-
+  const transformToBlack = () => {
+    // Services Intro section:
     selectElement('.services-color-container').style.backgroundColor = 'black';
     selectElement('#services-intro-js-change').style.color = boneColor;
 
-    selectElement('#services-ux-ui').style.color = boneColor;
-    selectElement('#services-ux-ui-swiper').style.color = boneColor;
-    Array.from(selectElement('.swiper-pagination-services-ux-ui').children).forEach(e => e.style.background = boneColor);
-
+    // Services Body section:
+    selectElement('#web-dev-mob-app').style.color = boneColor;
+    selectElementAll('.services-btn').forEach(ele => ele.classList.remove('services-btn-white'));
+    selectElementAll('.services-btn').forEach(ele => ele.classList.add('services-btn-black'));
+    selectElementAll('.services-btn').forEach(ele => ele.style.color = boneColor);
+    selectElementAll('.services-paths').forEach(ele => ele.style.fill = boneColor);
+    selectElementAll('.swiper-pagination-services').forEach( ele => {
+      let bulletObject = ele.children;
+      Object.values(bulletObject).forEach(bullet => bullet.style.backgroundColor = boneColor);
+    });
+    
+    selectElement('#prod-design-ana-seo').style.color = boneColor;
+    selectElement('#api-development').style.color = boneColor;
+    selectElement('.services-lets-talk-container').style.backgroundColor = 'black';
+    selectElement('.services-lets-talk-container').style.color = boneColor;
   }
-
-  const transformToWhiteTop = () => {
+  
+  const transformToWhite = () => {
+    // Services Intro section:
     selectElement('.services-color-container').style.backgroundColor = 'white';
     selectElement('#services-intro-js-change').style.color = charcoalColor;
-
-    selectElement('#services-ux-ui').style.color = charcoalColor;
-    selectElement('#services-ux-ui-swiper').style.color = charcoalColor;
-    Array.from(selectElement('.swiper-pagination-services-ux-ui').children).forEach(e => e.style.background = charcoalColor);
-
+    
+    // Services Body section:
+    selectElement('#web-dev-mob-app').style.color = charcoalColor;
+    selectElementAll('.services-btn').forEach(ele => ele.classList.remove('services-btn-black'));
+    selectElementAll('.services-btn').forEach(ele => ele.classList.add('services-btn-white'));
+    selectElementAll('.services-btn').forEach(ele => ele.style.color = charcoalColor);
+    selectElementAll('.services-paths').forEach(ele => ele.style.fill = charcoalColor);
+    selectElementAll('.swiper-pagination-services').forEach(ele => {
+      let bulletObject = ele.children;
+      Object.values(bulletObject).forEach(bullet => bullet.style.backgroundColor = charcoalColor);
+    });
+    
+    selectElement('#prod-design-ana-seo').style.color = charcoalColor;
+    selectElement('#api-development').style.color = charcoalColor;
+    selectElement('.services-lets-talk-container').style.backgroundColor = 'white';
+    selectElement('.services-lets-talk-container').style.color = charcoalColor;
+    
   }
 
   if (window.location.pathname === servicesPath) {
-    transformToBlackTop();
+    transformToBlack();
   }
 
   window.addEventListener('scroll', () => {
     if (window.location.pathname === servicesPath) {
 
-      if (window.scrollY <= 413) {
-        transformToBlackTop();
-      }
-      else {
-        transformToWhiteTop();
+      if (window.screen.width > 1039) {
+      
+        if (window.scrollY >= 1825 && window.scrollY <= 3287) {
+          transformToWhite();
+        }
+        else {
+          transformToBlack();
+        }
+
       }
 
     }
