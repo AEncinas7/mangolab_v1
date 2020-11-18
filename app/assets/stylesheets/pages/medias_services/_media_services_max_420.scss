@@ -6,6 +6,24 @@
 .swiper-services-description { width: 364px; }
 // ----------------------------------
 
+#web-dev-mob-app .bottom-side, #web-dev-mob-app .top-side {
+  .right-side {
+    h2 { width: 100%; }
+  }
+}
+
+#prod-design-ana-seo .bottom-side, #prod-design-ana-seo .top-side {
+  .right-side {
+    h2 { width: 100%; }
+  }
+}
+
+#api-development .top-side {
+  .right-side {
+    h2 { width: 100%; }
+  }
+}
+
 // Services lets talk section:
   #services-lets-talk {
   width: 364px;
