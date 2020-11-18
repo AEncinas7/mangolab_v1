@@ -21,13 +21,26 @@
 // Web Development and Mobile Application Section:
 #web-dev-mob-app, #prod-design-ana-seo {
   .middle-side {
-    img { width: 300px; }
+    img { 
+      width: 300px; 
+    }
     margin-bottom: 100px;
   }
 }
 
+#web-dev-mob-app .middle-side {
+  img { height: 253.33px; }
+}
+
+#prod-design-ana-seo .middle-side {
+  img { height: 293.33px; }
+}
+
 #api-development .bottom-side {
-  img { width: 300px; }
+  img { 
+    width: 300px; 
+    height: 226.8px;
+  }
 }
 
 // // Services tools section:
