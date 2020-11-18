@@ -137,6 +137,38 @@ const initNavbarScrolldown = () => {
           navbarBlackColor();
         }
 
+      } else if (window.screen.width <= 1039 && window.screen.width > 654) {
+
+        if (window.scrollY >= 1825 && window.scrollY <= 3287) {
+          navbarWhiteColor();
+        } else {
+          navbarBlackColor();
+        }
+
+      } else if (window.screen.width <= 654 && window.screen.width > 530) {
+
+        if (window.scrollY >= 1825 && window.scrollY <= 3287) {
+          navbarWhiteColor();
+        } else {
+          navbarBlackColor();
+        }
+
+      } else if (window.screen.width <= 530 && window.screen.width > 420) {
+
+        if (window.scrollY >= 1825 && window.scrollY <= 3287) {
+          navbarWhiteColor();
+        } else {
+          navbarBlackColor();
+        }
+
+      } else if (window.screen.width <= 420 && window.screen.width > 364) {
+
+        if (window.scrollY >= 1825 && window.scrollY <= 3287) {
+          navbarWhiteColor();
+        } else {
+          navbarBlackColor();
+        }
+
       }
       
     } else if (window.location.pathname === processPath || window.location.pathname === industriesPath) {

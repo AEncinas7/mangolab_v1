@@ -2,10 +2,9 @@
   // Tablet
   .menu-bar {
     height: 100px;
-    transition: height .55s linear;
+    transition: height .5s linear, background-color 1.5s;
     flex-direction: column;
     align-items: flex-start;
-    background-color: white;
   }
 
   .menu-container {
