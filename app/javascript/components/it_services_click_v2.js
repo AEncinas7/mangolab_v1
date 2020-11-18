@@ -17,21 +17,20 @@ const initItServicesClickV2 = () => {
         selectElement('.section.show-description').style.height = '44px';
         selectElement('.section.show-description').classList.remove('show-description');
         btn.parentElement.classList.add('show-description');
-        
-        if (btn.innerText === 'WEB DEVELOPMENT') {
-          btn.parentElement.style.height = `${88 + textHeight}px`;
-          console.log(btn.parentElement.style.height);
-        } else if (btn.innerText === 'MOBILE APPLICATION') {
-          btn.parentElement.style.height = `${88 + textHeight}px`;
-          console.log(btn.parentElement.style.height);
-        } else if (btn.innerText === 'PRODUCT DESIGN') {
-          btn.parentElement.style.height = `${88 + textHeight}px`;
-        } else if (btn.innerText === 'ANALYTICS & SEO') {
-          btn.parentElement.style.height = `${88 + textHeight}px`;
-        } else if (btn.innerText === 'API DEVELOPMENT') {
-          btn.parentElement.style.height = `${88 + textHeight}px`;
-        }
+      }
 
+      if (btn.innerText == 'WEB DEVELOPMENT') {
+        btn.parentElement.style.height = `${88 + textHeight}px`;
+        console.log(btn.parentElement.style.height);
+      } else if (btn.innerText == 'MOBILE APPLICATION') {
+        btn.parentElement.style.height = `${88 + textHeight}px`;
+        console.log(btn.parentElement.style.height);
+      } else if (btn.innerText == 'PRODUCT DESIGN') {
+        btn.parentElement.style.height = `${88 + textHeight}px`;
+      } else if (btn.innerText == 'ANALYTICS & SEO') {
+        btn.parentElement.style.height = `${88 + textHeight}px`;
+      } else if (btn.innerText == 'API DEVELOPMENT') {
+        btn.parentElement.style.height = `${88 + textHeight}px`;
       }
 
     })

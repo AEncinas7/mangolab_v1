@@ -6,7 +6,7 @@ const initItServicesClick = () => {
   const text = document.getElementById('it-services-description');
 
   // Content to be changed:
-  const webDevTitle = 'Website Development';
+  const webDevTitle = "Website Development";
   const webDevText = 'Dive into our deep web development expertise to build any web solution your company feels the need to receive: from single-page websites to online stores and including everything in between.';
 
   const mobileAppTitle = 'Mobile Application';
@@ -30,24 +30,25 @@ const initItServicesClick = () => {
       if (btn.classList != 'home-btn-black') {
         selectElement('.home-btn.home-btn-black.active').classList.remove('home-btn-black', 'active');
         btn.classList.add('home-btn-black', 'active'); 
-
-        if (btn.innerText === 'WEB DEVELOPMENT') {
-          title.innerText = webDevTitle;
-          text.innerText = webDevText;
-        } else if (btn.innerText === 'MOBILE APPLICATION') {
-          title.innerText = mobileAppTitle;
-          text.innerText = mobileAppText;
-        } else if (btn.innerText === 'PRODUCT DESIGN') {
-          title.innerText = prodDesignTitle;
-          text.innerText = prodDesignText;
-        } else if (btn.innerText === 'ANALYTICS & SEO') {
-          title.innerText = analyticTitle;
-          text.innerText = analyticText;
-        } else if (btn.innerText === 'API DEVELOPMENT') {
-          title.innerText = apiDevTitle;
-          text.innerText = apiDevText;
-        }
       }
+
+      if (btn.innerText == 'WEB DEVELOPMENT') {
+        title.innerText = webDevTitle;
+        text.innerText = webDevText;
+      } else if (btn.innerText == 'MOBILE APPLICATION') {
+        title.innerText = mobileAppTitle;
+        text.innerText = mobileAppText;
+      } else if (btn.innerText == 'PRODUCT DESIGN') {
+        title.innerText = prodDesignTitle;
+        text.innerText = prodDesignText;
+      } else if (btn.innerText == 'ANALYTICS & SEO') {
+        title.innerText = analyticTitle;
+        text.innerText = analyticText;
+      } else if (btn.innerText == 'API DEVELOPMENT') {
+        title.innerText = apiDevTitle;
+        text.innerText = apiDevText;
+      }
+
     })
   })
 
