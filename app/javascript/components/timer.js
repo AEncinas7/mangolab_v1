@@ -1,5 +1,5 @@
 const initTimer = () => {
-  const releaseDate = 'Nov 20, 2020 16:00:00';
+  const releaseDate = 'Dec 14, 2020 17:00:00';
   
   const timer = document.querySelector('#timer');
 
