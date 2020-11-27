@@ -48,7 +48,8 @@
           <div class="navbar-mangobar"></div>
         </li>
         <li class="free-consultation-btn black-background">
-          <%= link_to "FREE CONSULTATION", "https://calendly.com/mangolab/freeconsultation", class: "btn-black", target: :_blank, rel: "noreferrer" %>
+          <%= link_to "FREE CONSULTATION", "", onclick: "Calendly.initPopupWidget({url: 'https://calendly.com/mangolab/freeconsultation'});return false;", class: "btn-black" %>
+          <%# <%= link_to "FREE CONSULTATION", "https://calendly.com/mangolab/freeconsultation", class: "btn-black", target: :_blank, rel: "noreferrer" %>
         </li>
       </ul>
     </div>
