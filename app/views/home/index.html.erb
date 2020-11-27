@@ -19,7 +19,7 @@
     <div class="left-side" id="intro-js-change">
       <h3>We are MangoLab.io</h3>
       <h1>Software development focused on your success</h1>
-      <%= link_to "https://calendly.com/mangolab/freeconsultation", class: "lets-talk-btn-js-change lets-talk-btn", target: :_blank do %>
+      <%= link_to "", onclick: "Calendly.initPopupWidget({url: 'https://calendly.com/mangolab/freeconsultation'});return false;", class: "lets-talk-btn-js-change lets-talk-btn" do %>
         <span>
           LET'S TALK 
           <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right", alt: "mango chevron" %>
@@ -425,7 +425,7 @@
         <h2 id="second">Seconds</h2>
       </div>
       <h3 class="counter-text">Want to talk about your project?</h3>
-      <%= link_to "https://calendly.com/mangolab/freeconsultation", class: "lets-go-btn-js-change lets-go-btn-change", target: :_blank do %>
+      <%= link_to "", onclick: "Calendly.initPopupWidget({url: 'https://calendly.com/mangolab/freeconsultation'});return false;", class: "lets-go-btn-js-change lets-go-btn-change", target: :_blank do %>
         <span>
           LET'S GO 
           <%= image_tag "https://res.cloudinary.com/mangolab-io/image/upload/v1602614855/MangoLab.io%20-%20Website/Home_Page/Vector_pohnk9.svg", class: "chevron-right", alt: "mango chevron" %>
